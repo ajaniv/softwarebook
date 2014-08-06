@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Days offset test data
+/**
+ * \file days_offset_test_data.xml
+ * \brief Days offset   test data file
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+
+<oct:calendarsTestData
+  xmlns:oct="http://www.ondalear.com/calendar/test/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../../../schemas/xsd/calendars_test.xsd">
+
+  <oct:calendarTestDataList>
+    <oct:calendarTestData>
+      <oct:name>DaysOffset-2020</oct:name>
+      <oct:year>2020</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Good Friday</od:name>
+          <od:date>2020-04-10</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Easter Monday</od:name>
+          <od:date>2020-04-13</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+    <oct:calendarTestData>
+      <oct:name>DaysOffset-2016</oct:name>
+      <oct:year>2016</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Good Friday</od:name>
+          <od:date>2016-03-25</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Easter Monday</od:name>
+          <od:date>2016-03-28</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+  </oct:calendarTestDataList>
+</oct:calendarsTestData>

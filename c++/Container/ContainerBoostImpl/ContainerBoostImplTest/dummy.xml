@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+        <keyInteger>1024</keyInteger>
+        <keyString>some string</keyString>
+        <keyBool>1</keyBool>
+        <keyFloat>0.5</keyFloat>
+</root>

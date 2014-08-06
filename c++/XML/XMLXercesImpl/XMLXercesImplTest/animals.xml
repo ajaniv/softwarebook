@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- OndALear Circus -->
+
+
+<olc:animalList xmlns:olc="http://www.ondalear.com/circus">
+  <olc:animal>
+    <olc:name>Herby </olc:name>
+    <olc:species>elephant</olc:species>
+    <olc:dateOfBirth>1992-04-23</olc:dateOfBirth>
+    <olc:veterinarian name="Dr. Hal Brown" phone="(801)595-9627" />  
+    <olc:trainer name="Bob Fisk" phone="(801)881-2260" />
+  </olc:animal>
+  <olc:animal>
+    <olc:name>Sheldon</olc:name>
+    <olc:species>parrot</olc:species>
+    <olc:dateOfBirth>1998-09-30</olc:dateOfBirth>
+    <olc:veterinarian name="Dr. Kevin Wilson" phone="(801)466-6498" />
+    <olc:trainer name="Eli Wendel" phone="(801)929-2506" />
+  </olc:animal>
+  <olc:animal>
+    <olc:name>Dippy</olc:name>
+    <olc:species>penguin</olc:species>
+    <olc:dateOfBirth>2001-06-08</olc:dateOfBirth>
+    <olc:veterinarian name="Dr. Barbara Swayne" phone="(801)459-7746"  />
+    <olc:trainer name="Ben Waxman" phone="(801)882-3549"  />
+  </olc:animal>
+</olc:animalList>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- United States Federal holiday test data 
+/**
+ * \file us_banking.xml
+ * \brief United States Federal  test data file
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+
+<oct:calendarsTestData
+  xmlns:oct="http://www.ondalear.com/calendar/test/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../../schemas/xsd/calendars_test.xsd">
+  <oct:calendarTestDataList>
+    <oct:calendarTestData>
+      <oct:name>UnitedStatesFederalHoliday-2010</oct:name>
+      <oct:year>2010</oct:year>
+      <od:weekdayList>
+        <od:weekday>
+          <od:name>Thursday</od:name>
+          <od:date>2010-02-18</od:date>
+        </od:weekday>
+      </od:weekdayList>
+      <od:weekendList>
+        <od:weekend>
+          <od:name>Saturday</od:name>
+          <od:date>2010-02-20</od:date>
+        </od:weekend>
+        <od:weekend>
+          <od:name>Sunday</od:name>
+          <od:date>2010-02-21</od:date>
+        </od:weekend>
+      </od:weekendList>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>New Year</od:name>
+          <od:date>2010-01-01</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Martin Luther King's Birthday</od:name>
+          <od:date>2010-01-18</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Washington's Birthday</od:name>
+          <od:date>2010-02-15</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Memorial Day</od:name>
+          <od:date>2010-05-31</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Independence Day</od:name>
+          <od:date>2010-07-05</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Labor Day</od:name>
+          <od:date>2010-09-06</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Columbus Day</od:name>
+          <od:date>2010-10-11</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Veterans Day</od:name>
+          <od:date>2010-11-11</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Thank's Giving</od:name>
+          <od:date>2010-11-25</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Christmas</od:name>
+          <od:date>2010-12-24</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>New Year 2011</od:name>
+          <od:date>2010-12-31</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+    <oct:calendarTestData>
+      <oct:name>UnitedStatesFederalHoliday-2011</oct:name>
+      <oct:year>2011</oct:year>
+      <od:weekdayList>
+        <od:weekday>
+          <od:name>Friday</od:name>
+          <od:date>2011-02-18</od:date>
+        </od:weekday>
+      </od:weekdayList>
+      <od:weekendList>
+        <od:weekend>
+          <od:name>Saturday</od:name>
+          <od:date>2011-02-19</od:date>
+        </od:weekend>
+        <od:weekend>
+          <od:name>Sunday</od:name>
+          <od:date>2011-02-20</od:date>
+        </od:weekend>
+      </od:weekendList>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>New Year</od:name>
+          <od:date>2010-12-31</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Martin Luther King's Birthday</od:name>
+          <od:date>2011-01-17</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Washington's Birthday</od:name>
+          <od:date>2011-02-21</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Memorial Day</od:name>
+          <od:date>2011-05-30</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Independence Day</od:name>
+          <od:date>2011-07-04</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Labor Day</od:name>
+          <od:date>2011-09-05</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Columbus Day</od:name>
+          <od:date>2011-10-10</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Veterans Day</od:name>
+          <od:date>2011-11-11</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Thank's Giving</od:name>
+          <od:date>2011-11-24</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Christmas</od:name>
+          <od:date>2011-12-26</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+    <oct:calendarTestData>
+      <oct:name>UnitedStatesFederalHoliday-2012</oct:name>
+      <oct:year>2012</oct:year>
+      <od:weekdayList>
+        <od:weekday>
+          <od:name>Friday</od:name>
+          <od:date>2012-02-17</od:date>
+        </od:weekday>
+      </od:weekdayList>
+      <od:weekendList>
+        <od:weekend>
+          <od:name>Saturday</od:name>
+          <od:date>2012-02-18</od:date>
+        </od:weekend>
+        <od:weekend>
+          <od:name>Sunday</od:name>
+          <od:date>2012-02-19</od:date>
+        </od:weekend>
+      </od:weekendList>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>New Year</od:name>
+          <od:date>2012-01-02</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Martin Luther King's Birthday</od:name>
+          <od:date>2012-01-16</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Washington's Birthday</od:name>
+          <od:date>2012-02-20</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Memorial Day</od:name>
+          <od:date>2012-05-28</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Independence Day</od:name>
+          <od:date>2012-07-04</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Labor Day</od:name>
+          <od:date>2012-09-03</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Columbus Day</od:name>
+          <od:date>2012-10-08</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Veterans Day</od:name>
+          <od:date>2012-11-12</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Thank's Giving</od:name>
+          <od:date>2012-11-22</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Christmas</od:name>
+          <od:date>2012-12-25</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+  </oct:calendarTestDataList>
+</oct:calendarsTestData>

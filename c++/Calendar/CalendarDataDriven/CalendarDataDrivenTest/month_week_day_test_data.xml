@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Month Day rules test data 
+/**
+ * \file month_week_day_test_data.xml
+ * \brief Month Week Day Rules   test data file
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+
+<oct:calendarsTestData
+  xmlns:oct="http://www.ondalear.com/calendar/test/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../../../schemas/xsd/calendars_test.xsd">
+
+  <oct:calendarTestDataList>
+    <oct:calendarTestData>
+      <oct:name>MonthWeekDay-2020</oct:name>
+      <oct:year>2020</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Martin Luther King's Birthday</od:name>
+          <od:date>2020-01-20</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Washington's Birthday</od:name>
+          <od:date>2020-02-17</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Columbus Day</od:name>
+          <od:date>2020-10-12</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Thanks Giving</od:name>
+          <od:date>2020-11-26</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+    <oct:calendarTestData>
+      <oct:name>MonthWeekDay-2016</oct:name>
+      <oct:year>2016</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Martin Luther King's Birthday</od:name>
+          <od:date>2016-01-18</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Washington's Birthday</od:name>
+          <od:date>2016-02-15</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Columbus Day</od:name>
+          <od:date>2016-10-10</od:date>
+        </od:holiday>
+        <od:holiday>
+          <od:name>Thanks Giving</od:name>
+          <od:date>2016-11-24</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+  </oct:calendarTestDataList>
+</oct:calendarsTestData>

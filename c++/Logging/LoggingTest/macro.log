@@ -1,0 +1,593 @@
+|2011-01-08 00:17:22,436|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|225|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,436|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,436|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|228|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,436|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,437|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,437|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,437|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|233|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,437|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,437|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,437|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,437|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|238|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,437|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,438|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,438|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,438|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|243|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,438|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,438|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,438|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,438|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|248|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,438|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,438|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,439|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:17:22,439|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|254|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,451|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:17:22,464|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,359|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|225|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,359|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,359|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|228|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,359|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,359|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,359|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,359|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|233|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,359|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,360|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,360|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,360|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|238|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,360|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,360|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,360|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,360|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|243|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,360|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,361|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,361|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,361|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|248|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,361|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,361|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,361|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:42:18,361|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|254|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,375|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:42:18,391|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,279|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|225|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,279|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,279|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|228|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,279|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,279|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,280|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,280|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|233|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,280|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,280|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,280|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,280|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|238|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,280|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,280|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,281|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,281|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|243|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,281|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,281|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,281|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,281|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|248|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,281|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,281|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,282|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-08 00:44:25,282|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|254|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,299|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-08 00:44:25,320|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,809|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|225|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,809|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,810|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|228|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,810|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,810|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,810|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,810|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|233|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,810|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,810|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,810|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,811|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|238|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,811|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,811|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,811|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,811|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|243|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,811|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,811|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,811|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,812|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|248|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,812|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,812|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,812|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-10 18:36:53,812|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|254|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,844|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-10 18:36:53,875|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,534|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|225|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,534|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,534|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|228|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,534|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,534|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,535|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,535|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|233|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,535|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,535|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,535|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,535|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|238|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,535|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,535|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,535|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,536|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|243|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,536|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,536|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,536|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,536|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|248|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,536|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,536|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,536|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:12:31,537|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|254|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,568|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:12:31,599|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,348|test_logging_macros|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|225|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,348|test_logging_macros|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,349|DefaultLogger|DEBUG|3|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|228|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,349|DefaultLogger|DEBUG|4|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,349|test_logging_macros|DEBUG|5|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,349|test_logging_macros|DEBUG|6|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,349|DefaultLogger|INFO|7|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|233|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,349|DefaultLogger|INFO|8|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,349|test_logging_macros|INFO|9|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,350|test_logging_macros|INFO|10|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,350|DefaultLogger|WARN|11|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|238|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,350|DefaultLogger|WARN|12|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,350|test_logging_macros|WARN|13|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,350|test_logging_macros|WARN|14|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,350|DefaultLogger|ERROR|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|243|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,350|DefaultLogger|ERROR|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,351|test_logging_macros|ERROR|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,351|test_logging_macros|ERROR|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,351|DefaultLogger|FATAL|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|248|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,351|DefaultLogger|FATAL|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,351|test_logging_macros|FATAL|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,351|test_logging_macros|FATAL|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:33:12,351|DefaultLogger|ERROR|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|254|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,370|DefaultLogger|ERROR|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:33:12,389|DefaultLogger|FATAL|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,170|test_logging_macros|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|225|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,170|test_logging_macros|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,170|DefaultLogger|DEBUG|3|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|228|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,170|DefaultLogger|DEBUG|4|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,170|test_logging_macros|DEBUG|5|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,170|test_logging_macros|DEBUG|6|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,170|DefaultLogger|INFO|7|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|233|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,171|DefaultLogger|INFO|8|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,171|test_logging_macros|INFO|9|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,171|test_logging_macros|INFO|10|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,171|DefaultLogger|WARN|11|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|238|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,171|DefaultLogger|WARN|12|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,171|test_logging_macros|WARN|13|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,171|test_logging_macros|WARN|14|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,172|DefaultLogger|ERROR|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|243|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,172|DefaultLogger|ERROR|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,172|test_logging_macros|ERROR|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,172|test_logging_macros|ERROR|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,172|DefaultLogger|FATAL|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|248|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,172|DefaultLogger|FATAL|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,173|test_logging_macros|FATAL|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,173|test_logging_macros|FATAL|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:35:32,173|DefaultLogger|ERROR|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|254|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,187|DefaultLogger|ERROR|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:35:32,201|DefaultLogger|FATAL|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,576|test_logging_macros|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|225|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,576|test_logging_macros|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,577|DefaultLogger|DEBUG|3|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|228|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,577|DefaultLogger|DEBUG|4|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,577|test_logging_macros|DEBUG|5|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,577|test_logging_macros|DEBUG|6|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,577|DefaultLogger|INFO|7|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|233|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,577|DefaultLogger|INFO|8|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,577|test_logging_macros|INFO|9|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,577|test_logging_macros|INFO|10|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,578|DefaultLogger|WARN|11|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|238|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,578|DefaultLogger|WARN|12|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,578|test_logging_macros|WARN|13|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,578|test_logging_macros|WARN|14|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,578|DefaultLogger|ERROR|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|243|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,578|DefaultLogger|ERROR|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,578|test_logging_macros|ERROR|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,578|test_logging_macros|ERROR|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,579|DefaultLogger|FATAL|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|248|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,579|DefaultLogger|FATAL|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,579|test_logging_macros|FATAL|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,579|test_logging_macros|FATAL|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:37:31,579|DefaultLogger|ERROR|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|254|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,596|DefaultLogger|ERROR|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:37:31,609|DefaultLogger|FATAL|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,289|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,289|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,290|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,290|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,290|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,290|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,290|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,290|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,290|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,290|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,291|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,291|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,291|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,291|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,291|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,291|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,291|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,291|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,292|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,292|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,292|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,292|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:38:48,292|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,325|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|263|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:38:48,358|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|271|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,025|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,025|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,025|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,025|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,025|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,026|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,026|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,026|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,026|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,026|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,026|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,027|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,027|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,027|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,027|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,027|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,027|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,027|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,028|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,028|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,028|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,028|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:41:38,028|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,063|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|263|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:41:38,088|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|271|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,614|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,614|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,614|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,614|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,614|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,615|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,615|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,615|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,615|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,615|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,615|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,615|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,615|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,616|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,616|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,616|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,616|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,616|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,616|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,616|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,616|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,617|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:42:11,617|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,647|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|263|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:42:11,677|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|271|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,436|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,436|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,436|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,436|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,436|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,437|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,437|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,437|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,437|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,437|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,438|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,438|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,438|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,438|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,438|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,438|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,439|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,439|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,439|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,439|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,439|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,440|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:43:19,440|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,471|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|263|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:43:19,498|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|271|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,350|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,350|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,350|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,351|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,351|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,351|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,351|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,351|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,351|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,351|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,351|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,352|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,352|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,352|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,352|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,352|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,352|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,352|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,352|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,353|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,353|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,353|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 13:58:14,353|DefaultLogger|ERROR|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,380|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|263|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 13:58:14,405|DefaultLogger|FATAL|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|271|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,719|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,719|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,720|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,720|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,720|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,720|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,720|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,720|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,720|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,720|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,721|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,721|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,721|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,721|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,721|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,721|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,721|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,721|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,722|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,722|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,722|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,722|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,722|test_logging_macros|FATAL|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:29,750|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,774|DefaultLogger|ERROR|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:29,811|DefaultLogger|FATAL|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,861|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,861|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,861|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,862|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,862|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,862|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,862|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,862|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,862|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,862|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,863|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,863|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,863|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,863|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,863|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,863|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,863|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,863|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,864|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,864|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,864|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,864|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,864|test_logging_macros|FATAL|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:35:37,895|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,930|DefaultLogger|ERROR|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:35:37,963|DefaultLogger|FATAL|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,647|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,647|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,647|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,647|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,647|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,647|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,648|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,648|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,648|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,648|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,648|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,648|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,649|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,649|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,649|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,649|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,649|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,649|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,650|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,650|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,650|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:01,650|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:01,650|test_logging_macros|FATAL|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-01-11 19:36:45,797|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:45,856|DefaultLogger|ERROR|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-01-11 19:36:45,907|DefaultLogger|FATAL|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,327|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,342|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,342|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,342|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,342|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,342|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,342|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,342|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,342|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,343|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,343|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,343|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,343|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,343|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,343|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,343|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,344|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,344|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,344|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,344|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,344|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,344|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,344|test_logging_macros|FATAL|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-02-14 20:22:33,388|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,427|DefaultLogger|ERROR|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-02-14 20:22:33,471|DefaultLogger|FATAL|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,108|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,121|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,121|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,121|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,121|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,121|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,121|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,122|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,122|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,122|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,122|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,122|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,122|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,122|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,122|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,123|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,123|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,123|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,123|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,123|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,123|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,123|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,123|test_logging_macros|FATAL|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-05-15 20:56:32,195|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,252|DefaultLogger|ERROR|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-05-15 20:56:32,313|DefaultLogger|FATAL|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,270|test_logging_macros|DEBUG|15|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,303|test_logging_macros|DEBUG|16|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,303|DefaultLogger|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,304|DefaultLogger|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,304|test_logging_macros|DEBUG|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,304|test_logging_macros|DEBUG|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,304|DefaultLogger|INFO|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,304|DefaultLogger|INFO|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,304|test_logging_macros|INFO|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,304|test_logging_macros|INFO|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,304|DefaultLogger|WARN|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,305|DefaultLogger|WARN|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,305|test_logging_macros|WARN|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,305|test_logging_macros|WARN|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,305|DefaultLogger|ERROR|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,305|DefaultLogger|ERROR|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,305|test_logging_macros|ERROR|31|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,305|test_logging_macros|ERROR|32|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,305|DefaultLogger|FATAL|33|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,306|DefaultLogger|FATAL|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,306|test_logging_macros|FATAL|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,306|test_logging_macros|FATAL|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,306|test_logging_macros|FATAL|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:38:02,429|DefaultLogger|ERROR|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,509|DefaultLogger|ERROR|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:38:02,567|DefaultLogger|FATAL|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,257|DefaultLogger|INFO|33|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 18:57:41,257|test_logging_macros|DEBUG|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,257|test_logging_macros|DEBUG|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,257|DefaultLogger|DEBUG|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,257|DefaultLogger|DEBUG|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,257|test_logging_macros|DEBUG|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,258|test_logging_macros|DEBUG|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,258|DefaultLogger|INFO|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,258|DefaultLogger|INFO|41|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,258|test_logging_macros|INFO|42|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,258|test_logging_macros|INFO|43|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,258|DefaultLogger|WARN|44|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,258|DefaultLogger|WARN|45|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,258|test_logging_macros|WARN|46|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,259|test_logging_macros|WARN|47|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,259|DefaultLogger|ERROR|48|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,259|DefaultLogger|ERROR|49|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,259|test_logging_macros|ERROR|50|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,259|test_logging_macros|ERROR|51|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,259|DefaultLogger|FATAL|52|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,259|DefaultLogger|FATAL|53|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,260|test_logging_macros|FATAL|54|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,260|test_logging_macros|FATAL|55|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,260|test_logging_macros|FATAL|56|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:57:41,289|DefaultLogger|ERROR|57|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,323|DefaultLogger|ERROR|58|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,351|DefaultLogger|FATAL|59|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:57:41,382|DefaultLogger|INFO|60|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|156|ondalear::logging::LoggingConfigurator::shutdown|Logging subsystem is being shut down|
+|2011-06-26 18:58:20,195|DefaultLogger|INFO|33|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 18:58:20,195|test_logging_macros|DEBUG|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,195|test_logging_macros|DEBUG|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,196|DefaultLogger|DEBUG|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,196|DefaultLogger|DEBUG|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,196|test_logging_macros|DEBUG|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,196|test_logging_macros|DEBUG|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,196|DefaultLogger|INFO|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,196|DefaultLogger|INFO|41|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,196|test_logging_macros|INFO|42|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,196|test_logging_macros|INFO|43|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,197|DefaultLogger|WARN|44|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,197|DefaultLogger|WARN|45|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,197|test_logging_macros|WARN|46|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,197|test_logging_macros|WARN|47|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,197|DefaultLogger|ERROR|48|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,197|DefaultLogger|ERROR|49|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,197|test_logging_macros|ERROR|50|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,197|test_logging_macros|ERROR|51|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,198|DefaultLogger|FATAL|52|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,198|DefaultLogger|FATAL|53|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,198|test_logging_macros|FATAL|54|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,198|test_logging_macros|FATAL|55|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,198|test_logging_macros|FATAL|56|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 18:58:20,223|DefaultLogger|ERROR|57|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,252|DefaultLogger|ERROR|58|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,276|DefaultLogger|FATAL|59|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 18:58:20,307|DefaultLogger|INFO|60|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|156|ondalear::logging::LoggingConfigurator::shutdown|Logging subsystem is being shut down|
+|2011-06-26 19:00:38,748|DefaultLogger|INFO|33|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 19:00:38,749|test_logging_macros|DEBUG|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,749|test_logging_macros|DEBUG|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,749|DefaultLogger|DEBUG|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,749|DefaultLogger|DEBUG|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,749|test_logging_macros|DEBUG|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,750|test_logging_macros|DEBUG|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,750|DefaultLogger|INFO|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,750|DefaultLogger|INFO|41|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,750|test_logging_macros|INFO|42|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,750|test_logging_macros|INFO|43|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,751|DefaultLogger|WARN|44|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,751|DefaultLogger|WARN|45|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,751|test_logging_macros|WARN|46|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,751|test_logging_macros|WARN|47|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,751|DefaultLogger|ERROR|48|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,752|DefaultLogger|ERROR|49|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,752|test_logging_macros|ERROR|50|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,752|test_logging_macros|ERROR|51|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,752|DefaultLogger|FATAL|52|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,752|DefaultLogger|FATAL|53|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,753|test_logging_macros|FATAL|54|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,753|test_logging_macros|FATAL|55|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,753|test_logging_macros|FATAL|56|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:38,789|DefaultLogger|ERROR|57|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,822|DefaultLogger|ERROR|58|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,861|DefaultLogger|FATAL|59|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:38,916|DefaultLogger|INFO|60|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|156|ondalear::logging::LoggingConfigurator::shutdown|Logging subsystem is being shut down|
+|2011-06-26 19:00:47,196|DefaultLogger|INFO|33|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 19:00:47,196|test_logging_macros|DEBUG|34|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|226|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,197|test_logging_macros|DEBUG|35|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|227|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,197|DefaultLogger|DEBUG|36|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|229|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,197|DefaultLogger|DEBUG|37|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|230|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,197|test_logging_macros|DEBUG|38|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|231|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,197|test_logging_macros|DEBUG|39|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|232|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,197|DefaultLogger|INFO|40|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|234|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,198|DefaultLogger|INFO|41|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|235|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,198|test_logging_macros|INFO|42|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|236|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,198|test_logging_macros|INFO|43|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|237|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,198|DefaultLogger|WARN|44|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|239|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,198|DefaultLogger|WARN|45|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|240|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,198|test_logging_macros|WARN|46|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|241|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,199|test_logging_macros|WARN|47|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|242|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,199|DefaultLogger|ERROR|48|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|244|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,199|DefaultLogger|ERROR|49|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|245|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,199|test_logging_macros|ERROR|50|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|246|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,199|test_logging_macros|ERROR|51|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|247|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,200|DefaultLogger|FATAL|52|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|249|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,200|DefaultLogger|FATAL|53|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|250|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,200|test_logging_macros|FATAL|54|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|251|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,200|test_logging_macros|FATAL|55|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|252|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,200|test_logging_macros|FATAL|56|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|255|ondalear::test::logging::LoggerTest::test_logging_macros|message: Simple Message|
+|2011-06-26 19:00:47,249|DefaultLogger|ERROR|57|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|262|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,313|DefaultLogger|ERROR|58|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|270|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,374|DefaultLogger|FATAL|59|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|278|ondalear::test::logging::LoggerTest::test_logging_macros|Simple Message|
+|2011-06-26 19:00:47,420|DefaultLogger|INFO|60|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|156|ondalear::logging::LoggingConfigurator::shutdown|Logging subsystem is being shut down|

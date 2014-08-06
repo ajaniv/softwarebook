@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- First week day of month  test data 
+/**
+ * \file first_day_month_test_data.xml
+ * \brief First day of month test data
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+
+<oct:calendarsTestData
+  xmlns:oct="http://www.ondalear.com/calendar/test/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../../../schemas/xsd/calendars_test.xsd">
+
+  <oct:calendarTestDataList>
+    <oct:calendarTestData>
+      <oct:name>FirstDayOfMonth-2020</oct:name>
+      <oct:year>2020</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Labour Day</od:name>
+          <od:date>2020-09-07</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+    <oct:calendarTestData>
+      <oct:name>FirstDayOfMonth-2016</oct:name>
+      <oct:year>2016</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Labour Day</od:name>
+          <od:date>2016-09-05</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+  </oct:calendarTestDataList>
+</oct:calendarsTestData>

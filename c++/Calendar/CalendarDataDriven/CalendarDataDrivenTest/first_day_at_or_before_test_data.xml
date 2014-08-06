@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- First Day At or Before  Test Data
+/**
+ * \file first_day_at_or_before_test_data.xml
+ * \brief First day at or before    test data file
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+
+<oct:calendarsTestData
+  xmlns:oct="http://www.ondalear.com/calendar/test/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../../../schemas/xsd/calendars_test.xsd">
+
+  <oct:calendarTestDataList>
+    <oct:calendarTestData>
+      <oct:name>FirstDayAtOrBefore-2020</oct:name>
+      <oct:year>2020</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Victoria Day</od:name>
+          <od:date>2020-05-25</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+    <oct:calendarTestData>
+      <oct:name>FirstDayAtOrBefore-2016</oct:name>
+      <oct:year>2016</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Victoria Day</od:name>
+          <od:date>2016-05-23</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+    <oct:calendarTestData>
+      <oct:name>FirstDayAtOrBefore-2013</oct:name>
+      <oct:year>2013</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Victoria Day</od:name>
+          <od:date>2013-05-20</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+  </oct:calendarTestDataList>
+</oct:calendarsTestData>

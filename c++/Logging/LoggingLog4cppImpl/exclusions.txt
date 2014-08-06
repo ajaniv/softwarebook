@@ -1,0 +1,5 @@
+Log4cppFactory.hpp
+Log4cppConfigurationImpl.hpp
+Log4cppLogger.hpp
+Log4cppLoggerImpl.hpp
+Log4cppUtil.hpp

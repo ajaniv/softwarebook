@@ -1,0 +1,87 @@
+|2011-06-26 18:58:19,879|DefaultLogger|INFO|9|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 18:58:19,965|DefaultLogger|INFO|16|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 18:58:19,973|LoggerTest|DEBUG|Simple Message|
+|2011-06-26 18:58:19,975|LoggerTest|DEBUG|message: Simple Message|
+|2011-06-26 18:58:19,978|LoggerTest|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|146|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 18:58:19,985|LoggerTest|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|147|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 18:58:19,992|LoggerTest|INFO|Simple Message|
+|2011-06-26 18:58:19,995|LoggerTest|INFO|message: Simple Message|
+|2011-06-26 18:58:19,997|LoggerTest|INFO|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|155|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 18:58:20,005|LoggerTest|INFO|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|156|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 18:58:20,012|LoggerTest|WARN|Simple Message|
+|2011-06-26 18:58:20,015|LoggerTest|WARN|message: Simple Message|
+|2011-06-26 18:58:20,018|LoggerTest|WARN|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|164|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 18:58:20,032|LoggerTest|WARN|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|165|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 18:58:20,044|LoggerTest|ERROR|Simple Message|
+|2011-06-26 18:58:20,047|LoggerTest|ERROR|message: Simple Message|
+|2011-06-26 18:58:20,051|LoggerTest|ERROR|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|173|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 18:58:20,064|LoggerTest|ERROR|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|174|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 18:58:20,076|LoggerTest|FATAL|Simple Message|
+|2011-06-26 18:58:20,079|LoggerTest|FATAL|message: Simple Message|
+|2011-06-26 18:58:20,084|LoggerTest|FATAL|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|182|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 18:58:20,103|LoggerTest|FATAL|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|183|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 18:58:20,118|LoggerTest|DEBUG|Simple Message|
+|2011-06-26 18:58:20,122|LoggerTest|DEBUG|message: Simple Message|
+|2011-06-26 18:58:20,129|LoggerTest|DEBUG|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|191|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 18:58:20,141|LoggerTest|DEBUG|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|192|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 18:58:20,154|LoggerTest|FATAL|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|198|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 18:58:20,168|PriorityLogger|FATAL|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|206|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 18:58:20,180|DefaultLogger|INFO|31|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|156|ondalear::logging::LoggingConfigurator::shutdown|Logging subsystem is being shut down|
+|2011-06-26 19:00:38,306|DefaultLogger|INFO|9|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 19:00:38,362|DefaultLogger|INFO|16|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 19:00:38,435|LoggerTest|DEBUG|Simple Message|
+|2011-06-26 19:00:38,439|LoggerTest|DEBUG|message: Simple Message|
+|2011-06-26 19:00:38,442|LoggerTest|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|146|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:38,452|LoggerTest|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|147|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:38,466|LoggerTest|INFO|Simple Message|
+|2011-06-26 19:00:38,470|LoggerTest|INFO|message: Simple Message|
+|2011-06-26 19:00:38,476|LoggerTest|INFO|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|155|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:38,489|LoggerTest|INFO|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|156|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:38,506|LoggerTest|WARN|Simple Message|
+|2011-06-26 19:00:38,510|LoggerTest|WARN|message: Simple Message|
+|2011-06-26 19:00:38,516|LoggerTest|WARN|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|164|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:38,534|LoggerTest|WARN|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|165|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:38,553|LoggerTest|ERROR|Simple Message|
+|2011-06-26 19:00:38,559|LoggerTest|ERROR|message: Simple Message|
+|2011-06-26 19:00:38,566|LoggerTest|ERROR|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|173|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:38,583|LoggerTest|ERROR|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|174|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:38,602|LoggerTest|FATAL|Simple Message|
+|2011-06-26 19:00:38,611|LoggerTest|FATAL|message: Simple Message|
+|2011-06-26 19:00:38,618|LoggerTest|FATAL|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|182|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:38,637|LoggerTest|FATAL|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|183|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:38,656|LoggerTest|DEBUG|Simple Message|
+|2011-06-26 19:00:38,662|LoggerTest|DEBUG|message: Simple Message|
+|2011-06-26 19:00:38,669|LoggerTest|DEBUG|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|191|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:38,683|LoggerTest|DEBUG|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|192|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:38,701|LoggerTest|FATAL|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|198|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:38,716|PriorityLogger|FATAL|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|206|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:38,730|DefaultLogger|INFO|31|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|156|ondalear::logging::LoggingConfigurator::shutdown|Logging subsystem is being shut down|
+|2011-06-26 19:00:46,882|DefaultLogger|INFO|9|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 19:00:46,897|DefaultLogger|INFO|16|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|136|ondalear::logging::LoggingConfigurator::apply|Applied changes to logging subsystem|
+|2011-06-26 19:00:46,906|LoggerTest|DEBUG|Simple Message|
+|2011-06-26 19:00:46,909|LoggerTest|DEBUG|message: Simple Message|
+|2011-06-26 19:00:46,913|LoggerTest|DEBUG|17|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|146|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:46,922|LoggerTest|DEBUG|18|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|147|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:46,929|LoggerTest|INFO|Simple Message|
+|2011-06-26 19:00:46,931|LoggerTest|INFO|message: Simple Message|
+|2011-06-26 19:00:46,933|LoggerTest|INFO|19|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|155|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:46,939|LoggerTest|INFO|20|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|156|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:46,946|LoggerTest|WARN|Simple Message|
+|2011-06-26 19:00:46,949|LoggerTest|WARN|message: Simple Message|
+|2011-06-26 19:00:46,952|LoggerTest|WARN|21|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|164|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:46,969|LoggerTest|WARN|22|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|165|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:46,996|LoggerTest|ERROR|Simple Message|
+|2011-06-26 19:00:47,003|LoggerTest|ERROR|message: Simple Message|
+|2011-06-26 19:00:47,010|LoggerTest|ERROR|23|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|173|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:47,031|LoggerTest|ERROR|24|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|174|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:47,052|LoggerTest|FATAL|Simple Message|
+|2011-06-26 19:00:47,058|LoggerTest|FATAL|message: Simple Message|
+|2011-06-26 19:00:47,065|LoggerTest|FATAL|25|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|182|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:47,085|LoggerTest|FATAL|26|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|183|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:47,103|LoggerTest|DEBUG|Simple Message|
+|2011-06-26 19:00:47,108|LoggerTest|DEBUG|message: Simple Message|
+|2011-06-26 19:00:47,114|LoggerTest|DEBUG|27|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|191|ondalear::test::logging::LoggerTest::test_logging|Simple Message|
+|2011-06-26 19:00:47,129|LoggerTest|DEBUG|28|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|192|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:47,143|LoggerTest|FATAL|29|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|198|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:47,159|PriorityLogger|FATAL|30|d:\projects\ondalear\src\c++\logging\loggingtest\loggertest.cpp|206|ondalear::test::logging::LoggerTest::test_logging|message: Simple Message|
+|2011-06-26 19:00:47,177|DefaultLogger|INFO|31|d:\projects\ondalear\src\c++\logging\loggingconfigurator.cpp|156|ondalear::logging::LoggingConfigurator::shutdown|Logging subsystem is being shut down|

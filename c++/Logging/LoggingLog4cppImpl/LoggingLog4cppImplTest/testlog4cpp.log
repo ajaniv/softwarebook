@@ -1,0 +1,166 @@
+1294024762 INFO main_cat : This is some info
+1294024762 ALERT main_cat : All hands abandon ship
+1294024762 WARN main_cat : This will be a logged warning
+1294024762 CRIT main_cat : Importance depends on  context
+1294024762 CRIT main_cat : This will show up  as 1 critical message
+1294024762 FATAL main_cat : This will show up as 1 emergency message
+1294024762 ERROR main_cat : And this will be an error
+1294024762 INFO main_cat : info
+1294024762 NOTICE main_cat : notice
+1294024762 WARN main_cat : warn
+1294024762 ERROR main_cat : error
+1294024762 CRIT main_cat : crit
+1294024762 ALERT main_cat : alert
+1294024762 FATAL main_cat : emerg
+1294024787 INFO main_cat : This is some info
+1294024787 ALERT main_cat : All hands abandon ship
+1294024787 WARN main_cat : This will be a logged warning
+1294024787 CRIT main_cat : Importance depends on  context
+1294024787 CRIT main_cat : This will show up  as 1 critical message
+1294024787 FATAL main_cat : This will show up as 1 emergency message
+1294024787 ERROR main_cat : And this will be an error
+1294024787 INFO main_cat : info
+1294024787 NOTICE main_cat : notice
+1294024787 WARN main_cat : warn
+1294024787 ERROR main_cat : error
+1294024787 CRIT main_cat : crit
+1294024787 ALERT main_cat : alert
+1294024787 FATAL main_cat : emerg
+1294024825 INFO main_cat : This is some info
+1294024827 ALERT main_cat : All hands abandon ship
+1294024828 WARN main_cat : This will be a logged warning
+1294024833 CRIT main_cat : Importance depends on  context
+1294024834 CRIT main_cat : This will show up  as 1 critical message
+1294024841 FATAL main_cat : This will show up as 1 emergency message
+1294024842 ERROR main_cat : And this will be an error
+1294024844 INFO main_cat : info
+1294024845 NOTICE main_cat : notice
+1294024846 WARN main_cat : warn
+1294024847 ERROR main_cat : error
+1294024848 CRIT main_cat : crit
+1294025474 INFO main_cat : This is some info
+1294025474 ALERT main_cat : All hands abandon ship
+1294025474 WARN main_cat : This will be a logged warning
+1294025474 CRIT main_cat : Importance depends on  context
+1294025474 CRIT main_cat : This will show up  as 1 critical message
+1294025474 FATAL main_cat : This will show up as 1 emergency message
+1294025474 ERROR main_cat : And this will be an error
+1294025474 INFO main_cat : info
+1294025474 NOTICE main_cat : notice
+1294025474 WARN main_cat : warn
+1294025474 ERROR main_cat : error
+1294025474 CRIT main_cat : crit
+1294025474 ALERT main_cat : alert
+1294025474 FATAL main_cat : emerg
+1294025790 INFO main_cat : This is some info
+1294025790 ALERT main_cat : All hands abandon ship
+1294025790 WARN main_cat : This will be a logged warning
+1294025790 CRIT main_cat : Importance depends on  context
+1294025790 CRIT main_cat : This will show up  as 1 critical message
+1294025790 FATAL main_cat : This will show up as 1 emergency message
+1294025790 ERROR main_cat : And this will be an error
+1294025790 INFO main_cat : info
+1294025790 NOTICE main_cat : notice
+1294025790 WARN main_cat : warn
+1294025790 ERROR main_cat : error
+1294025790 CRIT main_cat : crit
+1294025790 ALERT main_cat : alert
+1294025790 FATAL main_cat : emerg
+1294073581 INFO main_cat : This is some info
+1294073581 ALERT main_cat : All hands abandon ship
+1294073581 WARN main_cat : This will be a logged warning
+1294073581 CRIT main_cat : Importance depends on  context
+1294073581 CRIT main_cat : This will show up  as 1 critical message
+1294073581 FATAL main_cat : This will show up as 1 emergency message
+1294073581 ERROR main_cat : And this will be an error
+1294073581 INFO main_cat : info
+1294073581 NOTICE main_cat : notice
+1294073581 WARN main_cat : warn
+1294073581 ERROR main_cat : error
+1294073581 CRIT main_cat : crit
+1294073581 ALERT main_cat : alert
+1294073581 FATAL main_cat : emerg
+1294074224 INFO main_cat : This is some info
+1294074224 ALERT main_cat : All hands abandon ship
+1294074224 WARN main_cat : This will be a logged warning
+1294074224 CRIT main_cat : Importance depends on  context
+1294074224 CRIT main_cat : This will show up  as 1 critical message
+1294074224 FATAL main_cat : This will show up as 1 emergency message
+1294074224 ERROR main_cat : And this will be an error
+1294074224 INFO main_cat : info
+1294074224 NOTICE main_cat : notice
+1294074224 WARN main_cat : warn
+1294074224 ERROR main_cat : error
+1294074224 CRIT main_cat : crit
+1294074224 ALERT main_cat : alert
+1294074224 FATAL main_cat : emerg
+1294074561 INFO main_cat : This is some info
+1294074561 ALERT main_cat : All hands abandon ship
+1294074561 WARN main_cat : This will be a logged warning
+1294074561 CRIT main_cat : Importance depends on  context
+1294074561 CRIT main_cat : This will show up  as 1 critical message
+1294074561 FATAL main_cat : This will show up as 1 emergency message
+1294074561 ERROR main_cat : And this will be an error
+1294074561 INFO main_cat : info
+1294074561 NOTICE main_cat : notice
+1294074561 WARN main_cat : warn
+1294074561 ERROR main_cat : error
+1294074561 CRIT main_cat : crit
+1294074561 ALERT main_cat : alert
+1294074561 FATAL main_cat : emerg
+1294074873 INFO main_cat : This is some info
+1294074873 ALERT main_cat : All hands abandon ship
+1294074873 WARN main_cat : This will be a logged warning
+1294074873 CRIT main_cat : Importance depends on  context
+1294074873 CRIT main_cat : This will show up  as 1 critical message
+1294074873 FATAL main_cat : This will show up as 1 emergency message
+1294074873 ERROR main_cat : And this will be an error
+1294074873 INFO main_cat : info
+1294074873 NOTICE main_cat : notice
+1294074873 WARN main_cat : warn
+1294074873 ERROR main_cat : error
+1294074873 CRIT main_cat : crit
+1294074873 ALERT main_cat : alert
+1294074873 FATAL main_cat : emerg
+1294077978 INFO main_cat : This is some info
+1294077978 ALERT main_cat : All hands abandon ship
+1294077978 WARN main_cat : This will be a logged warning
+1294077978 CRIT main_cat : Importance depends on  context
+1294077978 CRIT main_cat : This will show up  as 1 critical message
+1294077978 FATAL main_cat : This will show up as 1 emergency message
+1294077978 ERROR main_cat : And this will be an error
+1294077978 INFO main_cat : info
+1294077978 NOTICE main_cat : notice
+1294077978 WARN main_cat : warn
+1294077978 ERROR main_cat : error
+1294077978 CRIT main_cat : crit
+1294077978 ALERT main_cat : alert
+1294077978 FATAL main_cat : emerg
+1294078017 INFO main_cat : This is some info
+1294078017 ALERT main_cat : All hands abandon ship
+1294078017 WARN main_cat : This will be a logged warning
+1294078017 CRIT main_cat : Importance depends on  context
+1294078017 CRIT main_cat : This will show up  as 1 critical message
+1294078017 FATAL main_cat : This will show up as 1 emergency message
+1294078017 ERROR main_cat : And this will be an error
+1294078017 INFO main_cat : info
+1294078017 NOTICE main_cat : notice
+1294078017 WARN main_cat : warn
+1294078017 ERROR main_cat : error
+1294078017 CRIT main_cat : crit
+1294078017 ALERT main_cat : alert
+1294078017 FATAL main_cat : emerg
+1294078121 INFO main_cat : This is some info
+1294078121 ALERT main_cat : All hands abandon ship
+1294078121 WARN main_cat : This will be a logged warning
+1294078121 CRIT main_cat : Importance depends on  context
+1294078121 CRIT main_cat : This will show up  as 1 critical message
+1294078121 FATAL main_cat : This will show up as 1 emergency message
+1294078121 ERROR main_cat : And this will be an error
+1294078121 INFO main_cat : info
+1294078121 NOTICE main_cat : notice
+1294078121 WARN main_cat : warn
+1294078121 ERROR main_cat : error
+1294078121 CRIT main_cat : crit
+1294078121 ALERT main_cat : alert
+1294078121 FATAL main_cat : emerg

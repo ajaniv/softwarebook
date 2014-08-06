@@ -1,0 +1,17 @@
+Detected memory leaks!
+Dumping objects ->
+d:\projects\ondalear\src\c++\xml\xmlxercesimpl\xmlxercesimpltest\xercestestmain.cpp(141) : {8852} normal block at 0x0017CBE8, 32 bytes long.
+ Data: <        efgh    > 00 00 00 00 CD CD CD CD 65 66 67 68 00 CD CD CD 
+d:\projects\ondalear\src\c++\xml\xmlxercesimpl\xmlxercesimpltest\xercestestmain.cpp(123) : {5231} normal block at 0x00175170, 32 bytes long.
+ Data: <        abcd    > 00 00 00 00 CD CD CD CD 61 62 63 64 00 CD CD CD 
+{5142} normal block at 0x0016B3A0, 52 bytes long.
+ Data: <                > A0 B3 16 00 A0 B3 16 00 A0 B3 16 00 CD CD CD CD 
+{5141} normal block at 0x0017B828, 28 bytes long.
+ Data: <                > 00 00 00 00 CD CD CD CD CD CD CD CD CD CD CD CD 
+{5136} normal block at 0x00174418, 24 bytes long.
+ Data: < D   D   D      > 18 44 17 00 18 44 17 00 18 44 17 00 CD CD CD CD 
+{5135} normal block at 0x0016EC60, 20 bytes long.
+ Data: <`   `   `       > 60 EC 16 00 60 EC 16 00 60 EC 16 00 CD CD CD CD 
+{5134} normal block at 0x00178F58, 128 bytes long.
+ Data: <$  U            > 24 84 D7 55 00 00 00 00 CD CD CD CD 00 CD CD CD 
+Object dump complete.

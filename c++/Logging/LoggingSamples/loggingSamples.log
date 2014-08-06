@@ -1,0 +1,72 @@
+|2011-01-11 19:14:10,951|SampleLogger|DEBUG|Simple Message|
+|2011-01-11 19:14:10,954|SampleLogger|DEBUG|message: Simple Message|
+|2011-01-11 19:14:10,956|SampleLogger|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|93|ondalear::logging::samples::loggingSamples|Simple Message|
+|2011-01-11 19:14:10,965|SampleLogger|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|94|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:14:10,972|SampleLogger|FATAL|3|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|103|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:14:10,979|SampleLogger|FATAL|4|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|106|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:14:10,985|SampleLogger|FATAL|5|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|111|ondalear::logging::samples::loggingSamples|Simple Message|
+|2011-01-11 19:14:10,992|SampleLogger|FATAL|Caught exception;  details: (null)|
+|2011-01-11 19:19:14,744|SampleLogger|DEBUG|Simple Message|
+|2011-01-11 19:19:14,746|SampleLogger|DEBUG|message: Simple Message|
+|2011-01-11 19:19:14,749|SampleLogger|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|93|ondalear::logging::samples::loggingSamples|Simple Message|
+|2011-01-11 19:19:14,756|SampleLogger|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|94|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:19:14,764|SampleLogger|FATAL|3|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|103|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:19:14,771|SampleLogger|FATAL|4|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|106|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:19:14,777|SampleLogger|FATAL|5|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|111|ondalear::logging::samples::loggingSamples|Simple Message|
+|2011-01-11 19:19:14,784|SampleLogger|FATAL|Caught exception;  details: (null)|
+|2011-01-11 19:19:56,333|SampleLogger|DEBUG|Simple Message|
+|2011-01-11 19:19:56,335|SampleLogger|DEBUG|message: Simple Message|
+|2011-01-11 19:19:56,337|SampleLogger|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|93|ondalear::logging::samples::loggingSamples|Simple Message|
+|2011-01-11 19:19:56,344|SampleLogger|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|94|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:19:56,351|SampleLogger|FATAL|3|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|103|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:19:56,358|SampleLogger|FATAL|4|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|106|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:19:56,365|SampleLogger|FATAL|5|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|111|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:19:56,372|SampleLogger|FATAL|Caught exception;  details: (null)|
+|2011-01-11 19:26:41,322|SampleLogger|DEBUG|Simple Message|
+|2011-01-11 19:26:41,330|SampleLogger|DEBUG|message: Simple Message|
+|2011-01-11 19:26:41,340|SampleLogger|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|93|ondalear::logging::samples::loggingSamples|Simple Message|
+|2011-01-11 19:26:41,364|SampleLogger|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|94|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:26:41,379|SampleLogger|FATAL|3|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|103|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:26:41,392|SampleLogger|FATAL|4|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|106|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:29:23,878|SampleLogger|FATAL|5|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|111|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:32:12,134|SampleLogger|FATAL|Caught exception;  details: (null)|
+|2011-01-11 19:38:31,445|SampleLogger|DEBUG|Simple Message|
+|2011-01-11 19:38:31,448|SampleLogger|DEBUG|message: Simple Message|
+|2011-01-11 19:38:31,450|SampleLogger|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|93|ondalear::logging::samples::loggingSamples|Simple Message|
+|2011-01-11 19:38:31,457|SampleLogger|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|94|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:38:31,464|SampleLogger|FATAL|3|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|103|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:38:31,471|SampleLogger|FATAL|4|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|106|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:38:31,480|SampleLogger|FATAL|5|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|111|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:38:31,487|SampleLogger|FATAL|Caught exception;  details: (null)|
+|2011-01-11 19:40:15,148|SampleLogger|DEBUG|Simple Message|
+|2011-01-11 19:40:15,151|SampleLogger|DEBUG|message: Simple Message|
+|2011-01-11 19:40:15,154|SampleLogger|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|93|ondalear::logging::samples::loggingSamples|Simple Message|
+|2011-01-11 19:40:15,161|SampleLogger|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|94|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:40:15,171|SampleLogger|FATAL|3|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|103|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:40:15,178|SampleLogger|FATAL|4|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|106|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:40:15,185|SampleLogger|FATAL|5|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|111|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:40:15,213|SampleLogger|FATAL|Caught exception;  details: (null)|
+|2011-01-11 19:41:34,689|SampleLogger|DEBUG|Simple Message|
+|2011-01-11 19:41:34,692|SampleLogger|DEBUG|message: Simple Message|
+|2011-01-11 19:41:34,696|SampleLogger|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|93|ondalear::logging::samples::loggingSamples|Simple Message|
+|2011-01-11 19:41:34,705|SampleLogger|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|94|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:41:34,714|SampleLogger|FATAL|3|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|103|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:41:34,723|SampleLogger|FATAL|4|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|106|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:41:34,730|SampleLogger|FATAL|5|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|111|ondalear::logging::samples::loggingSamples|message: Simple Message|
+|2011-01-11 19:41:34,739|SampleLogger|FATAL|Caught exception;  details: d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp(111): Throw in function void __cdecl ondalear::logging::samples::loggingSamples(void)
+Dynamic exception type: class boost::exception_detail::clone_impl<class ondalear::core::BaseException>
+std::exception::what: message: Simple Message
+[struct tag_core_msg *] = message: Simple Message
+|
+|2011-05-07 15:20:00,345|SampleLogger|DEBUG|Simple Message|
+|2011-05-07 15:20:00,374|SampleLogger|DEBUG|message: Simple Message|
+|2011-05-07 15:20:00,377|SampleLogger|DEBUG|1|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|102|ondalear::samples::logging::loggingSamples|Simple Message|
+|2011-05-07 15:20:00,385|SampleLogger|DEBUG|2|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|103|ondalear::samples::logging::loggingSamples|message: Simple Message|
+|2011-05-07 15:20:00,392|SampleLogger|FATAL|3|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|117|ondalear::samples::logging::loggingSamples|message: Simple Message|
+|2011-05-07 15:20:00,399|SampleLogger|FATAL|4|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|122|ondalear::samples::logging::loggingSamples|message: Simple Message|
+|2011-05-07 15:20:00,407|SampleLogger|FATAL|5|d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp|129|ondalear::samples::logging::loggingSamples|message: Simple Message|
+|2011-05-07 15:20:00,414|SampleLogger|FATAL|Caught exception;  details: d:\projects\ondalear\src\c++\logging\loggingsamples\loggingsamples.cpp(129): Throw in function void __cdecl ondalear::samples::logging::loggingSamples(void)
+Dynamic exception type: class boost::exception_detail::clone_impl<class ondalear::core::BaseException>
+std::exception::what: message: Simple Message
+[struct tag_core_msg *] = message: Simple Message
+|

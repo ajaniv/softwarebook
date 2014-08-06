@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<goodKey>valueRoot</goodKey><levelOnePath><goodKey>valueLevelOne</goodKey><levelTwoPath><goodKey>valueLevelTwo</goodKey></levelTwoPath></levelOnePath>

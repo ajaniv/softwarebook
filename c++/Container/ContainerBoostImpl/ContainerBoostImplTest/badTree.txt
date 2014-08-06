@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<key1>1</key1><key2>2</key2><child><key1>1</key1><key2>2</key2></child>

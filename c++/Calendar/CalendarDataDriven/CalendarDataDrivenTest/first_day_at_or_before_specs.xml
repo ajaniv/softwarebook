@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- First Day At Or BeforeCalendar  definition
+/**
+ * \file first_day_at_or_before_specs.xml
+ * \brief Calendar comprised of first_day_at_or_before rule data
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+<oc:calendarData
+  xmlns:ob="http://www.ondalear.com/core/2011-05"
+  xmlns:oc="http://www.ondalear.com/calendar/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../../../schemas/xsd/calendar.xsd">
+  <oc:calendarList>
+    <oc:businessCalendar>
+      <oc:calendarName>Canada Banking Holiday Calendar A</oc:calendarName>
+      <oc:ruleRefList>
+        <oc:ruleRef>
+          <oc:ruleName>Victoria Day</oc:ruleName>
+        </oc:ruleRef>
+      </oc:ruleRefList>
+    </oc:businessCalendar>
+    <oc:businessCalendar>
+      <oc:calendarName>Canada Banking Holiday Calendar B</oc:calendarName>
+      <oc:ruleRefList>
+        <oc:ruleRef>
+          <oc:ruleName>Victoria Day</oc:ruleName>
+        </oc:ruleRef>
+      </oc:ruleRefList>
+    </oc:businessCalendar>
+
+  </oc:calendarList>
+
+  <oc:ruleList>
+    <!-- order is important  -->
+    <oc:weekendRule>
+      <!-- mandatory  -->
+      <oc:ruleName>West Weekend</oc:ruleName>
+      <od:weekEndDayList>
+        <od:weekDay>
+          <od:dayName>Sunday</od:dayName>
+        </od:weekDay>
+        <od:weekDay>
+          <od:dayName>Saturday</od:dayName>
+        </od:weekDay>
+      </od:weekEndDayList>
+    </oc:weekendRule>
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Canada May 24</oc:ruleName>
+      <!-- optional but required for this rule -->
+      <oc:weekendAdjustment>NextWeekDay</oc:weekendAdjustment>
+      <!-- optional but required for this rule -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>May</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>24</od:dayOfMonth>
+    </oc:monthDayRule>
+    
+    <oc:firstDayAtOrBeforeRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Victoria Day</oc:ruleName>
+      <!-- optional but required for this type of rule -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <oc:underlyingRuleRef>
+        <oc:ruleName>Canada May 24</oc:ruleName>
+      </oc:underlyingRuleRef>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+      <!-- mandatory  -->
+      <oc:startAtFlag>true</oc:startAtFlag>
+    </oc:firstDayAtOrBeforeRule>
+  </oc:ruleList>
+</oc:calendarData>
+
+
+

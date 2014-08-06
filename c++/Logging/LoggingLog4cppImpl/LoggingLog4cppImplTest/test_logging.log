@@ -1,0 +1,117 @@
+% 7 cat1:2011-01-03 13:19:54,338 (1294078794 / 7) [ERROR]  message 1 % (9) 
+% 8 cat1:2011-01-03 13:58:40,964 (1294081120 / 8) [ERROR]  message 1 % (10) 
+:2011-01-03 13:58:40,964:cat1:message 2:
+% 5 cat1:2011-01-03 14:00:11,956 (1294081211 / 5) [ERROR]  message 1 % (7) 
+:2011-01-03 14:00:11,956:cat1:ERROR:message 2:
+% 14 cat1:2011-01-03 14:04:07,951 (1294081447 / 14) [ERROR]  message 1 % (16) 
+|2011-01-03 14:04:07,951|cat1|ERROR|message 2|
+% 12 cat1:2011-01-03 14:10:05,563 (1294081805 / 12) [ERROR]  message 1 % (14) 
+% 3816 cat1:2011-01-03 14:11:59,398 (1294081919 / 3816) [ERROR]  message 1 % (3818) 
+% 7 cat1:2011-01-03 14:14:16,727 (1294082056 / 7) [ERROR]  message 1 % (8) 
+|2011-01-03 14:14:16,727|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|218|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+% 19 cat1:2011-01-03 17:43:26,319 (1294094606 / 19) [ERROR]  message 1 % (20) 
+|2011-01-03 17:43:26,319|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+% 17148 cat1:2011-01-03 17:44:03,011 (1294094643 / 17148) [ERROR]  message 1 % (17150) 
+|2011-01-03 17:44:09,083|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+% 13 cat1:2011-01-03 17:49:42,040 (1294094982 / 13) [ERROR]  message 1 % (15) 
+|2011-01-03 17:49:42,040|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-03 17:49:42,040|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 18 cat1:2011-01-04 20:51:41,887 (1294192301 / 18) [ERROR]  message 1 % (20) 
+|2011-01-04 20:51:41,887|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-04 20:51:41,887|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 7 cat1:2011-01-04 21:04:47,288 (1294193087 / 7) [ERROR]  message 1 % (9) 
+|2011-01-04 21:04:47,288|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-04 21:04:47,288|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 8 cat1:2011-01-04 21:04:55,370 (1294193095 / 8) [ERROR]  message 1 % (11) 
+|2011-01-04 21:04:55,371|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-04 21:04:55,371|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 15 cat1:2011-01-04 21:30:33,228 (1294194633 / 15) [ERROR]  message 1 % (18) 
+|2011-01-04 21:30:33,229|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-04 21:30:33,229|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cpp\log4cpptest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 9 cat1:2011-01-05 11:10:36,749 (1294243836 / 9) [ERROR]  message 1 % (11) 
+|2011-01-05 11:10:36,749|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-05 11:10:36,750|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 8 cat1:2011-01-05 11:25:23,053 (1294244723 / 8) [ERROR]  message 1 % (10) 
+|2011-01-05 11:25:23,054|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-05 11:25:23,054|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 9 cat1:2011-01-05 11:26:08,283 (1294244768 / 9) [ERROR]  message 1 % (12) 
+|2011-01-05 11:26:08,284|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-05 11:26:08,284|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 8 cat1:2011-01-05 11:28:09,429 (1294244889 / 8) [ERROR]  message 1 % (10) 
+|2011-01-05 11:28:09,430|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-05 11:28:09,430|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 7 cat1:2011-01-05 12:05:21,091 (1294247121 / 7) [ERROR]  message 1 % (9) 
+|2011-01-05 12:05:21,092|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-05 12:05:21,092|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 8 cat1:2011-01-05 12:24:54,580 (1294248294 / 8) [ERROR]  message 1 % (10) 
+|2011-01-05 12:24:54,580|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-05 12:24:54,580|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 8 cat1:2011-01-05 13:09:19,138 (1294250959 / 8) [ERROR]  message 1 % (10) 
+|2011-01-05 13:09:19,138|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-05 13:09:19,138|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 12 cat1:2011-01-05 13:14:51,119 (1294251291 / 12) [ERROR]  message 1 % (14) 
+|2011-01-05 13:14:51,119|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-05 13:14:51,119|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 52 cat1:2011-01-06 11:23:55,594 (1294331035 / 52) [ERROR]  message 1 % (55) 
+|2011-01-06 11:23:55,609|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 11:23:55,610|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 8 cat1:2011-01-06 11:27:35,999 (1294331255 / 8) [ERROR]  message 1 % (11) 
+|2011-01-06 11:27:36,000|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 11:27:36,000|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 12 cat1:2011-01-06 11:28:16,458 (1294331296 / 12) [ERROR]  message 1 % (15) 
+|2011-01-06 11:28:16,458|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 11:28:16,458|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 20 cat1:2011-01-06 11:36:44,431 (1294331804 / 20) [ERROR]  message 1 % (22) 
+|2011-01-06 11:36:44,431|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 11:36:44,432|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 9 cat1:2011-01-06 11:37:15,821 (1294331835 / 9) [ERROR]  message 1 % (11) 
+|2011-01-06 11:37:15,821|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 11:37:15,821|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 8 cat1:2011-01-06 11:46:18,048 (1294332378 / 8) [ERROR]  message 1 % (11) 
+|2011-01-06 11:46:18,049|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 11:46:18,049|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 8 cat1:2011-01-06 11:47:43,891 (1294332463 / 8) [ERROR]  message 1 % (10) 
+|2011-01-06 11:47:43,891|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 11:47:43,891|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 190 cat1:2011-01-06 11:47:58,224 (1294332478 / 190) [ERROR]  message 1 % (194) 
+|2011-01-06 11:47:58,225|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 11:47:58,225|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 11 cat1:2011-01-06 12:19:44,911 (1294334384 / 11) [ERROR]  message 1 % (14) 
+|2011-01-06 12:19:44,912|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 12:19:44,912|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 42 cat1:2011-01-06 12:20:09,581 (1294334409 / 42) [ERROR]  message 1 % (44) 
+|2011-01-06 12:20:09,581|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 12:20:09,581|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 9 cat1:2011-01-06 12:24:04,982 (1294334644 / 9) [ERROR]  message 1 % (11) 
+|2011-01-06 12:24:04,982|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 12:24:04,982|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 12 cat1:2011-01-06 12:29:00,925 (1294334940 / 12) [ERROR]  message 1 % (14) 
+|2011-01-06 12:29:00,925|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 12:29:00,926|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 9 cat1:2011-01-06 12:50:22,658 (1294336222 / 9) [ERROR]  message 1 % (11) 
+|2011-01-06 12:50:22,658|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 12:50:22,658|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 4906 cat1:2011-01-06 12:50:43,005 (1294336243 / 4906) [ERROR]  message 1 % (4909) 
+|2011-01-06 12:50:43,005|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 12:50:43,005|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 6 cat1:2011-01-06 13:04:46,295 (1294337086 / 6) [ERROR]  message 1 % (9) 
+|2011-01-06 13:04:46,296|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 13:04:46,296|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 7 cat1:2011-01-06 13:17:38,402 (1294337858 / 7) [ERROR]  message 1 % (10) 
+|2011-01-06 13:17:38,403|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 13:17:38,403|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 21 cat1:2011-01-06 17:05:17,066 (1294351517 / 21) [ERROR]  message 1 % (23) 
+|2011-01-06 17:05:17,066|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 17:05:17,066|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 5814 cat1:2011-01-06 17:05:38,198 (1294351538 / 5814) [ERROR]  message 1 % (5817) 
+|2011-01-06 17:05:38,198|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-06 17:05:38,198|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 99 cat1:2011-01-10 18:26:37,626 (1294701997 / 99) [ERROR]  message 1 % (101) 
+|2011-01-10 18:26:37,633|cat1|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-01-10 18:26:37,633|default|ERROR|d:\projects\ondalear\src\c++\logging\log4cppwrapper\log4cppwrappertest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 134 cat1:2011-04-23 21:17:27,350 (1303607847 / 134) [ERROR]  message 1 % (161) 
+|2011-04-23 21:17:27,360|cat1|ERROR|d:\projects\ondalear\src\c++\logging\logginglog4cppimpl\logginglog4cppimpltest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-04-23 21:17:27,360|default|ERROR|d:\projects\ondalear\src\c++\logging\logginglog4cppimpl\logginglog4cppimpltest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|
+% 87 cat1:2011-05-07 15:12:13,292 (1304795533 / 87) [ERROR]  message 1 % (90) 
+|2011-05-07 15:12:13,303|cat1|ERROR|d:\projects\ondalear\src\c++\logging\logginglog4cppimpl\logginglog4cppimpltest\log4cppfeaturetest.cpp|227|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message2|
+|2011-05-07 15:12:13,303|default|ERROR|d:\projects\ondalear\src\c++\logging\logginglog4cppimpl\logginglog4cppimpltest\log4cppfeaturetest.cpp|229|ondalear::test::logging::log4cppimpl::Log4cppFeatureTest::test_logging|message3|

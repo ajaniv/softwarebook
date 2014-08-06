@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="dll_common"
+	OutputDirectory="$(ONDALEAR_BIN_DIR)\$(PlatformName)\$(ConfigurationName)"
+	InheritedPropertySheets=".\ondalear_common.vsprops"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		PreprocessorDefinitions="BUILD_DLL"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="&quot;$(ONDALEAR_BIN_DIR)\$(PlatformName)\$(ConfigurationName)&quot;;&quot;$(BOOST_LIB_DIR)&quot;"
+	/>
+</VisualStudioPropertySheet>

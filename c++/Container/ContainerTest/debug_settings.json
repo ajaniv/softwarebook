@@ -1,0 +1,16 @@
+{
+   "logger": 
+   {
+	"debug":
+	{
+		"filename" : "debug.log",
+		"level" : 2,
+		"modules":
+		[
+			{"module" : "Finance"},
+			{"module" : "Admin"},
+			{"module" : "HR" }		
+		]
+	}
+   }
+}

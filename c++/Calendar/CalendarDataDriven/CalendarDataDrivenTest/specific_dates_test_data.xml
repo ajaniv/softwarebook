@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Specific Dates rule test data 
+/**
+ * \file specific_dates_test_data.xml
+ * \brief Specific Dates Rule  test data file
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+
+<oct:calendarsTestData
+  xmlns:oct="http://www.ondalear.com/calendar/test/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../../../schemas/xsd/calendars_test.xsd">
+
+  <oct:calendarTestDataList>
+    <oct:calendarTestData>
+      <oct:name>SpecificDates-2020 </oct:name>
+      <oct:year>2020</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Easter Sunday</od:name>
+          <od:date>2020-04-12</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+
+    <oct:calendarTestData>
+      <oct:name>SpecificDates-2016 </oct:name>
+      <oct:year>2016</oct:year>
+      <od:holidayList>
+        <od:holiday>
+          <od:name>Easter Sunday</od:name>
+          <od:date>2016-03-27</od:date>
+        </od:holiday>
+      </od:holidayList>
+    </oct:calendarTestData>
+
+  </oct:calendarTestDataList>
+</oct:calendarsTestData>

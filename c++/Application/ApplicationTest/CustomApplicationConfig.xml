@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Custom Application configuration file -->
+<logging>
+        <level>LoggingPriority::Debug</level>
+	<sinks>
+		<sink>
+			<sink_type>File</sink_type>
+			<sink_name>FileSink</sink_name>
+			<file_name>ApplicationTestMain.log</file_name>
+		</sink>
+		<sink>
+			<sink_type>Stream</sink_type>
+			<sink_name>StreamSink</sink_name>
+			<stream_name>std::cerr</stream_name>
+		</sink>
+	</sinks>
+	<loggers>
+		<logger>
+			<logger_name>CustomApplication</logger_name>
+			<level>LoggingPriority::Info</level>
+		</logger>
+		<logger>
+			<logger_name>Application</logger_name>
+			<level>LoggingPriority::Info</level>
+		</logger>
+	</loggers>
+</logging>
+<custom_application>
+	<maxIter>100</maxIter>
+</custom_application>

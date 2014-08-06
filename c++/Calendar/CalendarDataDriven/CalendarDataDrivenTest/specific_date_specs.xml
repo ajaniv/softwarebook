@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Specif Date Rules Calendar  definition
+/**
+ * \file specific_date_specs.xml
+ * \brief Calendar comprised of specific dates
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+<oc:calendarData
+  xmlns:oc="http://www.ondalear.com/calendar/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../../../schemas/xsd/calendar.xsd">
+  <oc:calendarList>
+    <oc:businessCalendar>
+      <oc:calendarName>UnitedKingdomBankingHoliday-2020-A</oc:calendarName>
+      <oc:ruleRefList>
+        <oc:ruleRef>
+          <oc:ruleName>New Year</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Boxing Day</oc:ruleName>
+        </oc:ruleRef>
+      </oc:ruleRefList>
+    </oc:businessCalendar>
+    <oc:businessCalendar>
+      <oc:calendarName>UnitedKingdomBankingHoliday-2020-B</oc:calendarName>
+      <oc:ruleRefList>
+        <oc:ruleRef>
+          <oc:ruleName>New Year</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Boxing Day</oc:ruleName>
+        </oc:ruleRef>
+      </oc:ruleRefList>
+    </oc:businessCalendar>
+
+  </oc:calendarList>
+
+  <oc:ruleList>
+    <!-- order is important  -->
+    <oc:weekendRule>
+      <!-- mandatory  -->
+      <oc:ruleName>West Weekend</oc:ruleName>
+      <od:weekEndDayList>
+        <od:weekDay>
+          <od:dayName>Sunday</od:dayName>
+        </od:weekDay>
+        <od:weekDay>
+          <od:dayName>Saturday</od:dayName>
+        </od:weekDay>
+      </od:weekEndDayList>
+    </oc:weekendRule>
+    <oc:specificDateRule>
+      <!-- mandatory  -->
+      <oc:ruleName>New Year</oc:ruleName>
+      <!-- optional -->
+      <oc:startEffectiveDate>2020-01-01</oc:startEffectiveDate>
+      <oc:endEffectiveDate>2020-12-31</oc:endEffectiveDate>
+      <oc:enabledFlag>true</oc:enabledFlag>
+      <!-- optional ignored for this rule -->
+      <oc:weekendAdjustment>Default</oc:weekendAdjustment>
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <oc:holidayDuration>1</oc:holidayDuration>
+      <oc:ignoreFridayMonthEndFlag>false</oc:ignoreFridayMonthEndFlag>
+      <oc:addNextYearFlag>false</oc:addNextYearFlag>
+      <oc:addPriorYearFlag>false</oc:addPriorYearFlag>
+      <oc:dateExceptions>
+        <od:datesPerYearList>
+          <od:year>2020</od:year>
+          <od:dateList>
+            <od:date>2020-01-30</od:date>
+          </od:dateList>
+        </od:datesPerYearList>
+        <od:datesPerYearList>
+          <od:year>2021</od:year>
+          <od:dateList>
+            <od:date>2020-01-30</od:date>
+          </od:dateList>
+        </od:datesPerYearList>
+        
+      </oc:dateExceptions>
+      <oc:specifiedDate>2020-01-01</oc:specifiedDate>
+    </oc:specificDateRule>
+    <oc:specificDateRule>
+      <oc:ruleName>Boxing Day</oc:ruleName>
+      <oc:specifiedDate>2020-12-28</oc:specifiedDate>
+    </oc:specificDateRule>
+
+  </oc:ruleList>
+</oc:calendarData>

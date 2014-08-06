@@ -1,0 +1,22 @@
+|2011-02-02 23:12:56,521|DefaultLogger|INFO|1|d:\projects\ondalear\src\c++\application\application.cpp|270|ondalear::application::Application::setupLoggingDefaults|Default logging initialized|
+|2011-02-02 23:12:56,530|DefaultLogger|INFO|2|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|74|ondalear::application::ApplicationConfigurator::configureLogging|Logging level change to  (LoggingPriority::Debug)|
+|2011-02-02 23:12:56,532|DefaultLogger|INFO|3|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|130|ondalear::application::ApplicationConfigurator::configureFileSink|Logging sink type (File) name (FileSink) added|
+|2011-02-02 23:12:56,533|DefaultLogger|INFO|4|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|120|ondalear::application::ApplicationConfigurator::configureStreamSink|Logging sink type (Stream) name (StreamSink) added|
+|2011-02-02 23:12:56,553|DefaultLogger|INFO|5|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|150|ondalear::application::ApplicationConfigurator::configureLoggerPriorities|Logger (CustomApplication) priority changed to (LoggingPriority::Info) |
+|2011-02-02 23:12:56,564|DefaultLogger|INFO|6|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|150|ondalear::application::ApplicationConfigurator::configureLoggerPriorities|Logger (Application) priority changed to (LoggingPriority::Info) |
+|2011-02-02 23:12:56,573|DefaultLogger|INFO|7|d:\projects\ondalear\src\c++\application\application.cpp|184|ondalear::application::Application::run|Application start work|
+|2011-02-02 23:12:56,580|SampleApplication|INFO|Using model: BS version: BS1.1 maxIter: 100|
+|2011-02-02 23:12:56,583|SampleApplication|INFO|Positional arg 1: arg1  arg 2: arg2|
+|2011-02-02 23:12:56,586|SampleApplication|DEBUG|maxIter: 100 index: 100|
+|2011-02-02 23:12:56,588|DefaultLogger|INFO|8|d:\projects\ondalear\src\c++\application\application.cpp|189|ondalear::application::Application::run|Application end work|
+|2011-02-03 13:30:58,128|DefaultLogger|INFO|1|d:\projects\ondalear\src\c++\application\application.cpp|270|ondalear::application::Application::setupLoggingDefaults|Default logging initialized|
+|2011-02-03 13:30:58,151|DefaultLogger|INFO|2|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|74|ondalear::application::ApplicationConfigurator::configureLogging|Logging level change to  (LoggingPriority::Debug)|
+|2011-02-03 13:30:58,154|DefaultLogger|INFO|3|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|130|ondalear::application::ApplicationConfigurator::configureFileSink|Logging sink type (File) name (FileSink) added|
+|2011-02-03 13:30:58,155|DefaultLogger|INFO|4|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|120|ondalear::application::ApplicationConfigurator::configureStreamSink|Logging sink type (Stream) name (StreamSink) added|
+|2011-02-03 13:30:58,177|DefaultLogger|INFO|5|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|150|ondalear::application::ApplicationConfigurator::configureLoggerPriorities|Logger (CustomApplication) priority changed to (LoggingPriority::Info) |
+|2011-02-03 13:30:58,199|DefaultLogger|INFO|6|d:\projects\ondalear\src\c++\application\applicationconfigurator.cpp|150|ondalear::application::ApplicationConfigurator::configureLoggerPriorities|Logger (Application) priority changed to (LoggingPriority::Info) |
+|2011-02-03 13:30:58,221|DefaultLogger|INFO|7|d:\projects\ondalear\src\c++\application\application.cpp|184|ondalear::application::Application::run|Application start work|
+|2011-02-03 13:30:58,235|SampleApplication|INFO|Using model: BS version: BS1.1 maxIter: 100|
+|2011-02-03 13:30:58,242|SampleApplication|INFO|Positional arg 1: arg1  arg 2: arg2|
+|2011-02-03 13:30:58,246|SampleApplication|DEBUG|maxIter: 100 index: 100|
+|2011-02-03 13:30:58,249|DefaultLogger|INFO|8|d:\projects\ondalear\src\c++\application\application.cpp|189|ondalear::application::Application::run|Application end work|

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="unittest_common"
+	OutputDirectory="$(ONDALEAR_TEST_DIR)\$(PlatformName)\$(ConfigurationName)"
+	IntermediateDirectory="$(ONDALEAR_BUILD_DIR)\$(PlatformName)\$(ProjectName)\$(ConfigurationName)"
+	InheritedPropertySheets=".\ondalear_common.vsprops"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(CPPUNIT_INCLUDE_DIR)&quot;"
+		PreprocessorDefinitions="USE_DLL"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="Unittest.lib"
+		OutputFile="$(ONDALEAR_TEST_DIR)\$(PlatformName)\$(ConfigurationName)\$(ProjectName).exe"
+		AdditionalLibraryDirectories="&quot;$(ONDALEAR_BIN_DIR)\$(PlatformName)\$(ConfigurationName)&quot;;&quot;$(BOOST_LIB_DIR)&quot;;&quot;$(CPPUNIT_LIB_DIR)&quot;"
+	/>
+</VisualStudioPropertySheet>
