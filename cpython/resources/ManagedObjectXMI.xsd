@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:com.ondalear.bus.mngobject="http:///com/ondalear/bus/mngobject.ecore" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/mngobject.ecore">
+  <xsd:import namespace="http://www.eclipse.org/emf/2002/Ecore" schemaLocation="ecore.xsd"/>
+  <xsd:complexType abstract="true" name="ManagedObject">
+  	<xsd:complexContent>
+  		<xsd:extension base="ecore:EObject">
+    		<xsd:attribute name="gUID" type="xsd:string"/>
+    		<xsd:attribute name="sequence" type="xsd:int"/>
+    		<xsd:attribute name="version" type="xsd:int"/>
+    		<xsd:attribute name="creationDate" type="xsd:string"/>
+    		<xsd:attribute name="creationUserID" type="xsd:string"/>
+    		<xsd:attribute name="lastChangeDate" type="xsd:string"/>
+    		<xsd:attribute name="lastChangeUserID" type="xsd:string"/>
+    		<xsd:attribute name="parent" type="xsd:string"/>
+   		 </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

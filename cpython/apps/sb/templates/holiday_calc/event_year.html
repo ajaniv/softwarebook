@@ -1,0 +1,58 @@
+{% extends "holiday_calc/base.html" %}
+
+{% block content %}
+	<style type="text/css">
+        
+        
+        .main { margin-left: 25px; margin-top: 30px; width: 700px; }
+        h4 {
+        	align:center;
+			font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font-size: 14pt;
+			color: navy;
+			margin: 5px 0px 0px 155px;
+		}
+        .last { border: 0px; }
+        .month { 
+        	font-size: 10pt;
+        	margin: 2px;
+        	float: left; 
+        	width:80px;
+        	border:1px solid;}
+        .current { 
+        	font-size: 10pt;
+        	background-color:#e0ffff;
+        	margin: 2px;
+        	float: left; 
+        	width:80px;
+        	border:1px solid;}
+        .clear {clear:left;}
+        .nofloat {float: none; text-align:left}
+        .title a { text-decoration: none; }
+        .button { background: #999; color: white; padding: 4px; text-decoration: none; }
+        .buttont { background: #999; color: white; padding: 2px; text-decoration: none; }
+
+        td { border-bottom: 1px solid #ccc; }
+        #list { border: 1px solid #ccc; width: 700px; }
+        #new_topic { float: right; }
+    </style>
+    <div style="margin-top:5em;"></div> 
+	
+
+    {% for year, months in years %}
+        <div class="clear"></div>
+        <h4>{{ year }}</h4>
+        {% for month in months %}
+            <div  class= 
+            {% if month.current %}"current"{% endif %}
+            {% if not month.current %}"month"{% endif %} >
+                {% if month.entry %}<b>*{% endif %}
+                <a href="{% url calc_views_event_month_ext year month.n %}">{{month.name}}</a>
+                {% if month.entry %}</b>{% endif %}
+            </div>
+
+            {% if month.n == 6 %}<br class="clear"/>{% endif %}
+        {% endfor %}
+    {% endfor %}
+    
+{% endblock %}

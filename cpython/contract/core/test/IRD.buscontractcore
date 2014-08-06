@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ondalear.bus.contract.core:BusinessContractWorkspace xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ondalear.bus.contract.core="http:///com/ondalear/bus/contract/core.ecore" gUID="de1f0140-d34d-404d-8bef-d1590151e8a5"
+    version="1" creationDate="2008-11-05T11:37:17.075-0500" creationUserID="Amnon Janiv"
+    lastChangeDate="2008-11-05T11:37:17.075-0500" lastChangeUserID="Amnon Janiv" businessObjectState="ACTIVE"
+    businessObjectType="UN_DEF" name="Root" description="Contract Construction using very basic business building blocks">
+  <contracts gUID="0f1cdf44-b5ce-4b59-b5b8-fa754f08aefb" parent="#de1f0140-d34d-404d-8bef-d1590151e8a5"
+      sequence="1" version="1" creationDate="2008-11-06T14:04:10.324-0500" creationUserID="Amnon Janiv"
+      lastChangeDate="2008-11-06T14:04:10.324-0500" lastChangeUserID="Amnon Janiv"
+      businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="MasterAgreement"
+      contractType="Master.refdataobjs#b53098b6-8a88-46fc-b87e-7f7d8a7977ec" contractDomain="Master.refdataobjs#6803b7c0-ff3a-4469-b9ab-e081f8c8a661"
+      businessLine="Master.refdataobjs#35384a52-ae4c-4c97-9e11-82b0d25499e6">
+    <attributes key="acquisitionDate" stringValue="Oct 13, 2005" objectType="DATE"/>
+    <attributes key="effectiveDate" stringValue="Oct 17, 2005" objectType="DATE"/>
+    <attributes key="maturityDate" stringValue=""/>
+    <attributes key="value" stringValue=""/>
+  </contracts>
+  <contracts gUID="628c8979-afb2-46a4-ad17-d3e1d320881a" parent="#de1f0140-d34d-404d-8bef-d1590151e8a5"
+      sequence="2" version="1" creationDate="2008-11-06T14:07:23.653-0500" creationUserID="Amnon Janiv"
+      lastChangeDate="2008-11-06T14:07:23.653-0500" lastChangeUserID="Amnon Janiv"
+      businessObjectState="ACTIVE" businessObjectType="UN_DEF" name=" IRVanillaSwap">
+    <attributes key="acquisitionDate" stringValue="Oct 20, 2008" objectType="DATE"/>
+    <attributes key="effectiveDate" stringValue="Oct 22, 2008" objectType="DATE"/>
+    <attributes key="maturityDate" stringValue="Oct 22, 2010" objectType="DATE"/>
+    <attributes key="value" stringValue=""/>
+    <contractSpec gUID="a270c018-52d8-427a-8aa9-e56ae4ef2d68" parent="#628c8979-afb2-46a4-ad17-d3e1d320881a"
+        sequence="3" version="1" creationDate="2008-11-11T12:25:00.121-0500" creationUserID="Amnon Janiv"
+        lastChangeDate="2008-11-11T12:25:00.121-0500" lastChangeUserID="Amnon Janiv"
+        businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="Contract Summary">
+      <contractableSpec gUID="5971c8a9-db7d-4d33-932e-069e16399d35" parent="#a270c018-52d8-427a-8aa9-e56ae4ef2d68"
+          version="1" creationDate="2008-11-11T12:25:04.519-0500" creationUserID="Amnon Janiv"
+          lastChangeDate="2008-11-11T12:25:04.519-0500" lastChangeUserID="Amnon Janiv"
+          businessObjectState="ACTIVE" businessObjectType="UN_DEF">
+        <attributes key="acquisitionDate" stringValue="Oct 20, 2008" objectType="DATE"/>
+        <attributes key="currency" stringValue="USD"/>
+        <attributes key="effectiveDate" stringValue="Oct 22, 2008" objectType="DATE"/>
+        <attributes key="fixedRate" stringValue="4.536" objectType="FLOAT"/>
+        <attributes key="index" stringValue="USD3MLibor"/>
+        <attributes key="maturityDate" stringValue="Oct 22, 2010" objectType="DATE"/>
+        <attributes key="period" stringValue="3M"/>
+        <attributes key="notional" stringValue="1000" objectType="FLOAT"/>
+      </contractableSpec>
+      <list gUID="2bbf281f-4f16-4c0a-b6e5-d16f012b9fb8" parent="#a270c018-52d8-427a-8aa9-e56ae4ef2d68"
+          sequence="1" version="1" creationDate="2008-11-11T12:34:13.347-0500" creationUserID="Amnon Janiv"
+          lastChangeDate="2008-11-11T12:34:13.347-0500" lastChangeUserID="Amnon Janiv"
+          businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="IBM-PRIMARY-SHORT"
+          role="Master.refdataobjs#b9c2f8c9-02e3-4ad1-b464-cd846dbd9c50" party="Master.refdataobjs#1d1798ce-22b6-4d07-8fa1-3dc92a8b6ff2"
+          side="Master.refdataobjs#afd54cfd-adf7-45cd-8cea-7944d298c9c3"/>
+      <list gUID="cf0531e9-794a-4a1f-81da-ae64dd00035e" parent="#a270c018-52d8-427a-8aa9-e56ae4ef2d68"
+          sequence="2" version="1" creationDate="2008-11-11T12:34:35.896-0500" creationUserID="Amnon Janiv"
+          lastChangeDate="2008-11-11T12:34:35.896-0500" lastChangeUserID="Amnon Janiv"
+          businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="GS-PRIMARY-LONG"
+          role="Master.refdataobjs#b9c2f8c9-02e3-4ad1-b464-cd846dbd9c50" party="Master.refdataobjs#874d75c9-cfd6-4f64-baea-5370607cea7b"
+          side="Master.refdataobjs#75d728c7-5f2d-42cd-b6b6-c0fe56c3281b"/>
+    </contractSpec>
+    <contracts gUID="b7850ccd-ff4d-4ded-862a-e392ddcec95b" parent="#628c8979-afb2-46a4-ad17-d3e1d320881a"
+        sequence="1" version="1" creationDate="2008-11-06T14:18:38.414-0500" creationUserID="Amnon Janiv"
+        lastChangeDate="2008-11-06T14:18:38.414-0500" lastChangeUserID="Amnon Janiv"
+        businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="FixedContract"
+        contractType="Master.refdataobjs#b53098b6-8a88-46fc-b87e-7f7d8a7977ec" contractDomain="Master.refdataobjs#6803b7c0-ff3a-4469-b9ab-e081f8c8a661"
+        businessLine="Master.refdataobjs#e3876933-9b7e-45aa-bee6-a25a0d97f08b">
+      <annotations gUID="d97f5eef-ed28-46d2-9e6f-c46e6bbbb505" version="1" creationDate="2008-11-06T14:19:03.208-0500"
+          creationUserID="Amnon Janiv" lastChangeDate="2008-11-06T14:19:03.208-0500"
+          lastChangeUserID="Amnon Janiv" businessObjectState="ACTIVE" businessObjectType="UN_DEF"
+          name="DemoOnly" commentary="This child contract was created  only for demo purposes"/>
+      <attributes key="acquisitionDate" stringValue="Oct 22, 2008" objectType="DATE"/>
+      <attributes key="value" stringValue=""/>
+      <attributes key="maturityDate" stringValue="Oct 22, 2010" objectType="DATE"/>
+      <attributes key="effectiveDate" stringValue="Oct 22, 2008" objectType="DATE"/>
+      <clauseGroups gUID="76bcf007-3c06-4fab-a1fe-25215062829b" parent="#b7850ccd-ff4d-4ded-862a-e392ddcec95b"
+          sequence="1" version="1" creationDate="2008-11-06T16:22:39.103-0500" creationUserID="Amnon Janiv"
+          lastChangeDate="2008-11-06T16:22:39.103-0500" lastChangeUserID="Amnon Janiv"
+          businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="FixedClauseGroup"
+          purpose="">
+        <list gUID="076a897e-8ffe-4450-ad0c-e31a83cad003" parent="#76bcf007-3c06-4fab-a1fe-25215062829b"
+            sequence="1" version="1" creationDate="2008-11-06T16:29:13.838-0500" creationUserID="Amnon Janiv"
+            lastChangeDate="2008-11-06T16:29:13.838-0500" lastChangeUserID="Amnon Janiv"
+            businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="On April 22 GIVE(IBM, CashUSD, 1000)"
+            clauseType="Master.refdataobjs#5dab7f39-c83d-4e08-afb8-cffdd6fc35ae">
+          <attributes key="maturityDate" stringValue="Apr 22, 2009" objectType="DATE"/>
+          <attributes key="effectiveDate" stringValue="Apr 22, 2009" objectType="DATE"/>
+          <actions gUID="de504105-9209-4392-ae68-5b0b3109365b" parent="#076a897e-8ffe-4450-ad0c-e31a83cad003"
+              version="1" creationDate="2008-11-11T12:27:29.309-0500" creationUserID="Amnon Janiv"
+              lastChangeDate="2008-11-11T12:27:29.309-0500" lastChangeUserID="Amnon Janiv"
+              businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="(actionType=TRANSFER,instructionType=GIVE,source=GS ,target=IBM,product=FixedUSD3M,quanity=1,rate=4.535,notional=1000"
+              actionType="Master.refdataobjs#7132d573-8720-46c6-8ac1-e9ee546164d9">
+            <instructions gUID="fdd9d084-c9c1-44a9-86e3-6398811b7778" parent="#de504105-9209-4392-ae68-5b0b3109365b"
+                version="1" creationDate="2008-11-11T12:27:52.041-0500" creationUserID="Amnon Janiv"
+                lastChangeDate="2008-11-11T12:27:52.041-0500" lastChangeUserID="Amnon Janiv"
+                businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="(instructionType=GIVE,source=GS ,target=IBM,product=FixedUSD3M,quanity=1,rate=4.535,notional=1000)"
+                instructionType="Master.refdataobjs#8dfa6f76-480b-418f-ab8e-05239de73d9d">
+              <instructionSpec gUID="0548899e-2e9e-4c61-ac84-9a2b4927921f" parent="#fdd9d084-c9c1-44a9-86e3-6398811b7778"
+                  version="1" creationDate="2008-11-11T12:27:56.193-0500" creationUserID="Amnon Janiv"
+                  lastChangeDate="2008-11-11T12:27:56.193-0500" lastChangeUserID="Amnon Janiv"
+                  businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="(source=GS ,target=IBM,product=FixedUSD3M,quanity=1,rate=4.535,notional=1000)"
+                  source="#cf0531e9-794a-4a1f-81da-ae64dd00035e" target="#2bbf281f-4f16-4c0a-b6e5-d16f012b9fb8">
+                <contractableSpec gUID="97e76ea0-add8-4081-9e11-278cc572a54e" parent="#0548899e-2e9e-4c61-ac84-9a2b4927921f"
+                    version="1" creationDate="2008-11-11T12:28:00.405-0500" creationUserID="Amnon Janiv"
+                    lastChangeDate="2008-11-11T12:28:00.405-0500" lastChangeUserID="Amnon Janiv"
+                    businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="(product=FixedUSD3M,quanity=1,rate=4.535,notional=1000)"
+                    product="Master.refdataobjs#c697fcaa-e910-4e3f-9b7e-9bbc99b4b352">
+                  <attributes key="fixedRate" stringValue="4.536" objectType="FLOAT"/>
+                  <attributes key="yearFraction" stringValue=".33" objectType="FLOAT"/>
+                  <quantity unit="Master.refdataobjs#231a2486-dbe1-4358-8f12-a190a8e11730"
+                      value="1.0"/>
+                  <notional currency="Master.refdataobjs#4e2d6aed-78ab-4cda-b5f3-8f30bac73161"
+                      value="1000.0"/>
+                </contractableSpec>
+              </instructionSpec>
+            </instructions>
+          </actions>
+        </list>
+      </clauseGroups>
+    </contracts>
+    <contracts gUID="483fc559-5a9f-4c54-9af2-026ab0d79e71" parent="#628c8979-afb2-46a4-ad17-d3e1d320881a"
+        sequence="2" version="1" creationDate="2008-11-06T14:20:22.144-0500" creationUserID="Amnon Janiv"
+        lastChangeDate="2008-11-06T14:20:22.144-0500" lastChangeUserID="Amnon Janiv"
+        businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="FloatContract"
+        contractType="Master.refdataobjs#b53098b6-8a88-46fc-b87e-7f7d8a7977ec" contractDomain="Master.refdataobjs#6803b7c0-ff3a-4469-b9ab-e081f8c8a661"
+        businessLine="Master.refdataobjs#e3876933-9b7e-45aa-bee6-a25a0d97f08b">
+      <annotations gUID="3a856bec-fc32-41d6-87c7-3bb792fafe8d" version="1" creationDate="2008-11-06T14:28:20.036-0500"
+          creationUserID="Amnon Janiv" lastChangeDate="2008-11-06T14:28:20.036-0500"
+          lastChangeUserID="Amnon Janiv" businessObjectState="ACTIVE" businessObjectType="UN_DEF"
+          name="DemoOnly" commentary="Contract created for demo"/>
+      <attributes key="acquisitionDate" stringValue="Oct 22, 2008" objectType="DATE"/>
+      <attributes key="value" stringValue=""/>
+      <attributes key="maturityDate" stringValue="Oct 22, 2010" objectType="DATE"/>
+      <attributes key="effectiveDate" stringValue="Oct 22, 2008" objectType="DATE"/>
+      <clauseGroups gUID="31332574-ec2e-4a0d-bdec-a4fabef9ca70" parent="#483fc559-5a9f-4c54-9af2-026ab0d79e71"
+          sequence="1" version="1" creationDate="2008-11-11T13:30:26.783-0500" creationUserID="Amnon Janiv"
+          lastChangeDate="2008-11-11T13:30:26.783-0500" lastChangeUserID="Amnon Janiv"
+          businessObjectState="ACTIVE" businessObjectType="UN_DEF">
+        <list gUID="e2ba9b13-a4d2-47c6-8693-e52c66c37bfc" parent="#483fc559-5a9f-4c54-9af2-026ab0d79e71"
+            sequence="1" version="1" creationDate="2008-11-06T16:35:28.537-0500" creationUserID="Amnon Janiv"
+            lastChangeDate="2008-11-06T16:35:28.537-0500" lastChangeUserID="Amnon Janiv"
+            businessObjectState="ACTIVE" businessObjectType="UN_DEF" clauseType="Master.refdataobjs#5dab7f39-c83d-4e08-afb8-cffdd6fc35ae">
+          <attributes key="maturityDate" stringValue="Apr 22, 2009" objectType="DATE"/>
+          <attributes key="effectiveDate" stringValue="Apr 22, 2009" objectType="DATE"/>
+          <actions gUID="a6027ce4-b08d-409c-8c5f-c5a0137786ab" parent="#e2ba9b13-a4d2-47c6-8693-e52c66c37bfc"
+              version="1" creationDate="2008-11-11T13:30:57.546-0500" creationUserID="Amnon Janiv"
+              lastChangeDate="2008-11-11T13:30:57.546-0500" lastChangeUserID="Amnon Janiv"
+              businessObjectState="ACTIVE" businessObjectType="UN_DEF" actionType="Master.refdataobjs#7132d573-8720-46c6-8ac1-e9ee546164d9">
+            <instructions gUID="6098b6b0-2161-4257-9ebf-4f11b433bebb" parent="#a6027ce4-b08d-409c-8c5f-c5a0137786ab"
+                version="1" creationDate="2008-11-11T13:31:02.730-0500" creationUserID="Amnon Janiv"
+                lastChangeDate="2008-11-11T13:31:02.730-0500" lastChangeUserID="Amnon Janiv"
+                businessObjectState="ACTIVE" businessObjectType="UN_DEF" instructionType="Master.refdataobjs#2d6245b3-aa8e-48c0-bcbf-9b93c0a40cf2">
+              <instructionSpec gUID="e7ef6f65-4a69-4fbc-ac4a-06640990365a" parent="#6098b6b0-2161-4257-9ebf-4f11b433bebb"
+                  version="1" creationDate="2008-11-11T13:31:38.082-0500" creationUserID="Amnon Janiv"
+                  lastChangeDate="2008-11-11T13:31:38.082-0500" lastChangeUserID="Amnon Janiv"
+                  businessObjectState="ACTIVE" businessObjectType="UN_DEF">
+                <contractableSpec gUID="e6431cc6-50f1-4819-a6dd-e3c6bb6560a0" parent="#e7ef6f65-4a69-4fbc-ac4a-06640990365a"
+                    version="1" creationDate="2008-11-11T13:33:57.540-0500" creationUserID="Amnon Janiv"
+                    lastChangeDate="2008-11-11T13:33:57.540-0500" lastChangeUserID="Amnon Janiv"
+                    businessObjectState="ACTIVE" businessObjectType="UN_DEF" product="Master.refdataobjs#7c5d5fde-feb9-465a-b107-84a14eaae243">
+                  <quantity unit="Master.refdataobjs#231a2486-dbe1-4358-8f12-a190a8e11730"
+                      value="1.0"/>
+                  <notional currency="Master.refdataobjs#4e2d6aed-78ab-4cda-b5f3-8f30bac73161"
+                      value="1000.0"/>
+                </contractableSpec>
+              </instructionSpec>
+            </instructions>
+          </actions>
+        </list>
+      </clauseGroups>
+    </contracts>
+    <clauses gUID="c0e20288-7c7a-4f8c-91db-4bb3a2e359f2" parent="#628c8979-afb2-46a4-ad17-d3e1d320881a"
+        sequence="1" version="1" creationDate="2008-11-06T16:30:48.367-0500" creationUserID="Amnon Janiv"
+        lastChangeDate="2008-11-06T16:30:48.367-0500" lastChangeUserID="Amnon Janiv"
+        businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="InitialPayment"
+        clauseType="Master.refdataobjs#5dab7f39-c83d-4e08-afb8-cffdd6fc35ae">
+      <attributes key="maturityDate" stringValue=""/>
+      <attributes key="effectiveDate" stringValue=""/>
+    </clauses>
+    <clauses gUID="d4ff72b6-8723-465e-beea-815949d1bff3" parent="#628c8979-afb2-46a4-ad17-d3e1d320881a"
+        sequence="2" version="1" creationDate="2008-11-06T16:31:46.990-0500" creationUserID="Amnon Janiv"
+        lastChangeDate="2008-11-06T16:31:46.990-0500" lastChangeUserID="Amnon Janiv"
+        businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="FinalPayment"
+        clauseType="Master.refdataobjs#5dab7f39-c83d-4e08-afb8-cffdd6fc35ae">
+      <attributes key="maturityDate" stringValue=""/>
+      <attributes key="effectiveDate" stringValue=""/>
+    </clauses>
+    <lists xsi:type="com.ondalear.bus.contract.core:BusinessContractList" gUID="e0a0485b-d1fa-46d4-b0a9-3ceae1497f99"
+        parent="#628c8979-afb2-46a4-ad17-d3e1d320881a" version="1" creationDate="2008-11-06T14:09:38.189-0500"
+        creationUserID="Amnon Janiv" lastChangeDate="2008-11-06T14:09:38.189-0500"
+        lastChangeUserID="Amnon Janiv" businessObjectState="ACTIVE" businessObjectType="UN_DEF"
+        name="LinkedContracts" contracts="#0f1cdf44-b5ce-4b59-b5b8-fa754f08aefb"/>
+  </contracts>
+</com.ondalear.bus.contract.core:BusinessContractWorkspace>

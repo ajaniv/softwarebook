@@ -1,0 +1,103 @@
+{% extends "holiday_calc/base.html" %}
+
+{% block sidebar %} <style type="text/css"> </style> {% endblock %}
+
+{% block content %}
+    <style type="text/css">
+        .main { margin-left: 25px; margin-top: 30px; }
+        .step-links a { font-size: 0.89em; }
+        .title {
+            font-size: 1.4em; margin-top: 20px; border-bottom: 1px solid #ccc;
+            padding-left: 4px;
+        }
+        .messages { margin-left: 20px; }
+        .pagination { margin-top: 20px; margin-left: -20px; }
+
+        img { margin: 10px; padding: 5px; border: 1px solid #ccc; }
+        ol.numbered {
+			list-style: decimal;
+		}
+		
+		ol.numbered li{
+  			background: #ffffff;
+  			margin-left: 40px;
+  			padding-left: 10px;
+		}
+    </style>
+
+    <div class="main">
+
+        <!-- Messages  -->
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        <div id="list">
+        
+        	<div class="header"  style="width:70%">
+			Holiday list   {{from_date}} - {{to_date}}
+			</div>
+        	
+        	<table class="image " cellpadding="4" width="60%">
+	             <tr>
+	                <th>#</th>
+	                
+	                <th>Holiday</th>
+	                <th>Date</th>
+	                 
+	            </tr>
+
+	            <!-- Calendar  -->
+	            {% for holiday in holidays %}
+	            <tr>
+	                <td> {{ forloop.counter }}</td>
+	                <td> {{holiday.holiday_name}}</td>
+	                <td> {{ holiday.fmt_date }}</td>
+	            </tr>
+	            {% endfor %}
+		    </table>
+        	
+
+		   
+	    </div>
+	    <div style="margin-top: 10px;">
+			<form action="{% url calc_views_holidays %}" method="POST">{% csrf_token %}
+				{% for field in form %}
+	        	<div class="fieldWrapper">
+	            	{{ field.errors }}
+	            	{{ field.label_tag }}: {{ field }}
+	        	</div>
+	    		{% endfor %}
+	        
+				<div id="update">
+					<input type="submit" value="Calc">
+				
+				</div>
+			</form>
+		</div>
+        <!-- Next/Prev page links  -->
+        {% if calendar.object_list and calendar.paginator.num_pages > 1 %}
+        <div class="pagination">
+            <span class="step-links">
+                {% if calendar.has_previous %}
+                    <a href= "?page={{ calendar.previous_page_number }}">previous &lt;&lt; </a>
+                {% endif %}
+
+                <span class="current">
+                    &nbsp;Page {{ calendar.number }} of {{ calendar.paginator.num_pages }}
+                </span>
+
+                {% if calendar.has_next %}
+                    <a href="?page={{ calendar.next_page_number }}"> &gt;&gt; next</a>
+                {% endif %}
+            </span>
+        </div>
+        {% endif %}
+
+    </div>
+
+{% endblock %}

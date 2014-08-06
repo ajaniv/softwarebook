@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>{% block title %}Event Schedule{% endblock %}</title>
+    <!-- <meta http-equiv="refresh" content="2">  -->
+    <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" charset="utf-8" />
+
+    <style type="text/css">
+        * {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        #menu a {
+            text-decoration: none;
+            background: #eee;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            border-right: 2px solid #fff;
+            padding-right: 3px;
+            padding-left: 3px;
+            color: #777;
+            font-size: 12pt;
+        }
+        a:hover {
+            background: #eeebeb;
+            border-top: 1px solid #aaa;
+            border-bottom: 1px solid #aaa;
+            color: #555;
+        }
+		.reminders {
+			float: right;
+			width:20%;
+			
+		}
+		.gr {
+			text-align: center;
+            text-decoration: none;
+            background: #ffc url(/static/admin/img/icon_error.gif) 5px .3em no-repeat;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            border-right: 2px solid #fff;
+            padding-right: 3px;
+            padding-left: 3px;
+            color: #777;
+            font-size: 12pt;
+        }
+        #container { margin: auto; width: 800px; border: 0px solid; }
+
+        p { font-size: 10pt; }
+        h3 { margin-right: 30px; display: inline; }
+    </style>
+
+</head>
+
+<body>
+    <div id="sidebar"> {% block sidebar %} {% endblock %} </div>
+    <div id="container">
+        <div id="menu">
+            {% block nav-global %}
+
+                <!-- MENU -->
+                <h3> <a href="{% url event_views_main %}">Events</a></h3>
+
+                {% if user.is_staff %} <a href="{% url admin:index %}">Admin</a> {% endif %}
+                {% if user.is_authenticated %}
+                    <a href="{% url forum_views_profile_edit user.pk %}">Edit profile</a> {% endif %}
+
+                {% if not user.is_authenticated %}<a href="/accounts/login/?next=/forum/main/">login</a> | <a
+                    href="/accounts/register/">register</a>{% endif %}
+
+                {% if user.is_authenticated %}<a href="/accounts/logout/?next=/forum/main/">logout</a>
+                    {% endif %}
+                    
+                <a href="{% url event_views_settings %}">Settings</a>
+
+            {% endblock %}
+            {% if reminders %}
+			<div class="reminders">
+			    <div class="gr">Alerts</div>
+			    {% for reminder in reminders %}<p> {{ reminder.short|safe }}</p>
+			    {% endfor %}
+			</div>
+		{% endif %}
+        </div>
+        
+
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+</body>
+</html>
+

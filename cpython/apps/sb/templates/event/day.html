@@ -1,0 +1,140 @@
+{% extends "event/ebase.html" %}
+
+{% block content %}
+	<style type="text/css">
+        
+        .main { margin-left: 25px; margin-top: 30px; width: 700px; }
+        h3 {
+        	text-align:left;
+			font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font-size: 12pt;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 0px;
+		}
+		h4 {
+        	text-align:left;
+			font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font-size: 14pt;
+			color: navy;
+			margin-top:30px;
+			margin-bottom:0px;
+		}
+		.errors {
+    		background: #ffc;
+		}
+
+		.errors input, .errors select, .errors textarea {
+    		border: 1px solid red;
+		}
+		
+		.errornote {
+			
+		    font-size: 12px !important;
+		    display: block;
+		    padding: 4px 5px 4px 25px;
+		    margin: 0 0 3px 0;
+		    border: 1px solid red;
+		    color: red;
+		    background: #ffc url(/static/admin/img/icon_error.gif) 5px .3em no-repeat;
+		}
+        .empty { 
+        	font-size: 10pt; 
+        	text-align:center;
+        	}
+        .day { 
+        	text-align:center;
+        	color: black; 
+        	width:80px;
+        	height:80px;
+        	font-size: 10pt;
+        	border:1px solid;
+        	}
+        .current { 
+        	text-align:center;
+        	color: cyan;
+        	width:80px;
+        	height:80px;
+        	font-size: 10pt;
+        	border:1px solid;
+        	}
+        .month { 
+        	margin: 20px 15px 10px 5 px;
+        	border:2px solid;
+        	width: 75%
+        	}
+
+        .clear {clear:left;}
+        .nofloat {float: none; text-align:left}
+        .title a { text-decoration: none; }
+        .button { background: #999; color: white; padding: 4px; text-decoration: none; }
+        .buttont { background: #999; color: white; padding: 2px; text-decoration: none; }
+
+        td { border-bottom: 1px solid #ccc; }
+        #list { border: 1px solid #ccc; width: 700px; }
+        #new_topic { float: right; }
+    </style>
+    <div style="margin-top: 10px; width:50%;">
+
+		<a href= "{% url event_views_day_nav year month day "prev" %}">&lt;&lt; Prev</a>
+		<a href= "{% url event_views_day_nav year month day "next" %}">Next &gt;&gt;</a>
+		
+		
+		<h4   >
+		 {{ month_name}} {{ day }}, {{year }}
+		</h4>
+		{% if other_entries %}
+			<h3  Others's Events /h3>
+			{% for entry in other_entries %}
+	    		<div class="entry">
+	    		{{ entry.creator }} |
+	    		{{ entry.short|safe }}<br />
+	    		{{ entry.body }}<br />
+	    		</div>
+			{% endfor %} <br />
+		{% endif %}
+		<h3 >
+		{{ user_name }}'s Events
+		</h3>
+		
+		<div style="margin-top: 20px;"/>
+		{% for form in entries.forms %}
+			{% if form.non_field_errors %}
+				{% for error in form.non_field_errors %}
+				<p class="errornote">
+				    {{ error }}
+				</p>
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+		<form action="{% url event_views_day_ext year month day %}" method="POST"> {% csrf_token %}
+		
+		{{ entries.management_form }}
+		
+		{% for entry in entries.forms %}
+			{% if entry.errors %}
+				<p class="errornote">
+				Please correct the errors below.
+				</p>
+			{% endif %}
+		    {{ entry.parent_business_object_id }}
+		    <div class="entry">
+		        <div class="del">Delete {{ entry.DELETE }}</div>
+		        <div id="inp1">
+		        	{% if entry.name.errors %}
+        				<p class="errors">{{ entry.name.errors.as_text }}</p>
+      				{% endif %}
+		            <p>Title: {{ entry.name }}</p>
+		            {% if entry.summary.errors %}
+        				<p class="errors">{{ entry.summary.errors.as_text }}</p>
+      				{% endif %}
+		            <p>Summary: {{ entry.summary }}</p>
+		        </div>
+		        <p>Remind: {{ entry.remind }}</p>
+		        {{ entry.body }}
+		    </div>
+		{% endfor %}
+		
+		<input type="submit" value="Save" /> </form>
+	</div>
+{% endblock %}

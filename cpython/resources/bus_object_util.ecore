@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="util"
+    nsURI="http:///com/ondalear/bus/object/bus_object_util.ecore" nsPrefix="com.ondalear.bus.object.util">
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentAttachment" eSuperTypes="../../../com.ondalear.bus.object.core/src/model/core.ecore#//BusinessObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachmentType" eType="ecore:EClass ../../../com.ondalear.bus.refdata.core/src/model/core.ecore#//AttachmentType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uRIString" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="uRI" eType="#//URI"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="URI" instanceClassName="org.eclipse.emf.common.util.URI"/>
+</ecore:EPackage>

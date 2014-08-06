@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mngobject"
+    nsURI="http:///com/ondalear/bus/mngobject.ecore" nsPrefix="com.ondalear.bus.mngobject">
+  <eClassifiers xsi:type="ecore:EClass" name="ManagedObject" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="gUID" eType="#//GUID" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//ManagedObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sequence" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationDate" eType="#//SystemDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creationUserID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastChangeDate" eType="#//SystemDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastChangeUserID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GUID" instanceClassName="com.ondalear.tech.core.techutil.GUID"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="SystemDate" instanceClassName="com.ondalear.bus.core.dates.SystemDate"/>
+</ecore:EPackage>

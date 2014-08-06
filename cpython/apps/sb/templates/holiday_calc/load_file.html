@@ -1,0 +1,55 @@
+{% extends "holiday_calc/base.html" %}
+{% load i18n admin_static  %}
+{% load holiday_tags %}
+{% block sidebar %} <style type="text/css"> </style> {% endblock %}
+
+{% block content %}
+    <style type="text/css">
+        .main { margin-left: 25px; margin-top: 30px; }
+        .step-links a { font-size: 0.89em; }
+        .title {
+            font-size: 1.4em; margin-top: 20px; border-bottom: 1px solid #ccc;
+            padding-left: 4px;
+        }
+        
+        .messages { margin-left: 20px; }
+        .pagination { margin-top: 20px; margin-left: -20px; }
+    </style>
+    <div class="main">
+
+        <!-- Messages  -->
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <div class="header"  style="width:60%">
+			     Import calendar file
+			     </div>
+       
+       
+        <form action="." method="POST" enctype="multipart/form-data">{% csrf_token %}
+	        {% if form.non_field_errors %}
+					{% for error in form.non_field_errors %}
+					<p class="errornote">
+					    {{ error }}
+					</p>
+					{% endfor %}
+			{% endif %}
+        	<div style="margin-top: 10px;"> </div>
+			{% for field in form %}
+				
+	        	<div class="fieldWrapper" title="{{ field.help_text }}">
+	            	{{ field.errors }}
+	            	<div  class="top">{{ field.label_tag }}{{ field }} </div>
+	            
+	        	</div>
+	    	{% endfor %}
+				
+			<div style="margin-top: 10px;"> </div>
+             <input type="submit" value="Import" />
+ 		</form>
+ 	</div>
+ {% endblock %}

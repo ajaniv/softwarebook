@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ondalear.bus.contract.core:BusinessContract xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ondalear.bus.contract.core="http:///com/ondalear/bus/contract/core.ecore" gUID="512366f4-1ec1-41ee-beef-e641561c61e2"
+    version="1" creationDate="2008-11-11T19:25:40.613-0500" creationUserID="Amnon Janiv"
+    lastChangeDate="2008-11-11T19:25:40.613-0500" lastChangeUserID="Amnon Janiv" businessObjectState="ACTIVE"
+    businessObjectType="UN_DEF" name="RootContract" contractType="Master.refdataobjs#b53098b6-8a88-46fc-b87e-7f7d8a7977ec"
+    contractDomain="Master.refdataobjs#8e7c66ca-5870-4f88-a606-a2ed9b31a70e" businessLine="Master.refdataobjs#35384a52-ae4c-4c97-9e11-82b0d25499e6">
+  <attributes key="acquisitionDate" stringValue="Dec 10, 2008" objectType="DATE"/>
+  <attributes key="value" stringValue="20" objectType="INT"/>
+  <attributes key="maturityDate" stringValue="Someting good"/>
+  <attributes key="effectiveDate" stringValue=""/>
+  <contracts gUID="110e6942-b3d3-4bf5-9749-df9c993dc652" parent="#512366f4-1ec1-41ee-beef-e641561c61e2"
+      sequence="1" version="1" creationDate="2008-11-11T19:26:19.987-0500" creationUserID="Amnon Janiv"
+      lastChangeDate="2008-11-11T19:26:19.987-0500" lastChangeUserID="Amnon Janiv"
+      businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="ChildContract1">
+    <attributes key="acquisitionDate" stringValue=""/>
+    <attributes key="value" stringValue=""/>
+    <attributes key="maturityDate" stringValue=""/>
+    <attributes key="effectiveDate" stringValue=""/>
+    <clauses gUID="f787298f-c965-4ce2-af9d-382e43eefc87" parent="#110e6942-b3d3-4bf5-9749-df9c993dc652"
+        sequence="1" version="1" creationDate="2008-11-11T19:26:53.926-0500" creationUserID="Amnon Janiv"
+        lastChangeDate="2008-11-11T19:26:53.926-0500" lastChangeUserID="Amnon Janiv"
+        businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="ChildContract1.ChildClause1"
+        clauseType="Master.refdataobjs#5dab7f39-c83d-4e08-afb8-cffdd6fc35ae">
+      <attributes key="maturityDate" stringValue=""/>
+      <attributes key="effectiveDate" stringValue=""/>
+    </clauses>
+    <clauses gUID="2eb88376-3f4f-4c74-beff-50f8eb0ebf2a" parent="#110e6942-b3d3-4bf5-9749-df9c993dc652"
+        sequence="2" version="1" creationDate="2008-12-06T12:19:24.429-0500" creationUserID="Amnon Janiv"
+        lastChangeDate="2008-12-06T12:19:24.429-0500" lastChangeUserID="Amnon Janiv"
+        businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="ChildContract1.ChildClause2">
+      <attributes key="maturityDate" stringValue=""/>
+      <attributes key="effectiveDate" stringValue=""/>
+    </clauses>
+    <clauseGroups gUID="1817fc4d-1013-4c96-b8cf-8d5ba46828c2" parent="#110e6942-b3d3-4bf5-9749-df9c993dc652"
+        sequence="1" version="1" creationDate="2008-12-06T12:17:52.001-0500" creationUserID="Amnon Janiv"
+        lastChangeDate="2008-12-06T12:17:52.001-0500" lastChangeUserID="Amnon Janiv"
+        businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="ClauseGrouping1">
+      <list gUID="3eb02610-260a-40b3-aec8-3699295e57d3" parent="#1817fc4d-1013-4c96-b8cf-8d5ba46828c2"
+          sequence="1" version="1" creationDate="2008-12-06T14:11:31.933-0500" creationUserID="Amnon Janiv"
+          lastChangeDate="2008-12-06T14:11:31.933-0500" lastChangeUserID="Amnon Janiv"
+          businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="ClauseGrouping1.Clause1">
+        <attributes key="maturityDate" stringValue=""/>
+        <attributes key="effectiveDate" stringValue=""/>
+      </list>
+      <list gUID="4e0b9ce5-e44b-4dcc-abad-89f926291518" parent="#1817fc4d-1013-4c96-b8cf-8d5ba46828c2"
+          sequence="2" version="1" creationDate="2008-12-06T14:11:39.465-0500" creationUserID="Amnon Janiv"
+          lastChangeDate="2008-12-06T14:11:39.465-0500" lastChangeUserID="Amnon Janiv"
+          businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="ClauseGroup2.ChildClause2">
+        <attributes key="maturityDate" stringValue=""/>
+        <attributes key="effectiveDate" stringValue=""/>
+      </list>
+    </clauseGroups>
+  </contracts>
+  <contracts gUID="b1e8e178-ade1-42a2-a17d-f4e076e397a7" parent="#512366f4-1ec1-41ee-beef-e641561c61e2"
+      sequence="2" version="1" creationDate="2008-12-06T12:18:44.223-0500" creationUserID="Amnon Janiv"
+      lastChangeDate="2008-12-06T12:18:44.223-0500" lastChangeUserID="Amnon Janiv"
+      businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="ChildContract2">
+    <attributes key="acquisitionDate" stringValue=""/>
+    <attributes key="value" stringValue=""/>
+    <attributes key="maturityDate" stringValue=""/>
+    <attributes key="effectiveDate" stringValue=""/>
+  </contracts>
+</com.ondalear.bus.contract.core:BusinessContract>

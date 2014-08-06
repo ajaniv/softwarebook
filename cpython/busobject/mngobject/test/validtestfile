@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ondalear.bus.contract.core:BusinessContract xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ondalear.bus.contract.core="http:///com/ondalear/bus/contract/core.ecore" gUID="512366f4-1ec1-41ee-beef-e641561c61e2"
+    version="1" creationDate="2008-11-11T19:25:40.613-0500" creationUserID="Amnon Janiv"
+    lastChangeDate="2008-11-11T19:25:40.613-0500" lastChangeUserID="Amnon Janiv" businessObjectState="ACTIVE"
+    businessObjectType="UN_DEF" name="RootContract" contractType="Master.refdataobjs#b53098b6-8a88-46fc-b87e-7f7d8a7977ec"
+    contractDomain="Master.refdataobjs#8e7c66ca-5870-4f88-a606-a2ed9b31a70e" businessLine="Master.refdataobjs#35384a52-ae4c-4c97-9e11-82b0d25499e6">
+  <attributes key="acquisitionDate" stringValue=""/>
+  <attributes key="value" stringValue=""/>
+  <attributes key="maturityDate" stringValue=""/>
+  <attributes key="effectiveDate" stringValue=""/>
+  <contracts gUID="110e6942-b3d3-4bf5-9749-df9c993dc652" parent="#512366f4-1ec1-41ee-beef-e641561c61e2"
+      sequence="1" version="1" creationDate="2008-11-11T19:26:19.987-0500" creationUserID="Amnon Janiv"
+      lastChangeDate="2008-11-11T19:26:19.987-0500" lastChangeUserID="Amnon Janiv"
+      businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="Child Contract">
+    <attributes key="acquisitionDate" stringValue=""/>
+    <attributes key="value" stringValue=""/>
+    <attributes key="maturityDate" stringValue=""/>
+    <attributes key="effectiveDate" stringValue=""/>
+    <clauses gUID="f787298f-c965-4ce2-af9d-382e43eefc87" parent="#110e6942-b3d3-4bf5-9749-df9c993dc652"
+        sequence="1" version="1" creationDate="2008-11-11T19:26:53.926-0500" creationUserID="Amnon Janiv"
+        lastChangeDate="2008-11-11T19:26:53.926-0500" lastChangeUserID="Amnon Janiv"
+        businessObjectState="ACTIVE" businessObjectType="UN_DEF" name="Child Clause"
+        clauseType="Master.refdataobjs#5dab7f39-c83d-4e08-afb8-cffdd6fc35ae">
+      <attributes key="maturityDate" stringValue=""/>
+      <attributes key="effectiveDate" stringValue=""/>
+    </clauses>
+  </contracts>
+</com.ondalear.bus.contract.core:BusinessContract>

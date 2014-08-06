@@ -1,0 +1,11 @@
+{% extends "datetime/base.html" %}
+
+{% block title %}Past time{% endblock %}
+
+{% block content %}
+<h2>Current</h2>
+<p>Date: {{ current|date:"l F j, Y"}}.  Time: {{current|date:"H:i"}}.</p>
+<h2>Past</h2>
+<p>Removing {{ offset }} hour(s), it was:</p>
+<p>Date: {{ past|date:"l F j, Y"}}.  Time: {{past|date:"H:i"}}.</p>
+{% endblock %}

@@ -1,0 +1,104 @@
+{% extends "holiday_calc/base.html" %}
+
+{% block content %}
+	<style type="text/css">
+        
+        .main { margin-left: 25px; margin-top: 30px; width: 700px; }
+        h4 {
+        	text-align:center;
+			font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font-size: 14pt;
+			color: navy;
+			margin: 20px 20px 20px 20px;
+		}
+        .empty { 
+        	font-size: 10pt; 
+        	text-align:center;
+        	}
+        .day { 
+        	text-align:center;
+        	color: black; 
+        	width:80px;
+        	height:80px;
+        	font-size: 10pt;
+        	border:1px solid;
+        	cursor: pointer;
+        	}
+        .current { 
+        	text-align:center;
+        	color: cyan;
+        	width:80px;
+        	height:80px;
+        	font-size: 10pt;
+        	border:1px solid;
+        	cursor: pointer;
+        	}
+        .month { 
+        	margin: 20px 15px 10px 5 px;
+        	border:2px solid;
+        	width: 75%
+        	}
+
+        .clear {clear:left;}
+        .nofloat {float: none; text-align:left}
+        .title a { text-decoration: none; }
+        .button { background: #999; color: white; padding: 4px; text-decoration: none; }
+        .buttont { background: #999; color: white; padding: 2px; text-decoration: none; }
+
+        td { border-bottom: 1px solid #ccc; }
+        #list { border: 1px solid #ccc; width: 700px; }
+        #new_topic { float: right; }
+    </style>
+    <div style="margin-top: 10px;"/>
+
+	<a href= "{% url calc_views_month_nav year month "prev" %}">&lt;&lt; Prev</a>
+	<a href= "{% url calc_views_month_nav year month "next" %}">Next &gt;&gt;</a>
+	
+	<div style="width: 75%">
+		<h4>{{ mname }} {{ year }}</h4>
+	</div>
+	
+	<div class="month">
+	    <table>
+	
+	    <tr>
+	        <td class="empty">Mon</td>
+	        <td class="empty">Tue</td>
+	        <td class="empty">Wed</td>
+	        <td class="empty">Thu</td>
+	        <td class="empty">Fri</td>
+	        <td class="empty">Sat</td>
+	        <td class="empty">Sun</td>
+	    </tr>
+	
+	    {% for week in month_days %}
+	        <tr>
+	        {% for day, entries, current in week %}
+	
+	            <!-- TD style: empty | day | current; onClick handler and highlight  -->
+	            <td class= {% if day == 0 %}"empty"{% endif %}
+	            {% if day != 0 and not current %}"day"{% endif %}
+	            {% if day != 0 and current %}"current"{% endif %}
+	            {% if day != 0 %}
+	                onClick="parent.location='{% url event_views_day_ext year month day %}'"
+	                onMouseOver="this.bgColor='#eeeeee';"
+	                onMouseOut="this.bgColor='white';"
+	            {% endif %} >
+	
+	            <!-- Day number and entry snippets -->
+	            {% if day != 0 %}
+	                {{ day }}
+	                {% for entry in entries %}
+	                    <br />
+	                    <b>{{ entry.short|safe }}</b>
+	                {% endfor %}
+	            {% endif %}
+	            </td>
+	        {% endfor %}
+	        </tr>
+	    {% endfor %}
+	    </table>
+	
+	    <div class="clear"></div>
+	</div>
+{% endblock %}

@@ -1,0 +1,85 @@
+{% extends "event/ebase.html" %}
+
+{% block content %}
+	<style type="text/css">
+        
+        .main { margin-left: 25px; margin-top: 30px; width: 700px; }
+        h3 {
+        	text-align:left;
+			font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font-size: 12pt;
+			color: black;
+			margin-top: 20px;
+			margin-bottom: 0px;
+		}
+		h4 {
+        	text-align:left;
+			font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font-size: 14pt;
+			color: navy;
+			margin-top:30px;
+			margin-bottom:0px;
+		}
+		.errors {
+    		background: #ffc;
+		}
+
+		.errors input, .errors select, .errors textarea {
+    		border: 1px solid red;
+		}
+		
+		.errornote {
+			
+		    font-size: 12px !important;
+		    display: block;
+		    padding: 4px 5px 4px 25px;
+		    margin: 0 0 3px 0;
+		    border: 1px solid red;
+		    color: red;
+		    background: #ffc url(/static/admin/img/icon_error.gif) 5px .3em no-repeat;
+		}
+        .empty { 
+        	font-size: 10pt; 
+        	text-align:center;
+        	}
+        .day { 
+        	text-align:center;
+        	color: black; 
+        	width:80px;
+        	height:80px;
+        	font-size: 10pt;
+        	border:1px solid;
+        	}
+        .current { 
+        	text-align:center;
+        	color: cyan;
+        	width:80px;
+        	height:80px;
+        	font-size: 10pt;
+        	border:1px solid;
+        	}
+        .month { 
+        	margin: 20px 15px 10px 5 px;
+        	border:2px solid;
+        	width: 75%
+        	}
+
+        .clear {clear:left;}
+        .nofloat {float: none; text-align:left}
+        .title a { text-decoration: none; }
+        .button { background: #999; color: white; padding: 4px; text-decoration: none; }
+        .buttont { background: #999; color: white; padding: 2px; text-decoration: none; }
+
+        td { border-bottom: 1px solid #ccc; }
+        #list { border: 1px solid #ccc; width: 700px; }
+        #new_topic { float: right; }
+    </style>
+    <div style="margin-top: 10px; width:50%;">
+   	 	<h4>Settings</h4>
+		<form action="" method="POST"> {% csrf_token %}
+			Show other users' entries:
+		    <input type="checkbox" name="show_users" {% if show_users %}checked{% endif %} />
+			<input type="submit" value="Save" />
+		</form>
+    </div>
+{% endblock %}

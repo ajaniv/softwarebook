@@ -1,0 +1,11 @@
+{% extends "datetime/base.html" %}
+
+{% block title %}Future time{% endblock %}
+
+{% block content %}
+<h2>Current</h2>
+<p>Date: {{ current|date:"l F j, Y"}}.  Time: {{current|date:"H:i"}}.</p>
+<h2>Future</h2>
+<p>In {{ offset }} hour(s), it will be:</p>
+<p>Date: {{ future|date:"l F j, Y"}}.  Time: {{future|date:"H:i"}}.</p>
+{% endblock %}

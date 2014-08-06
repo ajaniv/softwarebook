@@ -1,0 +1,1 @@
+HOLIDAY_DURATION_CHOICES = tuple((n, str(n)) for n in range(1, 14))

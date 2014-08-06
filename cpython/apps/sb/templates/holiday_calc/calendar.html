@@ -1,0 +1,104 @@
+{% extends "holiday_calc/base.html" %}
+
+{% block sidebar %} <style type="text/css"> </style> {% endblock %}
+
+{% block content %}
+    <style type="text/css">
+        .main { margin-left: 25px; margin-top: 30px; }
+        .step-links a { font-size: 0.89em; }
+        .title {
+            font-size: 1.4em; margin-top: 20px; border-bottom: 1px solid #ccc;
+            padding-left: 4px;
+        }
+        .messages { margin-left: 20px; }
+        .pagination { margin-top: 20px; margin-left: -20px; }
+
+        img { margin: 10px; padding: 5px; border: 1px solid #ccc; }
+        .top {
+        	float:left;
+        	color: blue;
+        	background: yellow;
+        	 
+        }
+        
+    </style>
+
+    <div class="main">
+
+        <!-- Messages  -->
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+   		<div style="margin-top: 10px;">
+   		
+   		
+			<form  method="POST"> {% csrf_token %}
+			<div class="header"  style="width:60%">
+			     Calendar
+			</div>
+			<div style="margin-top: 10px;"> </div>
+				{% for field in form %}
+				
+	        	<div class="fieldWrapper" "title="{{ field.help_text }}">
+	            	{{ field.errors }}
+	            	<div  class="top">{{ field.label_tag }}</div>{{ field }} 
+	            
+	        	</div>
+	    		{% endfor %}
+				
+			</form>
+		
+		
+	        <div id="list">
+        	<div class="header"  style="width:60%">
+			     Rules
+			</div>
+        	<table class="image" style="margin-top:10px" width="100%" >
+        		<col width="1%" />
+        		<col width="25%" />
+  				<col width="5%" />
+  				<col width="25%" />
+  				<col width="1%" />
+  				<col width="15%" />
+  				<col width="15%" />
+	            <tr>
+	                <th>#</th>
+	                
+	                <th>Rule</th>
+	                <th>Type</th>
+	                <th>Holiday</th>
+	                <th>Enabled</th>
+	                <th>Start</th>
+	                <th>End</th>
+	            </tr>
+
+	            <!-- Calendar  -->
+	            {% for rule in calendar.rules %}
+	            <tr>
+	                <td> {{ forloop.counter }}</td>
+	                <td> 
+		                	<a href="{% url calc_views_rule  calendar.calendar_name rule.rule_name %}">
+		                		{{ rule.rule_name  }}
+		                	</a>
+		            </td>
+	                <td> {{ rule.rule_type }}</td>
+	                <td> {{ rule.holiday_name }}</td>
+	                <td> {{ rule.enabled_flag }}</td>
+	                <td> {{ rule.effective_date_start.iso }} </td>
+	                <td> {{ rule.effective_date_end.iso }} </td>
+	                 
+	            </tr>
+	            {% endfor %}
+		    </table>
+	    </div>
+	 
+        </div>
+
+    </div>
+
+{% endblock %}

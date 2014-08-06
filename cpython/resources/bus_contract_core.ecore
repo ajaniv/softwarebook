@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="core"
+    nsURI="http:///com/ondalear/bus/contract/core.ecore" nsPrefix="com.ondalear.bus.contract.core">
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessContract" eSuperTypes="#//ContractPart">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contractType" eType="ecore:EClass ../../../com.ondalear.bus.refdata.contract.core/src/model/core.ecore#//ContractType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contractDomain" eType="ecore:EClass ../../../com.ondalear.bus.refdata.contract.core/src/model/core.ecore#//ContractDomain"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="businessLine" eType="ecore:EClass ../../../com.ondalear.bus.refdata.core/src/model/core.ecore#//Constant"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contractSpec" eType="#//ContractSpec"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contracts" upperBound="-1"
+        eType="#//BusinessContract" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clauses" upperBound="-1"
+        eType="#//BusinessContractClause" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clauseGroups" upperBound="-1"
+        eType="#//BusinessContractClauseGrouping" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lists" upperBound="-1"
+        eType="ecore:EClass ../../../com.ondalear.bus.object.core/src/model/core.ecore#//BusinessObjectList"
+        containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessContractAction" eSuperTypes="#//ContractPart">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actionType" eType="ecore:EClass ../../../com.ondalear.bus.refdata.contract.core/src/model/core.ecore#//BusinessContractActionType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actionSpec" eType="#//ContractActionSpec"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instructions" upperBound="-1"
+        eType="#//BusinessContractInstruction" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessContractClause" eSuperTypes="#//ContractPart">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clauseType" eType="ecore:EClass ../../../com.ondalear.bus.refdata.contract.core/src/model/core.ecore#//BusinessContractClauseType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clauseSpec" eType="#//ContractClauseSpec"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actions" upperBound="-1"
+        eType="#//BusinessContractAction" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessContractClauseGrouping">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="list" upperBound="-1" eType="#//BusinessContractClause"
+        containment="true"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass ../../../com.ondalear.bus.object.core/src/model/core.ecore#//BusinessObjectList">
+      <eTypeArguments eClassifier="#//BusinessContractClause"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessContractClauseList">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="list" upperBound="-1" eType="#//BusinessContractClause"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass ../../../com.ondalear.bus.object.core/src/model/core.ecore#//BusinessObjectList">
+      <eTypeArguments eClassifier="#//BusinessContractClause"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessContractInstruction" eSuperTypes="#//ContractPart">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instructionType" eType="ecore:EClass ../../../com.ondalear.bus.refdata.contract.core/src/model/core.ecore#//BusinessContractInstructionType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instructionSpec" eType="#//ContractInstructionSpec"
+        containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessContractList">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contracts" upperBound="-1"
+        eType="#//BusinessContract"/>
+    <eGenericSuperTypes eClassifier="ecore:EClass ../../../com.ondalear.bus.object.core/src/model/core.ecore#//BusinessObjectList">
+      <eTypeArguments eClassifier="#//BusinessContract"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessContractWorkspace" eSuperTypes="../../../com.ondalear.bus.object.core/src/model/core.ecore#//BusinessWorkspace">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contracts" upperBound="-1"
+        eType="#//BusinessContract" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contractLists" upperBound="-1"
+        eType="#//BusinessContractList" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContractActionSpec" eSuperTypes="#//ContractPartSpec"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ContractClauseSpec" eSuperTypes="#//ContractPartSpec"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ContractInstructionSpec" eSuperTypes="#//ContractPartSpec">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass ../../../com.ondalear.bus.refdata.parties/src/model/parties.ecore#//CounterPartySpec"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass ../../../com.ondalear.bus.refdata.parties/src/model/parties.ecore#//CounterPartySpec"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContractPart" abstract="true" eSuperTypes="../../../com.ondalear.bus.object.core/src/model/core.ecore#//BusinessObject"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ContractPartSpec" eSuperTypes="../../../com.ondalear.bus.object.core/src/model/core.ecore#//BusinessObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contractableSpec" eType="ecore:EClass ../../../com.ondalear.bus.refdata.product.core/src/model/core.ecore#//ContractableSpec"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachements" upperBound="-1"
+        eType="ecore:EClass ../../../com.ondalear.bus.object.util/src/model/util.ecore#//DocumentAttachment"
+        containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ContractSpec" eSuperTypes="#//ContractPartSpec">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shortcut" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="list" upperBound="-1" eType="ecore:EClass ../../../com.ondalear.bus.refdata.parties/src/model/parties.ecore#//CounterPartySpec"
+        containment="true" resolveProxies="false"/>
+  </eClassifiers>
+</ecore:EPackage>

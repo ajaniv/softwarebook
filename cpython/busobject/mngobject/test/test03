@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <com.ondalear.bus.mngobject:ManagedObject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ondalear.bus.mngobject="http:///com/ondalear/bus/mngobject.ecore" gUID="36758244-6f40-4a7d-aee6-c9b25f63a4bc" parent="ea9feb8f-5bd7-4fad-9115-6217f9693e8e" sequence="0" version="1" lastChangeUserID="Amnon Janiv" lastChangeDate="2008-11-20 22:17:00.398000" creationUserID="Amnon Janiv" creationDate="2008-11-20 22:17:00.398000">
+</com.ondalear.bus.mngobject:ManagedObject>

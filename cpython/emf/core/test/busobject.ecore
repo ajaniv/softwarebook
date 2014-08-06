@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="core"
+    nsURI="http:///com/ondalear/bus/object/core.ecore" nsPrefix="com.ondalear.bus.object.core">
+  <eClassifiers xsi:type="ecore:EClass" name="EStringToEJavaObjectMapEntry" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="key" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EJavaObject"
+        transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stringValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="objectType" eType="#//InstanceType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessObject" abstract="true" eSuperTypes="../../../com.ondalear.bus.mngobject/src/model/mngobject.ecore#//ManagedObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="immutable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="businessObjectState" eType="#//BusinessObjectState"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="businessObjectType" eType="#//BusinessObjectType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annotations" upperBound="-1"
+        eType="#//ObjectAnnotation" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
+        eType="#//BusinessObjectCategory" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="#//EStringToEJavaObjectMapEntry" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customAttributes" upperBound="-1"
+        eType="#//EStringToEJavaObjectMapEntry" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessObjectAssoc" eSuperTypes="#//BusinessObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="src" eType="#//BusinessObjectRef"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dst" eType="#//BusinessObjectRef"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessObjectCategory" eSuperTypes="#//BusinessObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessObjectList" eSuperTypes="#//BusinessObject">
+    <eTypeParameters name="T">
+      <eBounds eClassifier="#//BusinessObject"/>
+    </eTypeParameters>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="purpose" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="primary">
+      <eGenericType eTypeParameter="#//BusinessObjectList/T"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="owner" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessObjectRef" eSuperTypes="#//BusinessObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="obj" eType="#//BusinessObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refGUID" eType="#//GUID"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessWorkspace" abstract="true" eSuperTypes="#//BusinessObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Contractable" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LightWeightBusinessObject" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectAnnotation" eSuperTypes="#//BusinessObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="#//SystemDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="commentary" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="InstanceType">
+    <eLiterals name="STRING"/>
+    <eLiterals name="BIG_DECIMAL" value="1"/>
+    <eLiterals name="BIG_INTEGER" value="2"/>
+    <eLiterals name="BOOLEAN" value="3"/>
+    <eLiterals name="BYTE" value="4"/>
+    <eLiterals name="BYTE_ARRAY" value="5"/>
+    <eLiterals name="CHAR" value="6"/>
+    <eLiterals name="DATE" value="7"/>
+    <eLiterals name="DOUBLE" value="8"/>
+    <eLiterals name="FLOAT" value="9"/>
+    <eLiterals name="INT" value="10"/>
+    <eLiterals name="JAVA_CLASS" value="11"/>
+    <eLiterals name="JAVA_OBJECT" value="12"/>
+    <eLiterals name="LONG_OBJECT" value="13"/>
+    <eLiterals name="SHORT" value="14"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="BusinessObjectState" instanceClassName="com.ondalear.bus.object.core.BusinessObjectState"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="BusinessObjectType" instanceClassName="com.ondalear.bus.object.core.BusinessObjectType"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="GUID" instanceClassName="com.ondalear.tech.core.techutil.GUID"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="SystemDate" instanceClassName="com.ondalear.bus.core.dates.SystemDate"/>
+</ecore:EPackage>

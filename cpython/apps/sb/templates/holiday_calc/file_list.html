@@ -1,0 +1,244 @@
+
+{% extends "holiday_calc/base.html" %}
+{% load i18n admin_static  %}
+{% load holiday_tags %}
+{% block sidebar %} <style type="text/css"> </style> {% endblock %}
+
+{% block content %}
+    <style type="text/css">
+        .main { margin-left: 25px; margin-top: 30px; }
+        .step-links a { font-size: 0.89em; }
+        .title {
+            font-size: 1.4em; margin-top: 20px; border-bottom: 1px solid #ccc;
+            padding-left: 4px;
+        }
+        
+        .messages { margin-left: 20px; }
+        .pagination { margin-top: 20px; margin-left: -20px; }
+    </style>
+
+    <div class="main">
+
+        <!-- Messages  -->
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+		<form action="{% url calc_views_files %}" method="POST">{% csrf_token %}
+	        <div id="list">
+	        	<div class="header" style="width:60%"> 
+	        		{{ user.first_name}} {{user.last_name}}'s Calendars
+	        	</div>
+	        
+	        	<table class="simple"  style="margin-top:10px" width="60%" >
+	        		<col width="5%" />
+  					<col width="5%" />
+  					<col width="90%" />
+		            <tr>
+		                <th>#</th>
+		                <th>Selection</th>
+		                <th>Calendar</th>
+		            </tr>
+	
+		            <!-- Calendar  -->
+		            {% for wrapper in file_wrappers %}
+		            <tr class="table-data">
+		                <td> {{ forloop.counter }}</td>
+		                <td>
+		                	<input type="checkbox" name="files" value="{{ wrapper.path }}"
+		                		{% if wrapper.path in selected_files %}checked{% endif %} />
+		                	 
+		                </td>
+		                
+		                <td> 
+		                	<a href="{% url calc_views_calendar wrapper.calendar %}">
+		                		{{ wrapper.calendar }}
+		                	</a>
+		                </td>
+		                 
+		            </tr>
+		            {% endfor %}
+			    </table>
+		    </div>
+		    <div style="margin-top: 20px;"> </div>
+			
+			{% if form.non_field_errors %}
+				{% for error in form.non_field_errors %}
+				<p class="errornote">
+				    {{ error }}
+				</p>
+				{% endfor %}
+			{% endif %}
+			
+			<div >
+			    <div class="header"  style="width:60%">
+			     Year range
+			     </div>
+			     
+				<table border="0" cellpadding="2" >
+					
+		        	<tr class="fieldWrapper" title="{{ form.from_year.help_text }}">
+		        	 <td> {{ form.from_year.label_tag }} </td>
+		        	 <td> {{ form.from_year }} </td>
+		        	 <td> {{ form.from_year.errors}} </td>
+		        	</tr>
+		        	<tr class="fieldWrapper" title="{{ form.to_year.help_text }}">
+		        	 <td> {{ form.to_year.label_tag }} </td>
+		        	 <td> {{ form.to_year}} </td>
+		        	 <td> {{ form.to_year.errors}} </td>
+		        	</tr>
+		        	
+	    		</table>
+				<div  style="margin-top: 10px;">
+					<input id="calc_year" type="submit" value="Calc" name="calc_year">
+				
+				</div>
+			</div>
+			<div >
+			    <div class="header"  style="width:60%">
+			     Date range 
+			     </div>
+			     
+				<table border="0" cellpadding="2" >
+					
+		        	<tr class="fieldWrapper" title="{{ form.from_date.help_text }}">
+		        	 <td> {{ form.from_date.label_tag }} </td>
+		        	 <td> {{ form.from_date }} </td>
+		        	 <td> {{ form.from_date.errors}} </td>
+		        	</tr>
+		        	<tr class="fieldWrapper" title="{{ form.to_date.help_text }}">
+		        	 <td> {{ form.to_date.label_tag }} </td>
+		        	 <td> {{ form.to_date}} </td>
+		        	 <td> {{ form.to_date.errors}} </td>
+		        	</tr>
+		        	
+	    		</table>
+							
+							
+						
+						 		
+	    		<div style="float: none; margin-top: 10px;">
+					 <ul>
+						{% for choice in form.view_type.field.choices %}
+						<div  style="float: left;">
+							  <li> 
+							    <input type="radio" name="view_type" value="{{choice.0}}"
+							      {% ifequal form.view_type.value choice.0 %}
+							         checked="checked"
+							      {% endifequal %}/>
+							    <label for="">{{choice.1}} </label>
+							  </li>
+						  </div>
+						{% endfor %}
+					</ul>
+					<div id="some" style="clear:left;"> </div>   
+					<div >
+						<input  id="calc_date"  type="submit" value="Calc" name="calc_date">
+					</div>
+				</div>
+			</div>
+			<div >
+			    <div class="header"  style="width:60%">
+			     Date Checker 
+			     </div>
+			     <table class="simple"  style="margin-top:10px" width="60%" >
+	        		<col width="5%" />
+  					<col width="5%" />
+  					<col width="75%" />
+  					<col width="5%" />
+  					<col width="5%" />
+  					<col width="5%" />
+		            <tr>
+		                <th>#</th>
+		                <th>Selection</th>
+		                <th>Date</th>
+		                <th>Business Day</th>
+		                <th>Holiday</th>
+		                <th>Weekend</th>
+		            </tr>
+	
+		            <!-- Calendar  -->
+		            {% for holiday_field in form.holiday_fields %}
+		            <tr class="table-data">
+		                <td> {{ forloop.counter }}</td>
+		                <td>
+		                	<input type="checkbox" name="is_holiday_check" value="{{ forloop.counter }}"
+		                		{% if forloop.counter  in selected_holidays %}checked{% endif %} />
+		                	 
+		                </td>
+		                <td > 
+		               	 	<table border="0" cellpadding="0" style="border-style: none;">
+		               	 		<tr>
+		               	 			<td style="border-width: 0px;">
+		               	 			{{ holiday_field }} 
+		               	 			</td>
+		               	 			<td style="border-width: 0px;">
+		               	 			{{ holiday_field.errors }} 
+		               	 			</td>
+		               	 		</tr>	
+		                	</table>
+		                </td>
+		               
+		                 
+		                {% for value in is_holiday_results|get_item:forloop.counter %}
+		                <td>
+
+	                		{%if  value == 'Y'  %}
+	                		<img height="10" width="10" src="{% static "admin/img/icon-yes.gif" %}" />
+	                		{% elif value == 'N' %}
+	                		<img height="10" width="10" src="{% static "admin/img/icon-no.gif" %}" />
+	                		{% else %}
+	                		<img height="10" width="10" src="{% static "admin/img/icon-unknown.gif" %}" />
+	                		{% endif %}
+		                	
+		                </td>
+		                
+		                {% endfor %}
+		               
+		                 
+		            </tr>
+		            {% endfor %}
+			    </table>
+				<div style="float: none; margin-top: 10px;">
+					<div  style="float: none;">
+						<div  style="float: left;">
+							{{ form.date_calc_type }}
+						</div>
+						<div id="some" style="clear:left;"> </div>
+					</div>
+					 
+					<div >
+						<input  id="calc_holiday"  type="submit" value="Calc" name="calc_holiday">
+					</div>
+					
+					
+				
+				</div>
+			</div>
+		</form>
+		
+        <!-- Next/Prev page links  -->
+        {% if calendar.object_list and calendar.paginator.num_pages > 1 %}
+        <div class="pagination">
+            <span class="step-links">
+                {% if calendar.has_previous %}
+                    <a href= "?page={{ calendar.previous_page_number }}">previous &lt;&lt; </a>
+                {% endif %}
+
+                <span class="current">
+                    &nbsp;Page {{ calendar.number }} of {{ calendar.paginator.num_pages }}
+                </span>
+
+                {% if calendar.has_next %}
+                    <a href="?page={{ calendar.next_page_number }}"> &gt;&gt; next</a>
+                {% endif %}
+            </span>
+        </div>
+        {% endif %}
+
+    </div>
+
+{% endblock %}
