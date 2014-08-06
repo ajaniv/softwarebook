@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- DateTime Schema
+/**
+ * \file datetime_test.xsd
+ * \brief DateTime schema
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+<xsd:schema version="1"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.ondalear.com/datetime/2011-05"
+  elementFormDefault="qualified">
+  <xsd:annotation>
+    <xsd:documentation>
+      <dl>
+        <dt>Defines the schema for datetime module.</dt>
+        <dt>od - Ondalear DateTime  name space.</dt>
+        <dt>Strives to conform  to best practices defined inhttp://xml.coverpages.org/HP-StephensonSchemaBestPractices.pdf</dt>
+      </dl>
+    </xsd:documentation>
+  </xsd:annotation>
+
+
+  <xsd:complexType name="WeekdayListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Sequence of one or more week day  specs</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="od:weekday" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="weekdayList" type="od:WeekdayListType"/>
+
+  <xsd:complexType name="WeekendListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Sequence of one or more weekend specs</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="od:weekend" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="weekendList" type="od:WeekendListType"/>
+
+  <xsd:complexType name="HolidayListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Sequence of one or more holiday specs</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="od:holiday" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="holidayList" type="od:HolidayListType"/>
+
+  <xsd:complexType name="YearDateListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>List of dates per year</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="od:datesPerYearList" minOccurs="1" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="yearDateList" type="od:YearDateListType">
+    <xsd:unique name="multiYearDateListKey">
+      <xsd:selector xpath="./*"/>
+      <xsd:field xpath="od:year"/>
+    </xsd:unique>
+  </xsd:element>
+  
+  <xsd:complexType name="DatesPerYearListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>List of dates for a given year</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="year" type="od:YearType"/>
+      <xsd:element ref="od:dateList"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="datesPerYearList" type="od:DatesPerYearListType"/>
+
+
+  <xsd:complexType name="DateListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Simple list of date abstraction - uniquness guaranteed during parsing</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+      <xsd:element name="date"  type="od:DateType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="dateList" type="od:DateListType">
+    <xsd:unique name="dateListKey">
+      <xsd:selector xpath="./*"/>
+      <xsd:field xpath="od:date"/>
+    </xsd:unique>
+  </xsd:element>
+
+  
+  <xsd:complexType name="DateDescriptorType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Basic date descriptor  type comprised of name  and actual date</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence minOccurs="1" maxOccurs="1">
+      <xsd:element name="name" type="xsd:string"/>
+      <xsd:element name="date"  type="od:DateType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element  name="weekday" type="od:DateDescriptorType"/>
+  <xsd:element  name="weekend" type="od:DateDescriptorType"/>
+  <xsd:element  name="holiday" type="od:DateDescriptorType"/>
+  
+  <xsd:simpleType name="YearType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Basic year  type defined for 4 numeric characters</dt>
+          <dt>Todo: review restriction for valid types</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:int">
+      <xsd:pattern value="\d{4}"/>
+      <xsd:minInclusive value="2000" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="DaysType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Basic days  type constrained to 5 numeric characters</dt>
+          <dt>Todo: review restriction for valid types</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:int">
+      <xsd:minInclusive value="-99999" />
+      <xsd:maxInclusive value="99999" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+  <xsd:simpleType  name="DateType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Basic date type defined for ISO like date specs</dt>
+          <dt>Todo: review restriction for valid types</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:date">
+      <xsd:minInclusive value="2000-01-01"/>
+      <xsd:pattern value=".{10}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="HolidayDurationType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Describes holiday duration (i.e from 1-14)</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:int">
+      <xsd:minInclusive value="1" />
+      <xsd:maxInclusive value="14" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="DayOfMonthType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Describes day of month duration (i.e from 1-31)</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:int">
+      <xsd:minInclusive value="1" />
+      <xsd:maxInclusive value="31" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:element name="dayOfMonth" type="od:DayOfMonthType"/>
+
+  <xsd:complexType name="WeekEndDayListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specfication for weekend constrained to two days</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="od:weekDay"  minOccurs="1" maxOccurs="2"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element  name="weekEndDayList" type="od:WeekEndDayListType">
+    <xsd:unique name="weekEndDayKey">
+      <xsd:selector xpath="./*" />
+      <xsd:field xpath="od:name"/>
+    </xsd:unique>
+  </xsd:element>
+
+  <xsd:complexType name="WeekDayType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specfication for weekday </dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="dayName" type="od:WeekDayEnumerationType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:element name="weekDay" type="od:WeekDayType"/>
+  
+  <xsd:complexType name="MonthType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specfication for month (i.e. January) </dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="monthName" type="od:MonthEnumerationType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="month" type="od:MonthType"/>
+
+
+  <xsd:simpleType name="WeekOfMonthEnumerationType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="First"/>
+      <xsd:enumeration value="Second"/>
+      <xsd:enumeration value="Third"/>
+      <xsd:enumeration value="Fourth"/>
+      <xsd:enumeration value="Fifth"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:element name="weekOfMonth" type="od:WeekOfMonthEnumerationType"/>
+  
+  <xsd:simpleType name="MonthEnumerationType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="January"/>
+      <xsd:enumeration value="February"/>
+      <xsd:enumeration value="March"/>
+      <xsd:enumeration value="April"/>
+      <xsd:enumeration value="May"/>
+      <xsd:enumeration value="June"/>
+      <xsd:enumeration value="July"/>
+      <xsd:enumeration value="August"/>
+      <xsd:enumeration value="September"/>
+      <xsd:enumeration value="October"/>
+      <xsd:enumeration value="November"/>
+      <xsd:enumeration value="December"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+  <xsd:simpleType name="WeekDayEnumerationType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Sunday"/>
+      <xsd:enumeration value="Monday"/>
+      <xsd:enumeration value="Tuesday"/>
+      <xsd:enumeration value="Wednesday"/>
+      <xsd:enumeration value="Thursday"/>
+      <xsd:enumeration value="Friday"/>
+      <xsd:enumeration value="Saturday"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+
+  
+</xsd:schema>

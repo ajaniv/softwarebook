@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- US Federal Holiday Calendar  Definition
+/**
+ * \file us_federal_holiday_calendar_specs.xml
+ * \brief  US Federal Holiday Calendar  Definition
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+<oc:calendarData
+  xmlns:oc="http://www.ondalear.com/calendar/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../schemas/xsd/calendar.xsd">
+  <oc:calendarList>
+    <oc:businessCalendar>
+      <oc:calendarName>United States Federal Holiday Calendar</oc:calendarName>
+      <oc:ruleRefList>
+        <oc:ruleRef>
+          <oc:ruleName>West Weekend Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>New Year Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Martin Luther King's Birthday Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Washington's Birthday Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Memorial Day Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Independence Day Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Labour Day Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Columbus Day Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Veterans Day Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Thanks Giving Rule</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Christmas Rule</oc:ruleName>
+        </oc:ruleRef>
+      </oc:ruleRefList>
+    </oc:businessCalendar>
+  </oc:calendarList>
+
+  <oc:ruleList>
+    <!-- order is important: weekendRule needs to be first -->
+    <oc:weekendRule>
+      <!-- mandatory  -->
+      <oc:ruleName>West Weekend Rule</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <od:weekEndDayList>
+        <od:weekDay>
+          <od:dayName>Sunday</od:dayName>
+        </od:weekDay>
+        <od:weekDay>
+          <od:dayName>Saturday</od:dayName>
+        </od:weekDay>
+      </od:weekEndDayList>
+    </oc:weekendRule>
+
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>New Year Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>New Year</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional but required for this calendar-->
+      <oc:weekendAdjustment>ClosestWeekDay</oc:weekendAdjustment>
+      <!-- optional but required for this calendar -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend Rule</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- optional but required for this calendar -->
+      <oc:addNextYearFlag>true</oc:addNextYearFlag>
+      <!-- optional but required for this calendar -->
+      <oc:addPriorYearFlag>true</oc:addPriorYearFlag>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>January</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>1</od:dayOfMonth>
+    </oc:monthDayRule>
+    
+    
+    <oc:monthWeekDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Martin Luther King's Birthday Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>Martin Luther King's Birthday</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>January</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekOfMonth>Third</od:weekOfMonth>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+    </oc:monthWeekDayRule>
+    
+
+    <oc:monthWeekDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Washington's Birthday Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>Washington's Birthday</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>February</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekOfMonth>Third</od:weekOfMonth>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+    </oc:monthWeekDayRule>
+
+    <oc:lastDayOfMonthRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Memorial Day Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>Memorial Day</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>May</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+    </oc:lastDayOfMonthRule>
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Independence Day Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>Independence Day</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional -->
+      <oc:weekendAdjustment>ClosestWeekDay</oc:weekendAdjustment>
+      <!-- optional -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend Rule</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>July</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>4</od:dayOfMonth>
+    </oc:monthDayRule>
+
+    <oc:firstDayOfMonthRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Labour Day Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>Labour Day</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>September</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+    </oc:firstDayOfMonthRule>
+    
+    <oc:monthWeekDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Columbus Day Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>Columbus Day</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>October</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekOfMonth>Second</od:weekOfMonth>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+    </oc:monthWeekDayRule>
+
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Veterans Day Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>Veterans Day</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional -->
+      <oc:weekendAdjustment>ClosestWeekDay</oc:weekendAdjustment>
+      <!-- optional -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend Rule</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>November</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>11</od:dayOfMonth>
+    </oc:monthDayRule>
+
+    <oc:monthWeekDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Thanks Giving Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>Thanks Giving</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>November</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekOfMonth>Fourth</od:weekOfMonth>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Thursday</od:dayName>
+      </od:weekDay>
+    </oc:monthWeekDayRule>
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Christmas Rule</oc:ruleName>
+      <!-- optional  -->
+      <oc:holidayName>Christmas</oc:holidayName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional -->
+      <oc:weekendAdjustment>ClosestWeekDay</oc:weekendAdjustment>
+      <!-- optional -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend Rule</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>December</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>25</od:dayOfMonth>
+    </oc:monthDayRule>
+
+  </oc:ruleList>
+</oc:calendarData>

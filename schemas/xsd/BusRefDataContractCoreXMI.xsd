@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema version="0.10" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+	xmlns:com.ondalear.bus.refdata.contract.core="http:///com/ondalear/bus/refdata/contract/core.ecore"
+	xmlns:com.ondalear.bus.refdata.core="http:///com/ondalear/bus/refdata/core.ecore"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/refdata/contract/core.ecore">
+	<xsd:import namespace="http:///com/ondalear/bus/refdata/core.ecore"
+		schemaLocation="BusRefDataCoreXMI.xsd" />
+	<xsd:import namespace="http://www.eclipse.org/emf/2002/Ecore"
+		schemaLocation="Ecore.xsd" />
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en-US">
+			CopyRight Notice
+		</xsd:documentation>
+		<xsd:documentation xml:lang="en-US">
+			2008-12-05 Initial Version
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="BusRefDataContractCoreConstants">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsDomain">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="contractType"
+						type="com.ondalear.bus.refdata.contract.core:ContractTypeGrouping" />
+					<xsd:element name="contractClauseType"
+						type="com.ondalear.bus.refdata.contract.core:BusinessContractClauseTypeGrouping" />
+					<xsd:element name="contractActionType"
+						type="com.ondalear.bus.refdata.contract.core:BusinessContractActionTypeGrouping" />
+					<xsd:element name="contractInstructionType"
+						type="com.ondalear.bus.refdata.contract.core:BusinessContractInstructionTypeGrouping" />
+					<xsd:element name="businessLine"
+						type="com.ondalear.bus.refdata.contract.core:BusinessLineGrouping" />
+					<xsd:element name="contractDomain"
+						type="com.ondalear.bus.refdata.contract.core:ContractDomainGrouping" />
+					<xsd:element name="contractState"
+						type="com.ondalear.bus.refdata.contract.core:ContractStateGrouping" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusRefDataContractCoreConstants"
+		type="com.ondalear.bus.refdata.contract.core:BusRefDataContractCoreConstants" />
+	<xsd:complexType name="BusRefDataContractCoreDomain">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="constants"
+						type="com.ondalear.bus.refdata.contract.core:BusRefDataContractCoreConstants" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusRefDataContractCoreDomain"
+		type="com.ondalear.bus.refdata.contract.core:BusRefDataContractCoreDomain" />
+	<xsd:complexType name="BusinessContractActionType">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:Constant" />
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusinessContractActionType"
+		type="com.ondalear.bus.refdata.contract.core:BusinessContractActionType" />
+	<xsd:complexType name="BusinessContractActionTypeGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.contract.core:BusinessContractActionType" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusinessContractActionTypeGrouping"
+		type="com.ondalear.bus.refdata.contract.core:BusinessContractActionTypeGrouping" />
+	<xsd:complexType name="BusinessContractClauseType">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:Constant" />
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusinessContractClauseType"
+		type="com.ondalear.bus.refdata.contract.core:BusinessContractClauseType" />
+	<xsd:complexType name="BusinessContractClauseTypeGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.contract.core:BusinessContractClauseType" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusinessContractClauseTypeGrouping"
+		type="com.ondalear.bus.refdata.contract.core:BusinessContractClauseTypeGrouping" />
+	<xsd:complexType name="BusinessContractInstructionType">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:Constant" />
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusinessContractInstructionType"
+		type="com.ondalear.bus.refdata.contract.core:BusinessContractInstructionType" />
+	<xsd:complexType name="BusinessContractInstructionTypeGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.contract.core:BusinessContractInstructionType" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusinessContractInstructionTypeGrouping"
+		type="com.ondalear.bus.refdata.contract.core:BusinessContractInstructionTypeGrouping" />
+	<xsd:complexType name="BusinessLine">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:Constant" />
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusinessLine"
+		type="com.ondalear.bus.refdata.contract.core:BusinessLine" />
+	<xsd:complexType name="BusinessLineGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.contract.core:BusinessLine" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusinessLineGrouping"
+		type="com.ondalear.bus.refdata.contract.core:BusinessLineGrouping" />
+	<xsd:complexType name="ContractDomain">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:Constant" />
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="ContractDomain"
+		type="com.ondalear.bus.refdata.contract.core:ContractDomain" />
+	<xsd:complexType name="ContractDomainGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.contract.core:ContractDomain" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="ContractDomainGrouping"
+		type="com.ondalear.bus.refdata.contract.core:ContractDomainGrouping" />
+	<xsd:complexType name="ContractState">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:Constant" />
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="ContractState"
+		type="com.ondalear.bus.refdata.contract.core:ContractState" />
+	<xsd:complexType name="ContractStateGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.contract.core:ContractState" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="ContractStateGrouping"
+		type="com.ondalear.bus.refdata.contract.core:ContractStateGrouping" />
+	<xsd:complexType name="ContractType">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:Constant" />
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="ContractType"
+		type="com.ondalear.bus.refdata.contract.core:ContractType" />
+	<xsd:complexType name="ContractTypeGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.contract.core:ContractType" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="ContractTypeGrouping"
+		type="com.ondalear.bus.refdata.contract.core:ContractTypeGrouping" />
+	<xsd:simpleType name="ContractType_Attribute">
+		<xsd:annotation>
+			<xsd:documentation>type=ContractType
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="ecore:ECore_Attribute" />
+	</xsd:simpleType>
+	<xsd:simpleType name="ContractClauseType_Attribute">
+		<xsd:annotation>
+			<xsd:documentation>type=ContractClauseType
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="ecore:ECore_Attribute" />
+	</xsd:simpleType>
+	<xsd:simpleType name="ContractActionType_Attribute">
+		<xsd:annotation>
+			<xsd:documentation>type=ContractActionType
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="ecore:ECore_Attribute" />
+	</xsd:simpleType>
+	<xsd:simpleType name="ContractInstructionType_Attribute">
+		<xsd:annotation>
+			<xsd:documentation>type=ContractInstructionType
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="ecore:ECore_Attribute" />
+	</xsd:simpleType>
+	<xsd:simpleType name="ContractDomain_Attribute">
+		<xsd:annotation>
+			<xsd:documentation>type=ContractDomain
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="ecore:ECore_Attribute" />
+	</xsd:simpleType>
+	<xsd:simpleType name="BusinessLine_Attribute">
+		<xsd:annotation>
+			<xsd:documentation>type=BusinessLine
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="ecore:ECore_Attribute" />
+	</xsd:simpleType>
+</xsd:schema>

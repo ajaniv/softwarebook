@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema 
+	xmlns:com.ondalear.bus.refdata.common="http:///com/ondalear/bus/refdata/common.ecore" 
+	xmlns:com.ondalear.bus.refdata.core="http:///com/ondalear/bus/refdata/core.ecore" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/refdata/common.ecore">
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/core.ecore" schemaLocation="BusRefDataCoreXMI.xsd"/>
+  <xsd:complexType name="AddressType">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="AddressType" type="com.ondalear.bus.refdata.common:AddressType"/>
+  <xsd:complexType name="AddressTypeGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:AddressType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="AddressTypeGrouping" type="com.ondalear.bus.refdata.common:AddressTypeGrouping"/>
+  <xsd:complexType name="BusRefDataCommonConstants">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="addressType" type="com.ondalear.bus.refdata.common:AddressTypeGrouping"/>
+          <xsd:element name="unit" type="com.ondalear.bus.refdata.common:ContractableUnitGrouping"/>
+          <xsd:element name="emailAddressType" type="com.ondalear.bus.refdata.common:EmailAddressTypeGrouping"/>
+          <xsd:element name="phoneNumberType" type="com.ondalear.bus.refdata.common:PhoneNumberTypeGrouping"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataCommonConstants" type="com.ondalear.bus.refdata.common:BusRefDataCommonConstants"/>
+  <xsd:complexType name="BusRefDataCommonDomain">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="constants" type="com.ondalear.bus.refdata.common:BusRefDataCommonConstants"/>
+          <xsd:element name="objects" type="com.ondalear.bus.refdata.common:BusRefDataCommonObjects"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataCommonDomain" type="com.ondalear.bus.refdata.common:BusRefDataCommonDomain"/>
+  <xsd:complexType name="BusRefDataCommonObjects">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="currency" type="com.ondalear.bus.refdata.common:CurrencyGrouping"/>
+          <xsd:element name="rateDescriptor" type="com.ondalear.bus.refdata.common:RefRateDescriptorGrouping"/>
+          <xsd:element name="period" type="com.ondalear.bus.refdata.common:TimePeriodGrouping"/>
+          <xsd:element name="rate" type="com.ondalear.bus.refdata.common:ReferenceRateGrouping"/>
+          <xsd:element name="company" type="com.ondalear.bus.refdata.common:CompanyGrouping"/>
+          <xsd:element name="country" type="com.ondalear.bus.refdata.common:CountryGrouping"/>
+          <xsd:element name="person" type="com.ondalear.bus.refdata.common:PersonGrouping"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataCommonObjects" type="com.ondalear.bus.refdata.common:BusRefDataCommonObjects"/>
+  <xsd:complexType name="Company">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="emails" type="com.ondalear.bus.refdata.common:EmailAddress"/>
+          <xsd:element name="addresses" type="com.ondalear.bus.refdata.common:LocationAddress"/>
+          <xsd:element name="phones" type="com.ondalear.bus.refdata.common:PhoneNumber"/>
+        </xsd:choice>
+        <xsd:attribute name="primary" type="xsd:boolean"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Company" type="com.ondalear.bus.refdata.common:Company"/>
+  <xsd:complexType name="CompanyGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:Company"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CompanyGrouping" type="com.ondalear.bus.refdata.common:CompanyGrouping"/>
+  <xsd:complexType name="ContactAddress">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="addressType" type="com.ondalear.bus.refdata.common:AddressType"/>
+        </xsd:choice>
+        <xsd:attribute name="purpose" type="xsd:string"/>
+        <xsd:attribute name="address" type="xsd:string"/>
+        <xsd:attribute name="primary" type="xsd:boolean"/>
+        <xsd:attribute name="addressType" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ContactAddress" type="com.ondalear.bus.refdata.common:ContactAddress"/>
+  <xsd:complexType name="ContractableUnit">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ContractableUnit" type="com.ondalear.bus.refdata.common:ContractableUnit"/>
+  <xsd:complexType name="ContractableUnitGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:ContractableUnit"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ContractableUnitGrouping" type="com.ondalear.bus.refdata.common:ContractableUnitGrouping"/>
+  <xsd:complexType name="Country">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:attribute name="code" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Country" type="com.ondalear.bus.refdata.common:Country"/>
+  <xsd:complexType name="CountryGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:Country"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CountryGrouping" type="com.ondalear.bus.refdata.common:CountryGrouping"/>
+  <xsd:complexType name="Currency">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Currency" type="com.ondalear.bus.refdata.common:Currency"/>
+  <xsd:complexType name="CurrencyGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:Currency"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CurrencyGrouping" type="com.ondalear.bus.refdata.common:CurrencyGrouping"/>
+  <xsd:complexType name="EmailAddress">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.common:ContactAddress">
+        <xsd:attribute name="emailAddress" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="EmailAddress" type="com.ondalear.bus.refdata.common:EmailAddress"/>
+  <xsd:complexType name="EmailAddressType">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="EmailAddressType" type="com.ondalear.bus.refdata.common:EmailAddressType"/>
+  <xsd:complexType name="EmailAddressTypeGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:EmailAddressType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="EmailAddressTypeGrouping" type="com.ondalear.bus.refdata.common:EmailAddressTypeGrouping"/>
+  <xsd:complexType name="FixedRate">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.common:ReferenceRate"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="FixedRate" type="com.ondalear.bus.refdata.common:FixedRate"/>
+  <xsd:complexType name="Libor">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.common:ReferenceRate"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Libor" type="com.ondalear.bus.refdata.common:Libor"/>
+  <xsd:complexType name="LocationAddress">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.common:ContactAddress">
+        <xsd:attribute name="street" type="xsd:string"/>
+        <xsd:attribute name="buildingNumber" type="xsd:string"/>
+        <xsd:attribute name="stateName" type="xsd:string"/>
+        <xsd:attribute name="zipCode" type="xsd:string"/>
+        <xsd:attribute name="cityName" type="xsd:string"/>
+        <xsd:attribute name="countyName" type="xsd:string"/>
+        <xsd:attribute name="country" type="xsd:string"/>
+        <xsd:attribute name="formattedAddress" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="LocationAddress" type="com.ondalear.bus.refdata.common:LocationAddress"/>
+  <xsd:complexType name="Person">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="personName" type="com.ondalear.bus.refdata.common:PersonName"/>
+          <xsd:element name="emails" type="com.ondalear.bus.refdata.common:EmailAddress"/>
+          <xsd:element name="locations" type="com.ondalear.bus.refdata.common:LocationAddress"/>
+          <xsd:element name="phones" type="com.ondalear.bus.refdata.common:PhoneNumber"/>
+          <xsd:element name="companies" type="com.ondalear.bus.refdata.common:Company"/>
+        </xsd:choice>
+        <xsd:attribute name="personName" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Person" type="com.ondalear.bus.refdata.common:Person"/>
+  <xsd:complexType name="PersonGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:Person"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="PersonGrouping" type="com.ondalear.bus.refdata.common:PersonGrouping"/>
+  <xsd:complexType name="PersonName">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:attribute name="firstName" type="xsd:string"/>
+        <xsd:attribute name="middelName" type="xsd:string"/>
+        <xsd:attribute name="lastName" type="xsd:string"/>
+        <xsd:attribute name="nickName" type="xsd:string"/>
+        <xsd:attribute name="title" type="xsd:string"/>
+        <xsd:attribute name="suffiex" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="PersonName" type="com.ondalear.bus.refdata.common:PersonName"/>
+  <xsd:complexType name="PhoneNumber">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.common:ContactAddress">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="phoneNumberType" type="com.ondalear.bus.refdata.common:PhoneNumberType"/>
+        </xsd:choice>
+        <xsd:attribute name="countryCode" type="xsd:string"/>
+        <xsd:attribute name="regionCode" type="xsd:string"/>
+        <xsd:attribute name="localNumber" type="xsd:string"/>
+        <xsd:attribute name="extension" type="xsd:string"/>
+        <xsd:attribute name="phoneNumber" type="xsd:string"/>
+        <xsd:attribute name="phoneNumberType" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="PhoneNumber" type="com.ondalear.bus.refdata.common:PhoneNumber"/>
+  <xsd:complexType name="PhoneNumberType">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="PhoneNumberType" type="com.ondalear.bus.refdata.common:PhoneNumberType"/>
+  <xsd:complexType name="PhoneNumberTypeGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:PhoneNumberType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="PhoneNumberTypeGrouping" type="com.ondalear.bus.refdata.common:PhoneNumberTypeGrouping"/>
+  <xsd:complexType name="RefRateDescriptor">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="currency" type="com.ondalear.bus.refdata.common:Currency"/>
+        </xsd:choice>
+        <xsd:attribute name="currency" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefRateDescriptor" type="com.ondalear.bus.refdata.common:RefRateDescriptor"/>
+  <xsd:complexType name="RefRateDescriptorGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:RefRateDescriptor"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefRateDescriptorGrouping" type="com.ondalear.bus.refdata.common:RefRateDescriptorGrouping"/>
+  <xsd:complexType name="ReferenceRate">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="descriptor" type="com.ondalear.bus.refdata.common:RefRateDescriptor"/>
+          <xsd:element name="period" type="com.ondalear.bus.refdata.common:TimePeriod"/>
+        </xsd:choice>
+        <xsd:attribute name="descriptor" type="xsd:string"/>
+        <xsd:attribute name="period" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ReferenceRate" type="com.ondalear.bus.refdata.common:ReferenceRate"/>
+  <xsd:complexType name="ReferenceRateGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:ReferenceRate"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ReferenceRateGrouping" type="com.ondalear.bus.refdata.common:ReferenceRateGrouping"/>
+  <xsd:complexType name="TimePeriod">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="TimePeriod" type="com.ondalear.bus.refdata.common:TimePeriod"/>
+  <xsd:complexType name="TimePeriodGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.common:TimePeriod"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="TimePeriodGrouping" type="com.ondalear.bus.refdata.common:TimePeriodGrouping"/>
+</xsd:schema>

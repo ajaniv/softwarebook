@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:com.ondalear.bus.object.core="http:///com/ondalear/bus/object/core.ecore" 
+	xmlns:com.ondalear.bus.object.util="http:///com/ondalear/bus/object/util.ecore" 
+	xmlns:com.ondalear.bus.refdata.core="http:///com/ondalear/bus/refdata/core.ecore" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http:///com/ondalear/bus/object/util.ecore">
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/core.ecore" schemaLocation="BusRefDataCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/object/core.ecore" schemaLocation="BusObjectCoreXMI.xsd"/>
+  <xsd:complexType name="DocumentAttachment">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="attachmentType" type="com.ondalear.bus.refdata.core:AttachmentType"/>
+        </xsd:choice>
+        <xsd:attribute name="description" type="xsd:string"/>
+        <xsd:attribute name="uRIString" type="xsd:string"/>
+        <xsd:attribute name="uRI" type="xsd:string"/>
+        <xsd:attribute name="attachmentType" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="DocumentAttachment" type="com.ondalear.bus.object.util:DocumentAttachment"/>
+</xsd:schema>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema version="0.10" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+	xmlns:com.ondalear.bus.mngobject="http:///com/ondalear/bus/mngobject.ecore"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/mngobject.ecore">
+	<xsd:import namespace="http://www.eclipse.org/emf/2002/Ecore"
+		schemaLocation="Ecore.xsd" />
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en-US">
+			CopyRight Notice
+		</xsd:documentation>
+		<xsd:documentation xml:lang="en-US">
+			2008-12-05 Initial
+			Version
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType abstract="true" name="ManagedObject">
+		<xsd:complexContent>
+			<xsd:extension base="ecore:EObject">
+				<xsd:attribute name="gUID"
+					type="com.ondalear.bus.mngobject:GUID_Attribute" />
+				<xsd:attribute name="sequence" type="xsd:int" />
+				<xsd:attribute name="version" type="xsd:int" />
+				<xsd:attribute name="creationDate" type="xsd:string" />
+				<xsd:attribute name="creationUserID" type="xsd:string" />
+				<xsd:attribute name="lastChangeDate" type="xsd:string" />
+				<xsd:attribute name="lastChangeUserID" type="xsd:string" />
+				<xsd:attribute name="parent"
+					type="com.ondalear.bus.mngobject:ManagedObjectRef_Attribute" />
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:simpleType name="GUID_Attribute">
+		<xsd:annotation>
+			<xsd:documentation>type=GUID
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="ecore:ECore_Attribute" />
+	</xsd:simpleType>
+	<xsd:simpleType name="ManagedObjectRef_Attribute">
+		<xsd:annotation>
+			<xsd:documentation>type=ManagedObjectRef
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="ecore:ECore_Attribute" />
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Calendar  Data Schema
+/**
+ * \file calendar.xsd
+ * \brief Calendar   schema definition 
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+<xsd:schema version="1"
+  xmlns:oc="http://www.ondalear.com/calendar/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:ob="http://www.ondalear.com/core/2011-05"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.ondalear.com/calendar/2011-05"
+  elementFormDefault="qualified">
+  <xsd:annotation>
+    <xsd:documentation>
+      <dl>
+        <dt>Defines the schema for calendar.</dt>
+        <dt>Qualified name "oc" - Ondalear Calendar </dt>
+        <dt>Strives to conform  to best practices defined inhttp://xml.coverpages.org/HP-StephensonSchemaBestPractices.pdf</dt>
+      </dl>
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:import namespace="http://www.ondalear.com/core/2011-05"
+              schemaLocation="core.xsd"/>
+  <xsd:import namespace="http://www.ondalear.com/datetime/2011-05"
+                schemaLocation="datetime.xsd"/>
+
+  <xsd:element name="calendarData" type="oc:CalendarDataContainerType">
+    <xsd:keyref name="ruleRef" refer="oc:calRuleKey">
+      <xsd:selector xpath="./oc:calendarList/*/oc:ruleRefList/oc:ruleRef"/>
+      <xsd:field xpath="oc:ruleName"/>
+    </xsd:keyref>
+    <xsd:key name="calRuleKey">
+      <xsd:selector xpath="./oc:ruleList/*"/>
+      <xsd:field xpath="oc:ruleName"/>
+    </xsd:key>
+  </xsd:element>
+
+
+  <xsd:complexType name="CalendarDataContainerType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Root type comprised of a sequence of calendar specification</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="oc:calendarList"/>
+      <xsd:element ref="oc:ruleList"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  
+  
+  <xsd:complexType name="CalendarListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>List of Calendar  Data</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:choice>
+      <xsd:element ref="oc:businessCalendar"  minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:choice>
+  </xsd:complexType>
+
+  <xsd:element name="calendarList" type="oc:CalendarListType">
+    <xsd:key name="calendarNameKey">
+      <xsd:selector xpath="./*"/>
+      <xsd:field xpath="oc:calendarName"/>
+    </xsd:key>
+  </xsd:element>
+
+
+  
+  
+  <xsd:complexType name="BusinessCalendarType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for Business Calendar </dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:CalendarType">
+         
+      </xsd:extension>
+    </xsd:complexContent>
+   
+  </xsd:complexType>
+
+  <xsd:element name="businessCalendar" type="oc:BusinessCalendarType"/>
+
+
+  <xsd:complexType name="CalendarType" abstract="true">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for Abstract Calendar</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="calendarName" type="xsd:string"/>
+      <xsd:element ref="oc:ruleRefList"  />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="RuleRefListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specfication for collection of rule references</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="oc:ruleRef"  minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element  name="ruleRefList" type="oc:RuleRefListType">
+    <xsd:key name="ruleRefNameKey">
+      <xsd:selector xpath="./oc:ruleRef"/>
+      <xsd:field xpath="oc:ruleName"/>
+    </xsd:key>
+    
+  </xsd:element> 
+  
+  <xsd:complexType name="RuleRefType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for rule reference</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="ruleName" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element  name="ruleRef" type="oc:RuleRefType"/>
+
+  
+  <xsd:complexType name="ruleListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specfication for collection of rule specifications</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="oc:weekendRule" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:choice minOccurs="0" maxOccurs="unbounded">
+        <xsd:element ref="oc:specificDateRule"  minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="oc:monthDayRule"  minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="oc:monthWeekDayRule"  minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="oc:firstDayOfMonthRule"  minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="oc:lastDayOfMonthRule"  minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="oc:specificDatesRule"  minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="oc:daysOffsetRule"  minOccurs="0" maxOccurs="unbounded"/>
+        <xsd:element ref="oc:firstDayAtOrBeforeRule"  minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element  name="ruleList" type="oc:ruleListType">
+    <xsd:keyref name="ruleListWeekendRef" refer="oc:ruleListKey">
+      <xsd:selector xpath="./*/oc:weekendRuleRef"/>
+      <xsd:field xpath="oc:ruleName"/>
+    </xsd:keyref>
+    <xsd:keyref name="ruleListDerivedRef" refer="oc:ruleListKey">
+      <xsd:selector xpath="./*/oc:underlyingRuleRef"/>
+      <xsd:field xpath="oc:ruleName"/>
+    </xsd:keyref>
+    <xsd:key name="ruleListKey">
+      <xsd:selector xpath="./*"/>
+      <xsd:field xpath="oc:ruleName"/>
+    </xsd:key>
+    
+  </xsd:element>
+
+  <xsd:complexType name="FirstDayAtOrBeforeRuleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for First week day before or equal underlying rule (i.e  month and day - first Monday before or equal May 24  )</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:DerivedRuleType">
+        <xsd:sequence>
+          <xsd:element ref="od:weekDay"/>
+          <xsd:element name="startAtFlag"  type="ob:BooleanType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element  name="firstDayAtOrBeforeRule" type="oc:FirstDayAtOrBeforeRuleType"/>
+
+  <xsd:complexType name="DaysOffsetRuleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for rule derived from another by +- days</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:DerivedRuleType">
+        <xsd:sequence>
+          <xsd:element name="days"  type="od:DaysType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element  name="daysOffsetRule" type="oc:DaysOffsetRuleType"/>
+  
+  <xsd:complexType name="SpecificDatesRuleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for list of dates   rule (i.e. Date(2001-04-15), Date(2002-03-31)...</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:DateRuleType">
+        <xsd:sequence>
+          <xsd:element name ="specifiedDates" type="oc:SpecificDatesType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element  name="specificDatesRule" type="oc:SpecificDatesRuleType"/>
+
+  <xsd:complexType name="SpecificDatesType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specifications for specified dates; in place to encapsulate and leverage dateListType</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="od:dateList"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="LastDayOfMonthRuleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for first day of month rule (i.e. last Monday of May)</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:DateRuleType">
+        <xsd:sequence>
+          <xsd:element ref="od:month"/>
+          <xsd:element ref="od:weekDay"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element  name="lastDayOfMonthRule" type="oc:LastDayOfMonthRuleType"/>
+
+  <xsd:complexType name="FirstDayOfMonthRuleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for first day of month rule (i.e. First Monday of September)</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:DateRuleType">
+        <xsd:sequence>
+          <xsd:element ref="od:month"/>
+          <xsd:element ref="od:weekDay"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element  name="firstDayOfMonthRule" type="oc:FirstDayOfMonthRuleType"/>
+  
+  <xsd:complexType name="MonthWeekDayRuleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for month week day rule (i.e. Monday of third week in Jan)</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:DateRuleType">
+        <xsd:sequence>
+          <xsd:element ref="od:month"/>
+          <xsd:element ref="od:weekOfMonth"/>
+          <xsd:element ref="od:weekDay"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element  name="monthWeekDayRule" type="oc:MonthWeekDayRuleType"/>
+  
+  
+
+  <xsd:complexType name="MonthDayRuleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for month day rule (i.e. Jan 1)</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:DateRuleType">
+        <xsd:sequence>
+          <xsd:element ref="od:month"/>
+          <xsd:element ref="od:dayOfMonth"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element  name="monthDayRule" type="oc:MonthDayRuleType"/>
+  
+  <xsd:complexType name="SpecificDateRuleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for Specific Date rule i.e (2011-05-01)</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:DateRuleType">
+        <xsd:sequence>
+          <xsd:element name="specifiedDate"  type="od:DateType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element  name="specificDateRule" type="oc:SpecificDateRuleType"/>
+
+
+  
+  <xsd:complexType name="DerivedRuleType" abstract="true">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for derived rule which depends on an underlying rule</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:DateRuleType">
+        <xsd:sequence>
+          <xsd:element name="underlyingRuleRef"     type="oc:RuleRefType" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  
+  <xsd:complexType name="WeekendRuleType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for weekend rule</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:CalendarRuleType">
+        <xsd:sequence>
+          <xsd:element ref="od:weekEndDayList"  />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element  name="weekendRule" type="oc:WeekendRuleType"/>
+   
+
+  <xsd:complexType name="DateRuleType" abstract="true">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for Abstract Date Calendar Rule</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="oc:CalendarRuleType">
+        <xsd:sequence>
+          <xsd:element name="weekendAdjustment"  type="oc:WeekendAdjustmentType" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="weekendRuleRef"     type="oc:RuleRefType" minOccurs="0" maxOccurs="1" />
+          <xsd:element name="holidayDuration"  type="od:HolidayDurationType" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="ignoreFridayMonthEndFlag"  type="xsd:boolean" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="addNextYearFlag"  type="xsd:boolean" minOccurs="0" maxOccurs="1"/>
+          <xsd:element name="addPriorYearFlag"  type="xsd:boolean" minOccurs="0" maxOccurs="1"/>
+          <xsd:element ref="oc:dateExceptions"   minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:element name="dateExceptions" type="od:YearDateListType">
+    <xsd:unique name="dateExceptionsListKey">
+      <xsd:selector xpath="./*"/>
+      <xsd:field xpath="od:year"/>
+    </xsd:unique>
+  </xsd:element>
+  
+  <xsd:simpleType name="WeekendAdjustmentType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="None"/>
+      <xsd:enumeration value="NextWeekDay"/>
+      <xsd:enumeration value="PriorWeekDay"/>
+      <xsd:enumeration value="ClosestWeekDay"/>
+      <xsd:enumeration value="Default"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="CalendarRuleType" abstract="true">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for Abstract Calendar Rule</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="ruleName" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="holidayName" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="startEffectiveDate"  type="od:DateType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="endEffectiveDate"  type="od:DateType" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="enabledFlag"  type="xsd:boolean" minOccurs="0" maxOccurs="1"/>
+      
+    </xsd:sequence>
+    
+  </xsd:complexType>
+
+ 
+
+</xsd:schema>

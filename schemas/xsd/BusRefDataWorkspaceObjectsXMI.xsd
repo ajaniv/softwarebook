@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema 
+	xmlns:com.ondalear.bus.object.core="http:///com/ondalear/bus/object/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.common="http:///com/ondalear/bus/refdata/common.ecore" 
+	xmlns:com.ondalear.bus.refdata.contract.core="http:///com/ondalear/bus/refdata/contract/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.core="http:///com/ondalear/bus/refdata/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.parties="http:///com/ondalear/bus/refdata/parties.ecore" 
+	xmlns:com.ondalear.bus.refdata.product.core="http:///com/ondalear/bus/refdata/product/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.product.ir="http:///com/ondalear/bus/refdata/product/ir.ecore" 
+	xmlns:com.ondalear.bus.refdata.users="http:///com/ondalear/bus/refdata/users.ecore" 
+	xmlns:com.ondalear.bus.refdata.workspace.objects="http:///com/ondalear/bus/refdata/workspace/objects.ecore" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/refdata/workspace/objects.ecore">
+  <xsd:import namespace="http:///com/ondalear/bus/object/core.ecore" schemaLocation="BusObjectCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/core.ecore" schemaLocation="BusRefDataCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/common.ecore" schemaLocation="BusRefDataCommonXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/contract/core.ecore" schemaLocation="BusRefDataContractCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/users.ecore" schemaLocation="BusRefDataUsersXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/product/ir.ecore" schemaLocation="BusRefDataProductIRXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/product/core.ecore" schemaLocation="BusRefDataProductCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/parties.ecore" schemaLocation="BusRefDataPartiesXMI.xsd"/>
+ 
+  
+  
+  <xsd:complexType name="RefDataWorkspace">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessWorkspace">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="refDataDomain" type="com.ondalear.bus.refdata.core:RefDataDomain"/>
+          <xsd:element name="coreRefDataDomain" type="com.ondalear.bus.refdata.core:BusRefDataCoreDomain"/>
+          <xsd:element name="comRefDataDomain" type="com.ondalear.bus.refdata.common:BusRefDataCommonDomain"/>
+          <xsd:element name="partiesDomain" type="com.ondalear.bus.refdata.parties:BusRefDataPartiesDomain"/>
+          <xsd:element name="productCoreDomain" type="com.ondalear.bus.refdata.product.core:BusRefDataProductCoreDomain"/>
+          <xsd:element name="productIRDomain" type="com.ondalear.bus.refdata.product.ir:BusRefDataProductIRDomain"/>
+          <xsd:element name="usersDomain" type="com.ondalear.bus.refdata.users:BusRefDataUsersDomain"/>
+          <xsd:element name="busContractDomain" type="com.ondalear.bus.refdata.contract.core:BusRefDataContractCoreDomain"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefDataWorkspace" type="com.ondalear.bus.refdata.workspace.objects:RefDataWorkspace"/>
+</xsd:schema>

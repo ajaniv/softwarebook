@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Calendar Test Data Schema
+/**
+ * \file calendars_test.xsd
+ * \brief Calendar Test Data schema
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+<xsd:schema version="1"
+  xmlns:oct="http://www.ondalear.com/calendar/test/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.ondalear.com/calendar/test/2011-05"
+  elementFormDefault="qualified">
+  <xsd:annotation>
+    <xsd:documentation>
+      <dl>
+        <dt>Defines the schema for calendar test data.</dt>
+        <dt>Qualified name "oct" - Ondalear Calendar Test.</dt>
+        <dt>Strives to conform  to best practices defined inhttp://xml.coverpages.org/HP-StephensonSchemaBestPractices.pdf</dt>
+      </dl>
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:import namespace="http://www.ondalear.com/datetime/2011-05"
+                schemaLocation="datetime.xsd"/>
+
+  <xsd:element name="calendarsTestData" type="oct:CalendarTestDataContainerType"/>
+   
+
+  <xsd:complexType name="CalendarTestDataContainerType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Root type comprised of a sequence of test data per calendar and year</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="oct:calendarTestDataList" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  
+ 
+
+
+  <xsd:complexType name="CalendarTestDataListType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>List of Calendar Test Data</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element ref="oct:calendarTestData"  minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="calendarTestDataList" type="oct:CalendarTestDataListType">
+               
+    <xsd:key name="yearKey">
+      <xsd:selector xpath="./oct:calendarTestData"/>
+      <xsd:field xpath="oct:year"/>
+    </xsd:key>
+  </xsd:element>
+               
+  
+  <xsd:complexType name="CalendarTestDataType">
+    <xsd:annotation>
+      <xsd:documentation>
+        <dl>
+          <dt>Specification for calendar data set required for testing</dt>
+        </dl>
+      </xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string"/>
+      <xsd:element name="year" type="od:YearType"/>
+      <xsd:element ref="od:weekdayList" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="od:weekendList" minOccurs="0" maxOccurs="1"/>
+      <xsd:element ref="od:holidayList" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="calendarTestData" type="oct:CalendarTestDataType"/>
+
+
+
+</xsd:schema>

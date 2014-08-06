@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema 
+	xmlns:com.ondalear.bus.refdata.common="http:///com/ondalear/bus/refdata/common.ecore" 
+	xmlns:com.ondalear.bus.refdata.core="http:///com/ondalear/bus/refdata/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.product.core="http:///com/ondalear/bus/refdata/product/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.product.ir="http:///com/ondalear/bus/refdata/product/ir.ecore" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/refdata/product/ir.ecore">
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/common.ecore" schemaLocation="BusRefDataCommonXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/core.ecore" schemaLocation="BusRefDataCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/product/core.ecore" schemaLocation="BusRefDataProductCoreXMI.xsd"/>
+  <xsd:complexType name="BusRefDataProductIRDomain">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="objects" type="com.ondalear.bus.refdata.product.ir:BusRefDataProductIRObjects"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataProductIRDomain" type="com.ondalear.bus.refdata.product.ir:BusRefDataProductIRDomain"/>
+  <xsd:complexType name="BusRefDataProductIRObjects">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="cash" type="com.ondalear.bus.refdata.product.ir:CashProductGrouping"/>
+          <xsd:element name="float" type="com.ondalear.bus.refdata.product.ir:FloatProductGrouping"/>
+          <xsd:element name="fixed" type="com.ondalear.bus.refdata.product.ir:FixedProductGrouping"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataProductIRObjects" type="com.ondalear.bus.refdata.product.ir:BusRefDataProductIRObjects"/>
+  <xsd:complexType name="CashProduct">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.product.core:BusinessProduct"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CashProduct" type="com.ondalear.bus.refdata.product.ir:CashProduct"/>
+  <xsd:complexType name="CashProductGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.product.ir:CashProduct"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CashProductGrouping" type="com.ondalear.bus.refdata.product.ir:CashProductGrouping"/>
+  <xsd:complexType name="FixedProduct">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.product.ir:SimpleRateProduct"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="FixedProduct" type="com.ondalear.bus.refdata.product.ir:FixedProduct"/>
+  <xsd:complexType name="FixedProductGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.product.ir:FixedProduct"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="FixedProductGrouping" type="com.ondalear.bus.refdata.product.ir:FixedProductGrouping"/>
+  <xsd:complexType name="FloatProduct">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.product.ir:SimpleRateProduct"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="FloatProduct" type="com.ondalear.bus.refdata.product.ir:FloatProduct"/>
+  <xsd:complexType name="FloatProductGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.product.ir:FloatProduct"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="FloatProductGrouping" type="com.ondalear.bus.refdata.product.ir:FloatProductGrouping"/>
+  <xsd:complexType name="SimpleRateProduct">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.product.core:BusinessProduct">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="refRate" type="com.ondalear.bus.refdata.common:ReferenceRate"/>
+        </xsd:choice>
+        <xsd:attribute name="refRate" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="SimpleRateProduct" type="com.ondalear.bus.refdata.product.ir:SimpleRateProduct"/>
+</xsd:schema>

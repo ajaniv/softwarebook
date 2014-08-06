@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema 
+	xmlns:com.ondalear.bus.object.core="http:///com/ondalear/bus/object/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.core="http:///com/ondalear/bus/refdata/core.ecore" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/refdata/core.ecore">
+  <xsd:import namespace="http:///com/ondalear/bus/object/core.ecore" schemaLocation="BusObjectCoreXMI.xsd"/>
+  <xsd:complexType name="AttachmentType">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="AttachmentType" type="com.ondalear.bus.refdata.core:AttachmentType"/>
+  <xsd:complexType name="AttachmentTypeGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.core:AttachmentType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="AttachmentTypeGrouping" type="com.ondalear.bus.refdata.core:AttachmentTypeGrouping"/>
+  <xsd:complexType name="BusRefDataCoreConstants">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="sourceType" type="com.ondalear.bus.refdata.core:RefDataSourceTypeGrouping"/>
+          <xsd:element name="attachmentType" type="com.ondalear.bus.refdata.core:AttachmentTypeGrouping"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataCoreConstants" type="com.ondalear.bus.refdata.core:BusRefDataCoreConstants"/>
+  <xsd:complexType name="BusRefDataCoreDomain">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="constants" type="com.ondalear.bus.refdata.core:BusRefDataCoreConstants"/>
+          <xsd:element name="objects" type="com.ondalear.bus.refdata.core:BusRefDataCoreObjects"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataCoreDomain" type="com.ondalear.bus.refdata.core:BusRefDataCoreDomain"/>
+  <xsd:complexType name="BusRefDataCoreObjects">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="source" type="com.ondalear.bus.refdata.core:RefDataSourceGrouping"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataCoreObjects" type="com.ondalear.bus.refdata.core:BusRefDataCoreObjects"/>
+  <xsd:complexType name="Constant">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Constant" type="com.ondalear.bus.refdata.core:Constant"/>
+  <xsd:complexType name="ConstantsDomain">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ConstantsDomain" type="com.ondalear.bus.refdata.core:ConstantsDomain"/>
+  <xsd:complexType abstract="true" name="ConstantsGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ConstantsGrouping" type="com.ondalear.bus.refdata.core:ConstantsGrouping"/>
+  <xsd:complexType name="GenericConstantGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.core:Constant"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="GenericConstantGrouping" type="com.ondalear.bus.refdata.core:GenericConstantGrouping"/>
+  <xsd:complexType name="GenericRefDataObjectGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.core:RefDataObject"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="GenericRefDataObjectGrouping" type="com.ondalear.bus.refdata.core:GenericRefDataObjectGrouping"/>
+  <xsd:complexType name="RefDataDomain">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="subDomains" type="com.ondalear.bus.refdata.core:RefDataDomain"/>
+          <xsd:element name="objectGrouping" type="com.ondalear.bus.refdata.core:GenericRefDataObjectGrouping"/>
+          <xsd:element name="constantGroping" type="com.ondalear.bus.refdata.core:GenericConstantGrouping"/>
+        </xsd:choice>
+        <xsd:attribute name="modelPackage" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefDataDomain" type="com.ondalear.bus.refdata.core:RefDataDomain"/>
+  <xsd:complexType abstract="true" name="RefDataGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefDataGrouping" type="com.ondalear.bus.refdata.core:RefDataGrouping"/>
+  <xsd:complexType name="RefDataObject">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="source" type="com.ondalear.bus.refdata.core:RefDataSource"/>
+        </xsd:choice>
+        <xsd:attribute name="description" type="xsd:string"/>
+        <xsd:attribute name="source" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefDataObject" type="com.ondalear.bus.refdata.core:RefDataObject"/>
+  <xsd:complexType name="RefDataSource">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="sourceType" type="com.ondalear.bus.refdata.core:RefDataSourceType"/>
+        </xsd:choice>
+        <xsd:attribute name="sourceType" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefDataSource" type="com.ondalear.bus.refdata.core:RefDataSource"/>
+  <xsd:complexType name="RefDataSourceGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.core:RefDataSource"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefDataSourceGrouping" type="com.ondalear.bus.refdata.core:RefDataSourceGrouping"/>
+  <xsd:complexType name="RefDataSourceType">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefDataSourceType" type="com.ondalear.bus.refdata.core:RefDataSourceType"/>
+  <xsd:complexType name="RefDataSourceTypeGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.core:RefDataSourceType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="RefDataSourceTypeGrouping" type="com.ondalear.bus.refdata.core:RefDataSourceTypeGrouping"/>
+</xsd:schema>

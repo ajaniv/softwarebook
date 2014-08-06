@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:com.ondalear.bus.object.core="http:///com/ondalear/bus/object/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.common="http:///com/ondalear/bus/refdata/common.ecore" 
+	xmlns:com.ondalear.bus.refdata.core="http:///com/ondalear/bus/refdata/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.product.core="http:///com/ondalear/bus/refdata/product/core.ecore" 
+	xmlns:xmi="http://www.omg.org/XMI" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/refdata/product/core.ecore">
+  <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="XMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/object/core.ecore" schemaLocation="BusObjectCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/core.ecore" schemaLocation="BusRefDataCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/common.ecore" schemaLocation="BusRefDatacommonXMI.xsd"/>
+ 
+  <xsd:complexType name="BusRefDataProductCoreConstants">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="productFamily" type="com.ondalear.bus.refdata.product.core:ProductFamilyGrouping"/>
+          <xsd:element name="productType" type="com.ondalear.bus.refdata.product.core:ProductTypeGrouping"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataProductCoreConstants" type="com.ondalear.bus.refdata.product.core:BusRefDataProductCoreConstants"/>
+  <xsd:complexType name="BusRefDataProductCoreDomain">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="constants" type="com.ondalear.bus.refdata.product.core:BusRefDataProductCoreConstants"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataProductCoreDomain" type="com.ondalear.bus.refdata.product.core:BusRefDataProductCoreDomain"/>
+  <xsd:complexType name="BusinessProduct">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="productType" type="com.ondalear.bus.refdata.product.core:ProductType"/>
+          <xsd:element name="currency" type="com.ondalear.bus.refdata.common:Currency"/>
+        </xsd:choice>
+        <xsd:attribute name="productType" type="xsd:string"/>
+        <xsd:attribute name="currency" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusinessProduct" type="com.ondalear.bus.refdata.product.core:BusinessProduct"/>
+  <xsd:complexType name="ContractableSpec">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:choice maxOccurs="1" minOccurs="0">
+          <xsd:element name="product" type="com.ondalear.bus.refdata.product.core:BusinessProduct"/>
+          <xsd:element name="quantity" type="com.ondalear.bus.refdata.product.core:Quantity"/>
+          <xsd:element name="notional" type="com.ondalear.bus.refdata.product.core:Money"/>
+        </xsd:choice>
+        <xsd:attribute name="product" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ContractableSpec" type="com.ondalear.bus.refdata.product.core:ContractableSpec"/>
+  <xsd:complexType name="Money">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="currency" type="com.ondalear.bus.refdata.common:Currency"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="value" type="xsd:float"/>
+    <xsd:attribute name="currency" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Money" type="com.ondalear.bus.refdata.product.core:Money"/>
+  <xsd:complexType name="ProductFamily">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="productTypes" type="com.ondalear.bus.refdata.product.core:ProductType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ProductFamily" type="com.ondalear.bus.refdata.product.core:ProductFamily"/>
+  <xsd:complexType name="ProductFamilyGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.product.core:ProductFamily"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ProductFamilyGrouping" type="com.ondalear.bus.refdata.product.core:ProductFamilyGrouping"/>
+  <xsd:complexType name="ProductType">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ProductType" type="com.ondalear.bus.refdata.product.core:ProductType"/>
+  <xsd:complexType name="ProductTypeGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.product.core:ProductType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ProductTypeGrouping" type="com.ondalear.bus.refdata.product.core:ProductTypeGrouping"/>
+  <xsd:complexType name="Quantity">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="unit" type="com.ondalear.bus.refdata.common:ContractableUnit"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="value" type="xsd:float"/>
+    <xsd:attribute name="unit" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Quantity" type="com.ondalear.bus.refdata.product.core:Quantity"/>
+</xsd:schema>

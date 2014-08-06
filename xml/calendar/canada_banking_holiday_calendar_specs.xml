@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Candaa  Banking Calendar  Definition
+/**
+ * \file canada_banking_holiday_calendar_specs.xml
+ * \brief  Canada Banking Holiday Calendar  Definition
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+<oc:calendarData
+  xmlns:oc="http://www.ondalear.com/calendar/2011-05"
+  xmlns:od="http://www.ondalear.com/datetime/2011-05"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.ondalear.com/calendar/test/2011-05
+    ../../schemas/xsd/calendar.xsd">
+  <oc:calendarList>
+    <oc:businessCalendar>
+      <oc:calendarName>Canada Banking Holiday Calendar</oc:calendarName>
+      <oc:ruleRefList>
+        <oc:ruleRef>
+          <oc:ruleName>West Weekend</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>New Year</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Family Day</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Good Friday</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Victoria Day</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Provincial Day</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Canada Day</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Civic Holiday</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Labour Day</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Thanks Giving</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Remembrance Day</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Christmas</oc:ruleName>
+        </oc:ruleRef>
+        <oc:ruleRef>
+          <oc:ruleName>Boxing Day</oc:ruleName>
+        </oc:ruleRef>
+         
+      </oc:ruleRefList>
+    </oc:businessCalendar>
+  </oc:calendarList>
+
+  <oc:ruleList>
+    <!-- order is important: weekendRule needs to be first -->
+    <oc:weekendRule>
+      <!-- mandatory  -->
+      <oc:ruleName>West Weekend</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <od:weekEndDayList>
+        <od:weekDay>
+          <od:dayName>Sunday</od:dayName>
+        </od:weekDay>
+        <od:weekDay>
+          <od:dayName>Saturday</od:dayName>
+        </od:weekDay>
+      </od:weekEndDayList>
+    </oc:weekendRule>
+
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>New Year</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional but required for this calendar-->
+      <oc:weekendAdjustment>NextWeekDay</oc:weekendAdjustment>
+      <!-- optional but required for this calendar -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>January</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>1</od:dayOfMonth>
+    </oc:monthDayRule>
+
+
+    <oc:monthWeekDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Family Day</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2008-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>February</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekOfMonth>Third</od:weekOfMonth>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+    </oc:monthWeekDayRule>
+
+
+    <oc:specificDatesRule>
+      <!-- mandatory  -->
+      <oc:ruleName>West Easter Sunday</oc:ruleName>
+      <!-- optional but required for this type of rule -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional but required for this type of rule-->
+      <oc:endEffectiveDate>2025-12-31</oc:endEffectiveDate>
+      <!-- optional -->
+      <oc:enabledFlag>true</oc:enabledFlag>
+      <!-- optional; ignored for this rule -->
+      <oc:weekendAdjustment>ClosestWeekDay</oc:weekendAdjustment>
+      <!-- optional ; ignored for this rule-->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- optional ignored for this rule -->
+      <oc:holidayDuration>1</oc:holidayDuration>
+      <!-- optional ignored for this rule -->
+      <oc:ignoreFridayMonthEndFlag>false</oc:ignoreFridayMonthEndFlag>
+      <!-- optional ignored for this rule -->
+      <oc:addNextYearFlag>true</oc:addNextYearFlag>
+      <!-- optional  ignored for this rule-->
+      <oc:addPriorYearFlag>true</oc:addPriorYearFlag>
+      <!-- optional ignored for this rule -->
+      <oc:dateExceptions>
+        <od:datesPerYearList>
+          <od:year>2020</od:year>
+          <od:dateList>
+            <od:date>2020-01-30</od:date>
+          </od:dateList>
+        </od:datesPerYearList>
+        <od:datesPerYearList>
+          <od:year>2021</od:year>
+          <od:dateList>
+            <od:date>2020-01-30</od:date>
+          </od:dateList>
+        </od:datesPerYearList>
+      </oc:dateExceptions>
+      <!-- mandatory  -->
+      <oc:specifiedDates>
+        <od:dateList>
+          <od:date>2000-04-23</od:date>
+
+          <od:date>2001-04-15</od:date>
+          <od:date>2002-03-31</od:date>
+          <od:date>2003-04-20</od:date>
+          <od:date>2004-04-11</od:date>
+          <od:date>2005-03-27</od:date>
+
+          <od:date>2006-04-16</od:date>
+          <od:date>2007-04-08</od:date>
+          <od:date>2008-04-23</od:date>
+          <od:date>2009-04-12</od:date>
+          <od:date>2010-04-04</od:date>
+
+          <od:date>2011-04-24</od:date>
+          <od:date>2012-04-08</od:date>
+          <od:date>2013-03-31</od:date>
+          <od:date>2014-04-20</od:date>
+          <od:date>2015-04-05</od:date>
+
+          <od:date>2016-03-27</od:date>
+          <od:date>2017-04-16</od:date>
+          <od:date>2018-04-01</od:date>
+          <od:date>2019-04-21</od:date>
+          <od:date>2020-04-12</od:date>
+
+          <od:date>2021-04-04</od:date>
+          <od:date>2022-04-17</od:date>
+          <od:date>2023-04-09</od:date>
+          <od:date>2024-03-31</od:date>
+          <od:date>2025-04-20</od:date>
+
+        </od:dateList>
+      </oc:specifiedDates>
+    </oc:specificDatesRule>
+
+    <oc:daysOffsetRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Good Friday</oc:ruleName>
+      <!-- optional but required for this type of rule -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional but required for this type of rule-->
+      <oc:endEffectiveDate>2025-12-31</oc:endEffectiveDate>
+      <!-- mandatory  -->
+      <oc:underlyingRuleRef>
+        <oc:ruleName>West Easter Sunday</oc:ruleName>
+      </oc:underlyingRuleRef>
+      <!-- mandatory  -->
+      <oc:days>-2</oc:days>
+    </oc:daysOffsetRule>
+
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Canada May 24</oc:ruleName>
+      <!-- optional but required for this type of rule -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional but required for this rule -->
+      <oc:weekendAdjustment>NextWeekDay</oc:weekendAdjustment>
+      <!-- optional but required for this rule -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>May</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>24</od:dayOfMonth>
+    </oc:monthDayRule>
+
+    <oc:firstDayAtOrBeforeRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Victoria Day</oc:ruleName>
+      <!-- optional but required for this type of rule -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <oc:underlyingRuleRef>
+        <oc:ruleName>Canada May 24</oc:ruleName>
+      </oc:underlyingRuleRef>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+      <!-- mandatory  -->
+      <oc:startAtFlag>true</oc:startAtFlag>
+    </oc:firstDayAtOrBeforeRule>
+
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Provincial Day</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional -->
+      <oc:weekendAdjustment>NextWeekDay</oc:weekendAdjustment>
+      <!-- optional -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>June</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>24</od:dayOfMonth>
+    </oc:monthDayRule>
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Canada Day</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional -->
+      <oc:weekendAdjustment>NextWeekDay</oc:weekendAdjustment>
+      <!-- optional -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>July</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>1</od:dayOfMonth>
+    </oc:monthDayRule>
+
+
+    <oc:firstDayOfMonthRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Civic Holiday</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>August</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+    </oc:firstDayOfMonthRule>
+    
+    
+
+    
+
+    <oc:firstDayOfMonthRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Labour Day</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>September</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+    </oc:firstDayOfMonthRule>
+
+    <oc:monthWeekDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Thanks Giving</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>October</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:weekOfMonth>Second</od:weekOfMonth>
+      <!-- mandatory  -->
+      <od:weekDay>
+        <od:dayName>Monday</od:dayName>
+      </od:weekDay>
+    </oc:monthWeekDayRule>
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Remembrance Day</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional -->
+      <oc:weekendAdjustment>NextWeekDay</oc:weekendAdjustment>
+      <!-- optional -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>November</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>11</od:dayOfMonth>
+    </oc:monthDayRule>
+
+    
+
+    <oc:monthDayRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Christmas</oc:ruleName>
+      <!-- optional; will default to today's date -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional -->
+      <oc:weekendAdjustment>NextWeekDay</oc:weekendAdjustment>
+      <!-- optional -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <od:month>
+        <od:monthName>December</od:monthName>
+      </od:month>
+      <!-- mandatory  -->
+      <od:dayOfMonth>25</od:dayOfMonth>
+    </oc:monthDayRule>
+
+    <oc:daysOffsetRule>
+      <!-- mandatory  -->
+      <oc:ruleName>Boxing Day</oc:ruleName>
+      <!-- optional but required for this type of rule -->
+      <oc:startEffectiveDate>2000-01-01</oc:startEffectiveDate>
+      <!-- optional but required for this type of rule-->
+      <oc:endEffectiveDate>2025-12-31</oc:endEffectiveDate>
+      <!-- optional -->
+      <oc:weekendAdjustment>NextWeekDay</oc:weekendAdjustment>
+      <!-- optional -->
+      <oc:weekendRuleRef>
+        <oc:ruleName>West Weekend</oc:ruleName>
+      </oc:weekendRuleRef>
+      <!-- mandatory  -->
+      <oc:underlyingRuleRef>
+        <oc:ruleName>Christmas</oc:ruleName>
+      </oc:underlyingRuleRef>
+      <!-- mandatory  -->
+      <oc:days>1</oc:days>
+    </oc:daysOffsetRule>
+ 
+     
+  </oc:ruleList>
+</oc:calendarData>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:com.ondalear.bus.refdata.common="http:///com/ondalear/bus/refdata/common.ecore"
+	xmlns:com.ondalear.bus.refdata.core="http:///com/ondalear/bus/refdata/core.ecore"
+	xmlns:com.ondalear.bus.refdata.users="http:///com/ondalear/bus/refdata/users.ecore"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/refdata/users.ecore">
+	<xsd:import namespace="http:///com/ondalear/bus/refdata/core.ecore"
+		schemaLocation="BusRefDataCoreXMI.xsd" />
+	<xsd:import namespace="http:///com/ondalear/bus/refdata/common.ecore"
+		schemaLocation="BusRefDataCommonXMI.xsd" />
+
+	<xsd:complexType name="FunctionalRole">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:Constant" />
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="FunctionalRole"
+		type="com.ondalear.bus.refdata.users:FunctionalRole" />
+	<xsd:complexType name="FunctionalRoleGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.users:FunctionalRole" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="FunctionalRoleGrouping"
+		type="com.ondalear.bus.refdata.users:FunctionalRoleGrouping" />
+	<xsd:complexType name="SystemUser">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="person"
+						type="com.ondalear.bus.refdata.common:Person" />
+					<xsd:element name="groups"
+						type="com.ondalear.bus.refdata.users:SystemUserGroup" />
+					<xsd:element name="primaryGroup"
+						type="com.ondalear.bus.refdata.users:SystemUserGroup" />
+					<xsd:element name="currentGroup"
+						type="com.ondalear.bus.refdata.users:SystemUserGroup" />
+					<xsd:element name="roles"
+						type="com.ondalear.bus.refdata.users:FunctionalRole" />
+					<xsd:element name="primaryRole"
+						type="com.ondalear.bus.refdata.users:FunctionalRole" />
+					<xsd:element name="currentRole"
+						type="com.ondalear.bus.refdata.users:FunctionalRole" />
+					<xsd:element name="userType"
+						type="com.ondalear.bus.refdata.users:UserType" />
+				</xsd:choice>
+				<xsd:attribute name="loginId" type="xsd:string" />
+				<xsd:attribute name="person" type="xsd:string" />
+				<xsd:attribute name="groups" type="xsd:string" />
+				<xsd:attribute name="primaryGroup" type="xsd:string" />
+				<xsd:attribute name="currentGroup" type="xsd:string" />
+				<xsd:attribute name="roles" type="xsd:string" />
+				<xsd:attribute name="primaryRole" type="xsd:string" />
+				<xsd:attribute name="currentRole" type="xsd:string" />
+				<xsd:attribute name="userType" type="xsd:string" />
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="SystemUser"
+		type="com.ondalear.bus.refdata.users:SystemUser" />
+	<xsd:complexType name="SystemUserGroup">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="subGroups"
+						type="com.ondalear.bus.refdata.users:SystemUserGroup" />
+					<xsd:element name="users"
+						type="com.ondalear.bus.refdata.users:SystemUser" />
+				</xsd:choice>
+				<xsd:attribute name="users" type="xsd:string" />
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="SystemUserGroup"
+		type="com.ondalear.bus.refdata.users:SystemUserGroup" />
+	<xsd:complexType name="SystemUserGroupGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.users:SystemUserGroup" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="SystemUserGroupGrouping"
+		type="com.ondalear.bus.refdata.users:SystemUserGroupGrouping" />
+	<xsd:complexType name="SystemUserGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.users:SystemUser" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="SystemUserGrouping"
+		type="com.ondalear.bus.refdata.users:SystemUserGrouping" />
+	<xsd:complexType name="UserType">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:Constant" />
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="UserType" type="com.ondalear.bus.refdata.users:UserType" />
+	<xsd:complexType name="UserTypeTypeGrouping">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="list"
+						type="com.ondalear.bus.refdata.users:UserType" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="UserTypeTypeGrouping"
+		type="com.ondalear.bus.refdata.users:UserTypeTypeGrouping" />
+	<xsd:complexType name="BusRefDataUsersConstants">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:ConstantsDomain">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="role"
+						type="com.ondalear.bus.refdata.users:FunctionalRoleGrouping" />
+					<xsd:element name="userType"
+						type="com.ondalear.bus.refdata.users:UserTypeTypeGrouping" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusRefDataUsersConstants"
+		type="com.ondalear.bus.refdata.users:BusRefDataUsersConstants" />
+	<xsd:complexType name="BusRefDataUsersDomain">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="constants"
+						type="com.ondalear.bus.refdata.users:BusRefDataUsersConstants" />
+					<xsd:element name="objects"
+						type="com.ondalear.bus.refdata.users:BusRefDataUsersObjects" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusRefDataUsersDomain"
+		type="com.ondalear.bus.refdata.users:BusRefDataUsersDomain" />
+	<xsd:complexType name="BusRefDataUsersObjects">
+		<xsd:complexContent>
+			<xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+				<xsd:choice maxOccurs="unbounded" minOccurs="0">
+					<xsd:element name="user"
+						type="com.ondalear.bus.refdata.users:SystemUserGrouping" />
+					<xsd:element name="userGroup"
+						type="com.ondalear.bus.refdata.users:SystemUserGroupGrouping" />
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="BusRefDataUsersObjects"
+		type="com.ondalear.bus.refdata.users:BusRefDataUsersObjects" />
+</xsd:schema>

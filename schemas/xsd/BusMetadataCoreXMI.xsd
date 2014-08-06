@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:com.ondalear.bus.metadata.core="http:///com/ondalear/bus/metadata/core.ecore" xmlns:com.ondalear.bus.mngobject="http:///com/ondalear/bus/mngobject.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/metadata/core.ecore">
+  <xsd:import namespace="http:///com/ondalear/bus/mngobject.ecore" schemaLocation="mngobject.xsd"/>
+  <xsd:import namespace="http://www.eclipse.org/emf/2002/Ecore" schemaLocation="ecore.xsd"/>
+  <xsd:complexType name="MetaDataWorld">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.metadata.core:ModelElement">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="models" type="com.ondalear.bus.metadata.core:MetaModel"/>
+          <xsd:element name="dataTypes" type="com.ondalear.bus.metadata.core:ModelDataType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="MetaDataWorld" type="com.ondalear.bus.metadata.core:MetaDataWorld"/>
+  <xsd:complexType name="MetaModel">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.metadata.core:ModelElement">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="domains" type="com.ondalear.bus.metadata.core:ModelDomain"/>
+          <xsd:element name="dataTypes" type="com.ondalear.bus.metadata.core:ModelDataType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="MetaModel" type="com.ondalear.bus.metadata.core:MetaModel"/>
+  <xsd:complexType name="ModelAttribute">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.metadata.core:ModelElement">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="superTypes" type="com.ondalear.bus.metadata.core:ModelAttribute"/>
+          <xsd:element name="delegate" type="ecore:EAttribute"/>
+        </xsd:choice>
+        <xsd:attribute name="ordered" type="xsd:boolean"/>
+        <xsd:attribute name="unique" type="xsd:boolean"/>
+        <xsd:attribute name="lowerBound" type="xsd:int"/>
+        <xsd:attribute name="upperBound" type="xsd:int"/>
+        <xsd:attribute name="many" type="xsd:boolean"/>
+        <xsd:attribute name="required" type="xsd:boolean"/>
+        <xsd:attribute name="changeable" type="xsd:boolean"/>
+        <xsd:attribute name="volatile" type="xsd:boolean"/>
+        <xsd:attribute name="transient" type="xsd:boolean"/>
+        <xsd:attribute name="defaultValueLiteral" type="xsd:string"/>
+        <xsd:attribute name="unsettable" type="xsd:boolean"/>
+        <xsd:attribute name="derived" type="xsd:boolean"/>
+        <xsd:attribute name="defaultValue" type="xsd:string"/>
+        <xsd:attribute name="superTypes" type="xsd:string"/>
+        <xsd:attribute name="delegate" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ModelAttribute" type="com.ondalear.bus.metadata.core:ModelAttribute"/>
+  <xsd:complexType name="ModelDataType">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.metadata.core:ModelElement">
+        <xsd:attribute name="modelElementClassName" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ModelDataType" type="com.ondalear.bus.metadata.core:ModelDataType"/>
+  <xsd:complexType name="ModelDomain">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.metadata.core:ModelElement">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="subDomains" type="com.ondalear.bus.metadata.core:ModelDomain"/>
+          <xsd:element name="attributes" type="com.ondalear.bus.metadata.core:ModelAttribute"/>
+          <xsd:element name="features" type="com.ondalear.bus.metadata.core:ModelFeature"/>
+          <xsd:element name="featureGroups" type="com.ondalear.bus.metadata.core:ModelFeatureGroup"/>
+          <xsd:element name="entities" type="com.ondalear.bus.metadata.core:ModelEntity"/>
+          <xsd:element name="dataTypes" type="com.ondalear.bus.metadata.core:ModelDataType"/>
+        </xsd:choice>
+        <xsd:attribute name="domainType" type="xsd:string"/>
+        <xsd:attribute name="modelPackage" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ModelDomain" type="com.ondalear.bus.metadata.core:ModelDomain"/>
+  <xsd:complexType abstract="true" name="ModelElement">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.mngobject:ManagedObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="dataType" type="com.ondalear.bus.metadata.core:ModelDataType"/>
+        </xsd:choice>
+        <xsd:attribute name="elementType" type="xsd:string"/>
+        <xsd:attribute name="elementState" type="xsd:string"/>
+        <xsd:attribute name="description" type="xsd:string"/>
+        <xsd:attribute name="comments" type="xsd:string"/>
+        <xsd:attribute name="name" type="xsd:string"/>
+        <xsd:attribute name="packageName" type="xsd:string"/>
+        <xsd:attribute name="dataType" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ModelElement" type="com.ondalear.bus.metadata.core:ModelElement"/>
+  <xsd:complexType name="ModelEntity">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.metadata.core:ModelElement">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="superTypes" type="com.ondalear.bus.metadata.core:ModelEntity"/>
+          <xsd:element name="attributes" type="com.ondalear.bus.metadata.core:ModelAttribute"/>
+          <xsd:element name="features" type="com.ondalear.bus.metadata.core:ModelFeature"/>
+          <xsd:element name="featureGroups" type="com.ondalear.bus.metadata.core:ModelFeatureGroup"/>
+          <xsd:element name="delegate" type="ecore:EClass"/>
+        </xsd:choice>
+        <xsd:attribute name="concrete" type="xsd:boolean"/>
+        <xsd:attribute name="superTypes" type="xsd:string"/>
+        <xsd:attribute name="attributes" type="xsd:string"/>
+        <xsd:attribute name="features" type="xsd:string"/>
+        <xsd:attribute name="featureGroups" type="xsd:string"/>
+        <xsd:attribute name="delegate" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ModelEntity" type="com.ondalear.bus.metadata.core:ModelEntity"/>
+  <xsd:complexType name="ModelFeature">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.metadata.core:ModelElement">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="attributes" type="com.ondalear.bus.metadata.core:ModelAttribute"/>
+        </xsd:choice>
+        <xsd:attribute name="attributes" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ModelFeature" type="com.ondalear.bus.metadata.core:ModelFeature"/>
+  <xsd:complexType name="ModelFeatureGroup">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.metadata.core:ModelElement">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="features" type="com.ondalear.bus.metadata.core:ModelFeature"/>
+        </xsd:choice>
+        <xsd:attribute name="features" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ModelFeatureGroup" type="com.ondalear.bus.metadata.core:ModelFeatureGroup"/>
+</xsd:schema>

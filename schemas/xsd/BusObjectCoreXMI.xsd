@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:com.ondalear.bus.mngobject="http:///com/ondalear/bus/mngobject.ecore" 
+	xmlns:com.ondalear.bus.object.core="http:///com/ondalear/bus/object/core.ecore" 
+	xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+	xmlns:xmi="http://www.omg.org/XMI" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/object/core.ecore">
+  <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="XMI.xsd"/>
+  <xsd:import namespace="http://www.eclipse.org/emf/2002/Ecore" schemaLocation="Ecore.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/mngobject.ecore" schemaLocation="ManagedObjectXMI.xsd"/>
+  <xsd:simpleType name="InstanceType">
+    <xsd:restriction base="xsd:NCName">
+      <xsd:enumeration value="STRING"/>
+      <xsd:enumeration value="BIG_DECIMAL"/>
+      <xsd:enumeration value="BIG_INTEGER"/>
+      <xsd:enumeration value="BOOLEAN"/>
+      <xsd:enumeration value="BYTE"/>
+      <xsd:enumeration value="BYTE_ARRAY"/>
+      <xsd:enumeration value="CHAR"/>
+      <xsd:enumeration value="DATE"/>
+      <xsd:enumeration value="DOUBLE"/>
+      <xsd:enumeration value="FLOAT"/>
+      <xsd:enumeration value="INT"/>
+      <xsd:enumeration value="JAVA_CLASS"/>
+      <xsd:enumeration value="JAVA_OBJECT"/>
+      <xsd:enumeration value="LONG_OBJECT"/>
+      <xsd:enumeration value="SHORT"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType abstract="true" name="BusinessObject">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.mngobject:ManagedObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="annotations" type="com.ondalear.bus.object.core:ObjectAnnotation"/>
+          <xsd:element name="categories" type="com.ondalear.bus.object.core:BusinessObjectCategory"/>
+          <xsd:element name="attributes" type="com.ondalear.bus.object.core:EStringToEJavaObjectMapEntry"/>
+          <xsd:element name="customAttributes" type="com.ondalear.bus.object.core:EStringToEJavaObjectMapEntry"/>
+        </xsd:choice>
+        <xsd:attribute name="immutable" type="xsd:boolean"/>
+        <xsd:attribute name="businessObjectState" type="xsd:string"/>
+        <xsd:attribute name="businessObjectType" type="xsd:string"/>
+        <xsd:attribute name="name" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusinessObject" type="com.ondalear.bus.object.core:BusinessObject"/>
+  <xsd:complexType name="BusinessObjectAssoc">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="src" type="com.ondalear.bus.object.core:BusinessObjectRef"/>
+          <xsd:element name="dst" type="com.ondalear.bus.object.core:BusinessObjectRef"/>
+        </xsd:choice>
+        <xsd:attribute name="src" type="xsd:string"/>
+        <xsd:attribute name="dst" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusinessObjectAssoc" type="com.ondalear.bus.object.core:BusinessObjectAssoc"/>
+  <xsd:complexType name="BusinessObjectCategory">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:attribute name="description" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusinessObjectCategory" type="com.ondalear.bus.object.core:BusinessObjectCategory"/>
+  <xsd:complexType name="BusinessObjectList">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:attribute name="purpose" type="xsd:string"/>
+        <xsd:attribute name="primary" type="xsd:string"/>
+        <xsd:attribute name="owner" type="xsd:boolean"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusinessObjectList" type="com.ondalear.bus.object.core:BusinessObjectList"/>
+  <xsd:complexType name="BusinessObjectRef">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="obj" type="com.ondalear.bus.object.core:BusinessObject"/>
+        </xsd:choice>
+        <xsd:attribute name="refName" type="xsd:string"/>
+        <xsd:attribute name="refGUID" type="xsd:string"/>
+        <xsd:attribute name="obj" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusinessObjectRef" type="com.ondalear.bus.object.core:BusinessObjectRef"/>
+  <xsd:complexType abstract="true" name="BusinessWorkspace">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:attribute name="description" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusinessWorkspace" type="com.ondalear.bus.object.core:BusinessWorkspace"/>
+  <xsd:complexType abstract="true" name="Contractable">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+  </xsd:complexType>
+  <xsd:element name="Contractable" type="com.ondalear.bus.object.core:Contractable"/>
+  <xsd:complexType abstract="true" name="LightWeightBusinessObject">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+  </xsd:complexType>
+  <xsd:element name="LightWeightBusinessObject" type="com.ondalear.bus.object.core:LightWeightBusinessObject"/>
+  <xsd:complexType name="ObjectAnnotation">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:attribute name="commentary" type="xsd:string"/>
+        <xsd:attribute name="date" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ObjectAnnotation" type="com.ondalear.bus.object.core:ObjectAnnotation"/>
+  <xsd:complexType name="EStringToEJavaObjectMapEntry">
+	<xsd:choice maxOccurs="unbounded" minOccurs="0">
+		<xsd:element ref="xmi:Extension" />
+	</xsd:choice>
+	<xsd:attribute ref="xmi:id" />
+	<xsd:attributeGroup ref="xmi:ObjectAttribs" />
+	<xsd:attribute name="key" type="xsd:string" />
+	<xsd:attribute name="stringValue" type="xsd:string" />
+	<xsd:attribute name="objectType" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:element name="EStringToEJavaObjectMapEntry" type="com.ondalear.bus.object.core:EStringToEJavaObjectMapEntry"/>
+</xsd:schema>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema 
+	xmlns:com.ondalear.bus.object.core="http:///com/ondalear/bus/object/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.common="http:///com/ondalear/bus/refdata/common.ecore" 
+	xmlns:com.ondalear.bus.refdata.core="http:///com/ondalear/bus/refdata/core.ecore" 
+	xmlns:com.ondalear.bus.refdata.parties="http:///com/ondalear/bus/refdata/parties.ecore" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/refdata/parties.ecore">
+  <xsd:import namespace="http:///com/ondalear/bus/object/core.ecore" schemaLocation="BusObjectCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/core.ecore" schemaLocation="BusRefDataCoreXMI.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/refdata/common.ecore" schemaLocation="BusRefDataCommonXMI.xsd"/>
+  <xsd:complexType name="BusRefDataPartiesConstants">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="role" type="com.ondalear.bus.refdata.parties:CounterPartyRoleGrouping"/>
+          <xsd:element name="counterPartyType" type="com.ondalear.bus.refdata.parties:CounterPartyTypeGrouping"/>
+          <xsd:element name="legalEntityType" type="com.ondalear.bus.refdata.parties:LegalEntityTypeGrouping"/>
+          <xsd:element name="transactionSide" type="com.ondalear.bus.refdata.parties:TransactionSideGrouping"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataPartiesConstants" type="com.ondalear.bus.refdata.parties:BusRefDataPartiesConstants"/>
+  <xsd:complexType name="BusRefDataPartiesDomain">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="constants" type="com.ondalear.bus.refdata.parties:BusRefDataPartiesConstants"/>
+          <xsd:element name="objects" type="com.ondalear.bus.refdata.parties:BusRefDataPartiesObjects"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataPartiesDomain" type="com.ondalear.bus.refdata.parties:BusRefDataPartiesDomain"/>
+  <xsd:complexType name="BusRefDataPartiesObjects">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataDomain">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="party" type="com.ondalear.bus.refdata.parties:CounterPartyGrouping"/>
+          <xsd:element name="corporateEntity" type="com.ondalear.bus.refdata.parties:CorporateLegalEntityGrouping"/>
+          <xsd:element name="individualEntity" type="com.ondalear.bus.refdata.parties:IndividualLegalEntityGrouping"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="BusRefDataPartiesObjects" type="com.ondalear.bus.refdata.parties:BusRefDataPartiesObjects"/>
+  <xsd:complexType name="CorporateLegalEntity">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.parties:LegalEntity">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="company" type="com.ondalear.bus.refdata.common:Company"/>
+        </xsd:choice>
+        <xsd:attribute name="company" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CorporateLegalEntity" type="com.ondalear.bus.refdata.parties:CorporateLegalEntity"/>
+  <xsd:complexType name="CorporateLegalEntityGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.parties:CorporateLegalEntity"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CorporateLegalEntityGrouping" type="com.ondalear.bus.refdata.parties:CorporateLegalEntityGrouping"/>
+  <xsd:complexType name="CounterParty">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="partyType" type="com.ondalear.bus.refdata.parties:CounterPartyType"/>
+          <xsd:element name="legalEntity" type="com.ondalear.bus.refdata.parties:LegalEntity"/>
+          <xsd:element name="location" type="com.ondalear.bus.refdata.common:LocationAddress"/>
+        </xsd:choice>
+        <xsd:attribute name="partyType" type="xsd:string"/>
+        <xsd:attribute name="legalEntity" type="xsd:string"/>
+        <xsd:attribute name="location" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CounterParty" type="com.ondalear.bus.refdata.parties:CounterParty"/>
+  <xsd:complexType name="CounterPartyGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.parties:CounterParty"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CounterPartyGrouping" type="com.ondalear.bus.refdata.parties:CounterPartyGrouping"/>
+  <xsd:complexType name="CounterPartyRole">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CounterPartyRole" type="com.ondalear.bus.refdata.parties:CounterPartyRole"/>
+  <xsd:complexType name="CounterPartyRoleGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.parties:CounterPartyRole"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CounterPartyRoleGrouping" type="com.ondalear.bus.refdata.parties:CounterPartyRoleGrouping"/>
+  <xsd:complexType name="CounterPartySpec">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.object.core:BusinessObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="role" type="com.ondalear.bus.refdata.parties:CounterPartyRole"/>
+          <xsd:element name="party" type="com.ondalear.bus.refdata.parties:CounterParty"/>
+          <xsd:element name="side" type="com.ondalear.bus.refdata.parties:TransactionSide"/>
+        </xsd:choice>
+        <xsd:attribute name="role" type="xsd:string"/>
+        <xsd:attribute name="party" type="xsd:string"/>
+        <xsd:attribute name="side" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CounterPartySpec" type="com.ondalear.bus.refdata.parties:CounterPartySpec"/>
+  <xsd:complexType name="CounterPartyType">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CounterPartyType" type="com.ondalear.bus.refdata.parties:CounterPartyType"/>
+  <xsd:complexType name="CounterPartyTypeGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.parties:CounterPartyType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="CounterPartyTypeGrouping" type="com.ondalear.bus.refdata.parties:CounterPartyTypeGrouping"/>
+  <xsd:complexType name="IndividualLegalEntity">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.parties:LegalEntity">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="person" type="com.ondalear.bus.refdata.common:Person"/>
+        </xsd:choice>
+        <xsd:attribute name="person" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="IndividualLegalEntity" type="com.ondalear.bus.refdata.parties:IndividualLegalEntity"/>
+  <xsd:complexType name="IndividualLegalEntityGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.parties:IndividualLegalEntity"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="IndividualLegalEntityGrouping" type="com.ondalear.bus.refdata.parties:IndividualLegalEntityGrouping"/>
+  <xsd:complexType name="LegalEntity">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:RefDataObject">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="entityType" type="com.ondalear.bus.refdata.parties:LegalEntityType"/>
+        </xsd:choice>
+        <xsd:attribute name="entityType" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="LegalEntity" type="com.ondalear.bus.refdata.parties:LegalEntity"/>
+  <xsd:complexType name="LegalEntityType">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="LegalEntityType" type="com.ondalear.bus.refdata.parties:LegalEntityType"/>
+  <xsd:complexType name="LegalEntityTypeGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.parties:LegalEntityType"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="LegalEntityTypeGrouping" type="com.ondalear.bus.refdata.parties:LegalEntityTypeGrouping"/>
+  <xsd:complexType name="TransactionSide">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:Constant"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="TransactionSide" type="com.ondalear.bus.refdata.parties:TransactionSide"/>
+  <xsd:complexType name="TransactionSideGrouping">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.refdata.core:ConstantsGrouping">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="list" type="com.ondalear.bus.refdata.parties:TransactionSide"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="TransactionSideGrouping" type="com.ondalear.bus.refdata.parties:TransactionSideGrouping"/>
+</xsd:schema>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:com.ondalear.bus.object.core="http:///com/ondalear/bus/busobject/corebusobj.ecore" xmlns:com.ondalear.bus.process="http:///com/ondalear/bus/busprocess.ecore" xmlns:com.ondalear.bus.metadata.process="http:///com/ondalear/bus/metadata/process.ecore" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///com/ondalear/bus/metadata/process.ecore">
+  <xsd:import namespace="http:///com/ondalear/bus/busobject/corebusobj.ecore" schemaLocation="corebusobj.xsd"/>
+  <xsd:import namespace="http:///com/ondalear/bus/busprocess.ecore" schemaLocation="busprocess.xsd"/>
+  <xsd:complexType name="MetaDataProcessConfig">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.process:BusinessProcessConfiguration">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="inspected" type="com.ondalear.bus.object.core:BusinessObject"/>
+        </xsd:choice>
+        <xsd:attribute name="doMissingAttr" type="xsd:boolean"/>
+        <xsd:attribute name="doValidation" type="xsd:boolean"/>
+        <xsd:attribute name="doOptionalAttr" type="xsd:boolean"/>
+        <xsd:attribute name="doMandatoryAttr" type="xsd:boolean"/>
+        <xsd:attribute name="inspected" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="MetaDataProcessConfig" type="com.ondalear.bus.metadata.process:MetaDataProcessConfig"/>
+  <xsd:complexType name="MetaDataValidationProcess">
+    <xsd:complexContent>
+      <xsd:extension base="com.ondalear.bus.process:BusinessProcess"/>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="MetaDataValidationProcess" type="com.ondalear.bus.metadata.process:MetaDataValidationProcess"/>
+</xsd:schema>

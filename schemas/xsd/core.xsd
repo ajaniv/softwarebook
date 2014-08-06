@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Core Schema
+/**
+ * \file core.xsd
+ * \brief Core schema
+ *
+ */
+
+
+/*
+ * This file is part of OndALear  collection of open source components.
+ *
+ * This software is provided 'as-is', without any express or implied
+ * warranty.  In no event will the authors be held liable for any damages
+ * arising from the use of this software.
+ *
+ * Copyright (C) 2008-2011 Amnon Janiv <amnon.janiv@ondalear.com>
+ *
+ * Initial version: 2010-11-11
+ * Author: Amnon Janiv <amnon.janiv@ondalear.com>
+ */
+
+/*
+ * $Id:  $
+ */
+-->
+
+<xsd:schema version="1"
+  xmlns:ob="http://www.ondalear.com/core/2011-05"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.ondalear.com/core/2011-05"
+  elementFormDefault="qualified">
+  <xsd:annotation>
+    <xsd:documentation>
+      <dl>
+        <dt>Defines the schema for core module.</dt>
+        <dt>ob - Ondalear Core/Base  name space.</dt>
+        <dt>Strives to conform  to best practices defined inhttp://xml.coverpages.org/HP-StephensonSchemaBestPractices.pdf</dt>
+      </dl>
+    </xsd:documentation>
+  </xsd:annotation>
+
+
+
+
+  <xsd:simpleType name="BooleanType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="true"/>
+      <xsd:enumeration value="false"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  
+  <xsd:simpleType name="StringType">
+    <xsd:restriction base="xsd:string">
+    </xsd:restriction>
+  </xsd:simpleType>
+  
+
+  
+</xsd:schema>
